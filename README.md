@@ -25,8 +25,9 @@ We're trying to use the best tools and practices in order to produce a quality e
 | Version Control System| git & github |
 | Recommended IDE | [VSCode](https://code.visualstudio.com) |
 | Issues | [![GitHub issues](https://img.shields.io/github/issues/erezam/DNA-PRIMER-BUILDER.svg?style=flat)](https://github.com/erezam/DNA-PRIMER-BUILDER/issues) |
+| Project Diary & Calendar | [![Inline docs](http://inch-ci.org/github/erezam/DNA-PRIMER-BUILDER.svg?branch=master)](https://github.com/erezam/DNA-PRIMER-BUILDER/wiki/Project-Calendar) |
 | Project Management Board| [here](https://github.com/orbardugo/Hahot-Hameshulash/projects/1) |
-| Contributors | [![GitHub contributors](https://img.shields.io/github/contributors/orbardugo/Hahot-Hameshulash.svg)](https://github.com/erezam/DNA-PRIMER-BUILDER/graphs/contributors)|
+| Contributors | [![GitHub contributors](https://img.shields.io/github/contributors/erezam/DNA-PRIMER-BUILDER.svg)](https://github.com/erezam/DNA-PRIMER-BUILDER/graphs/contributors)|
 
 
 ## Application Screenshots
