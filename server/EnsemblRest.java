@@ -14,14 +14,15 @@ public class EnsemblRest {
  
   public static void main(String[] args) throws Exception {
     String server = "https://rest.ensembl.org";
-    String ext = "/sequence/id/ENSCAFT00000046249.1?type=cdna";
+    //String ext = "/sequence/symbol/homo_sapiens/BRCA2-201?type=cdna";
+    String ext = "/lookup/symbol/homo_sapiens/BRAF?expand=1";
     URL url = new URL(server + ext);
  
     URLConnection connection = url.openConnection();
     HttpURLConnection httpConnection = (HttpURLConnection)connection;
     
-    httpConnection.setRequestProperty("Content-Type", "text/x-fasta");
-    
+    //httpConnection.setRequestProperty("Content-Type", "text/x-fasta");  // cdna
+    httpConnection.setRequestProperty("Content-Type", "application/json");
  
     InputStream response = connection.getInputStream();
     int responseCode = httpConnection.getResponseCode();
@@ -49,7 +50,11 @@ public class EnsemblRest {
           logOrIgnore.printStackTrace();
         }
     }
- 
-    System.out.println(output);
+    //System.out.println(output.charAt(output.lastIndexOf("BRCA2-201")+1));
+   // String newStr = output.substring(output.indexOf("BRCA2-201"), output.indexOf("BRCA2-201")+300);
+    int index = output.indexOf("id", output.indexOf("BRAF-201"))+5;
+    String tmp= output.substring(index, index+15);
+    System.out.println(tmp);
+  //  System.out.println(output);
   }
 }
