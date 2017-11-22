@@ -6,6 +6,7 @@ public class PrimerTests{
     public static void main(String[] args) {
             String primer = "CCTCTGGAGCGGACTTATTTAC";
             nucleotideSum(primer);
+            System.out.println(criticalTests(primer));
             System.out.println(getGCprecent(primer));
             System.out.println(getTM(primer));
             return;
@@ -37,18 +38,40 @@ public class PrimerTests{
     }
 
     private static boolean criticalTests(String primer){
-        if(primer.charAt(0)=='G')      
+        if(primer.charAt(0)=='G') 
+        {
+            System.out.println("primer cant start with G");
             return false;            // primer cant start with G
-
-        int consecutiveG = 0;
-        for(int i=0 ; i<primer.length();i++){
-            if(primer.charAt(index)=='G')
-                consecutiveG++;
-            else
-                consecutiveG=0;
-            if(consecutiveG==3)
-                return false;       // primer cant have 3 consecutive G
         }
+        if(primer.contains("GGG"))
+        {
+            System.out.println("primer cant have 3 consecutive G");
+            return false;        // primer cant have 3 consecutive G
+        }
+        if(primer.contains("GGAG"))
+        {
+            System.out.println("primer cant have GGAG");
+            return false;        // primer cant have GGAG
+        }
+        if(primer.contains("AAAAAA"))
+        {
+            System.out.println("primer cant have AAAAAA");
+            return false;       // primer cant have 6 consecutive A
+        }   
+        int consecutiveC = 0;
+        for(int i=1 ; i<primer.length()-1;i++){
+            if(primer.charAt(i)=='C')
+                consecutiveC++;
+            else
+                consecutiveC=0;
+            if(consecutiveC==2)
+            {
+                System.out.println("primer cant have cc in the middle");
+                return false;       // primer cant have 2 consecutive C in the middle                
+            }
+        }
+
+        return true;
 
         
 
