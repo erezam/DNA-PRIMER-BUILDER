@@ -5,18 +5,19 @@ public class PrimerTests{
 
     public static void main(String[] args) {
             String primer = "CCTCTGGAGCGGACTTATTTAC";
-            System.out.println(GCprecent(primer));
+            nucleotideSum(primer);
+            System.out.println(getGCprecent(primer));
             return;
     }
 
     private static int getGCprecent(String primer) {   // return G,C precent in primer
-        return (int)((double)((gSum+cSum)/primer.length())*100);
+        return (int)(((double)(gSum+cSum)/primer.length())*100);
     }
     
-    private static int TM(String primer)
+  /*  private static int TM(String primer)
     {
 
-    }
+    }*/
 
     private static void nucleotideSum(String primer) // the method counting each nucleotid.
     {
