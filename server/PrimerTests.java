@@ -3,14 +3,19 @@ public class PrimerTests{
 
     public static void main(String[] args) {
             
-            String forwardPrimer = "CCTCTGGGGAGCGGACTTATTTAC";
+            String forwardPrimer = "CCTCTGGGAGCGGACTTATTTAC";
             String reversePrimer = "CCTCTGGAGCGGACTTATTTAC";
             Primer p1 = new Primer(forwardPrimer);
-            System.out.println(criticalTests(p1.getPrimerStr()));
+            Primer p2 = new Primer(reversePrimer);
+            System.out.println("forwardPrimer syntax: "+syntaxTests(p1.getPrimerStr()));
+            System.out.println("reversePrimer syntax: "+syntaxTests(p2.getPrimerStr()));
+            System.out.println("forwardPrimer tmTest: "+ tmTest(p1));
+            System.out.println("reversePrimer tmTest: "+ tmTest(p2));
+            System.out.println("temperture Differences: " + tmDifferencesTest(p1,p2));
             return;
     }
 
-    private static boolean criticalTests(String primer){
+    private static boolean syntaxTests(String primer){
         if(primer.charAt(0)=='G') 
         {
             System.out.println("primer cant start with G");
@@ -45,5 +50,18 @@ public class PrimerTests{
         }*/
         return true;
     }
+
+    private static boolean tmTest(Primer primer)
+    {
+        if(primer.getTm()< 50 ||primer.getTm() > 70 )
+             return false;
+        return true;
+    }
     
+    private static boolean tmDifferencesTest(Primer primerF , Primer primerR)
+    {
+        if(Math.abs(primerF.getTm() - primerR.getTm())>5) 
+             return false;
+        return true;
+    }
 }
