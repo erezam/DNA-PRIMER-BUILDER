@@ -33,5 +33,23 @@ public class PrimerTests{
                 tSum++;
         }
     }
+
+    private static boolean criticalTests(String primer){
+        if(primer.charAt(0)=='G')      
+            return false;            // primer cant start with G
+
+        int consecutiveG = 0;
+        for(int i=0 ; i<primer.length();i++){
+            if(primer.charAt(index)=='G')
+                consecutiveG++;
+            else
+                consecutiveG=0;
+            if(consecutiveG==3)
+                return false;       // primer cant have 3 consecutive G
+        }
+
+        
+
+    }
     
 }
