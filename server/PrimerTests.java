@@ -6,14 +6,8 @@ public class PrimerTests{
             return;
     }
 
-    private static int GCprecent(String primer) {   // return G,C precent in primer
-        double count=0;
-        for(int i=0 ; i<primer.length();i++)
-            if((primer.charAt(i)=='G') || (primer.charAt(i)=='C'))
-                count+=1; 
-        System.out.println(primer.length());        
-        int tmp = (int)((count/(double)primer.length())*100);
-        return tmp;
+    private static int getGCprecent(String primer) {   // return G,C precent in primer
+        return (int)((double)((gSum+cSum)/primer.length())*100);
     }
 
     
