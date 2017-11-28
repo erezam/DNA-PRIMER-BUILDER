@@ -3,9 +3,11 @@ public class PrimerTests{
 
     public static void main(String[] args) {
             String forwardPrimer = "CTACCTCCACCATGCCAAGT";
-            String reversePrimer = "CCTCTGGAGCGGACTTATTTAC";
+            String reversePrimer = "CCATGAACTTCACCACTTCGT";
             Primer p1 = new Primer(forwardPrimer);
             Primer p2 = new Primer(reversePrimer);
+            System.out.println("Forward len:"+p1.getLength());
+            System.out.println("Reverse len:"+p2.getLength());
             System.out.println("Forward tm:"+p1.getTm());
             System.out.println("Reverse tm:"+p2.getTm());
             System.out.println("Forward GC:"+p1.getPercentCg());

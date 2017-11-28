@@ -14,7 +14,7 @@ public class EnsemblRest {
   public static void main(String[] args) throws Exception {
     String server = "https://rest.ensembl.org";
     //String ext = "/sequence/symbol/homo_sapiens/BRCA2-201?type=cdna";
-    String ext = "/lookup/symbol/homo_sapiens/BRAF?expand=1";
+    String ext = "/lookup/symbol/homo_sapiens/VEGFA?expand=1";
     URL url = new URL(server + ext);
  
     URLConnection connection = url.openConnection();
