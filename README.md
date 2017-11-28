@@ -5,17 +5,16 @@
 * 
 * 
 * 
- #About Us
- 
- We are two students of Software Engineering at Azrieli - Jerusalem College of Engineering. This project is our final project to get our B.Sc degree. We are implementing a Website to be used by researchers in the field of medicine and biotechnology. The site will be used to create a primer for gene testing in a PCR machine. The resulting PRIMER will meet stringent requirements and will be an optimal primer that does not contain mutations.
-
-
-
-
-###  press on the following image to view the primer creation process:
+press on the following image to view the primer creation process:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DjNGgte52lI/0.jpg)](https://www.youtube.com/watch?v=DjNGgte52lI)
 
+ # About Us
+ 
+ We are two students of Software Engineering at Azrieli - Jerusalem College of Engineering. This project is our final project to get our B.Sc degree. We are implementing a Website to be used by researchers in the field of medicine and biotechnology. The site will be used to create a primer for gene testing in a PCR machine. The resulting PRIMER will meet stringent requirements and will be an optimal primer that does not contain mutations.
+ # Team
 
+####  [Amir Erez](https://github.com/erezam)
+####  [Or Bardugo](https://github.com/orbardugo)
 
 ## Tools & Practices
 We're trying to use the best tools and practices in order to produce a quality enginneered product.
