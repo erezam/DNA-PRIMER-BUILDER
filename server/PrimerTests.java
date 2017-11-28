@@ -2,16 +2,20 @@
 public class PrimerTests{
 
     public static void main(String[] args) {
-            
-            String forwardPrimer = "CCTCTGGGAGCGGACTTATTTAC";
+            String forwardPrimer = "CTACCTCCACCATGCCAAGT";
             String reversePrimer = "CCTCTGGAGCGGACTTATTTAC";
             Primer p1 = new Primer(forwardPrimer);
             Primer p2 = new Primer(reversePrimer);
+            System.out.println("Forward tm:"+p1.getTm());
+            System.out.println("Reverse tm:"+p2.getTm());
+            System.out.println("Forward GC:"+p1.getPercentCg());
+            System.out.println("Reverse GC:"+p2.getPercentCg());
+            /*
             System.out.println("forwardPrimer syntax: "+syntaxTests(p1.getPrimerStr()));
             System.out.println("reversePrimer syntax: "+syntaxTests(p2.getPrimerStr()));
             System.out.println("forwardPrimer tmTest: "+ tmTest(p1));
             System.out.println("reversePrimer tmTest: "+ tmTest(p2));
-            System.out.println("temperture Differences: " + tmDifferencesTest(p1,p2));
+            System.out.println("temperture Differences: " + tmDifferencesTest(p1,p2));*/
             return;
     }
 
