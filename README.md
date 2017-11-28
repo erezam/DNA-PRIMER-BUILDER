@@ -45,7 +45,7 @@ Please visit our wiki for furthur project info:
 ### [Team Page](../../wiki/team)
 
 ### Project Documents
-- [Schedule tasks](https://github.com/orbardugo/Hahot-Hameshulash/projects/2)
+- [Schedule tasks](https://github.com/erezam/DNA-PRIMER-BUILDER/projects/1)
 - [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
 - [Project Inception](../../wiki/inception)
 - [Software Requirements Specification](../../wiki/srs)
