@@ -1,5 +1,5 @@
 class Primer{
-    private int gSum,cSum,aSum,tSum,tm,prcentGC,Lenght;
+    private int gSum,cSum,aSum,tSum,tm,prcentGC,Length;
     private String primerStr;
 
     public Primer(String primer){
@@ -17,7 +17,7 @@ class Primer{
         }
         this.prcentGC=(int)(((double)(gSum+cSum)/primer.length())*100);
         this.tm=(int)(64.9 + 41*(gSum+cSum-16.4)/(aSum+tSum+gSum+cSum));
-        this.Lenght = primer.length();
+        this.Length = primer.length();
     }
 
     public String getPrimerStr(){
@@ -46,6 +46,10 @@ class Primer{
 
     public int getPercentCg(){
         return this.prcentGC;
+    }
+
+    public int getLength(){
+        return this.Length;
     }
    
 }
