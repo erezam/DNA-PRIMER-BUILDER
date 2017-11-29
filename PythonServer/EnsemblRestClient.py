@@ -74,7 +74,8 @@ def run(species, symbol):
     transcripts = variants['Transcript']
     if transcripts:
         for t in transcripts:
-            print '{display_name}: ==> {id}'.format(**t);
+            if t['display_name']=='BRAF-201':
+                print '{display_name}: ==> {id}'.format(**t);
 
 
 if __name__ == '__main__':
