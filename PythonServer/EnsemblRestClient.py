@@ -61,8 +61,8 @@ class EnsemblRestClient(object):
         if genes:
             stable_id = genes[0]['id']
             variants = self.perform_rest_action(
-                '/overlap/id/{0}'.format(stable_id),
-                params={'feature': 'variation'}
+                '/lookup/id/{0}'.format(stable_id),
+                params={'expand': '1'}
             )
             return variants
         return None
@@ -71,9 +71,10 @@ class EnsemblRestClient(object):
 def run(species, symbol):
     client = EnsemblRestClient()
     variants = client.get_variants(species, symbol)
-    if variants:
-        for v in variants:
-            print '{seq_region_name}:{start}-{end}:{strand} ==> {id} ({consequence_type})'.format(**v);
+    transcripts = variants['Transcript']
+    if transcripts:
+        for t in transcripts:
+            print '{display_name}: ==> {id}'.format(**t);
 
 
 if __name__ == '__main__':
