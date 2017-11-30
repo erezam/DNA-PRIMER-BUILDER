@@ -74,14 +74,15 @@ def run(species, symbol):
     transcripts = variants['Transcript']
     if transcripts:
         for t in transcripts:
-            if t['display_name']=='BRAF-201':
+            if t['display_name'] == symbol+"-201":
                 print '{display_name}: ==> {id}'.format(**t);
 
 
 if __name__ == '__main__':
-    if len(sys.argv) == 3:
-        species, symbol = sys.argv[1:]
-    else:
-        species, symbol = 'human', 'BRAF'
-
+    #if len(sys.argv) == 3:
+    #   species, symbol = sys.argv[1:]
+    #else:
+    #    species, symbol = 'human', 'BRAF'
+    species = raw_input("Enter specie:")
+    symbol = raw_input("Enter symbol:")
     run(species, symbol)
