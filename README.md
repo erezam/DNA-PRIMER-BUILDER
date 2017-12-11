@@ -4,8 +4,8 @@
 
 # Introduction
 
-This project is a software for building primers to DNA genetic testing in a PCR machine.
-What is a primer?
+This project is a software for building primers to DNA genetic testing in a PCR machine. </br>
+What is a primer?</br>
 Primeris a short section of nucleic acid that assists in DNA replication.
 The reason for its existence is the inability of the DNA polymerase enzyme to begin creating a new strand of DNA, The enzyme, responsible for cell DNA replication, is able to exclusively extend an existing DNA strand. 
 Primer gives the enzyme a starting point for creating a new strand.
