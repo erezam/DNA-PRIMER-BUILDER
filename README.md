@@ -6,17 +6,17 @@
 
 This project is a software for building primers to DNA genetic testing in a PCR machine. </br>
 What is a primer?</br>
-Primeris a short section of nucleic acid that assists in DNA replication.
-The reason for its existence is the inability of the DNA polymerase enzyme to begin creating a new strand of DNA, The enzyme, responsible for cell DNA replication, is able to exclusively extend an existing DNA strand. 
-Primer gives the enzyme a starting point for creating a new strand.
-Primers are artificially manufactured by biotech companies and are widely used in genetics and molecular biology, such as PCR.
-PCR is a laboratory method used to rapidly replicate DNA fragments.
-It is customary to use PCR to scan for genetic diseases and to perform comparative analysis of DNA from different populations, including DNA from extinct species. 
-The method is essential for deciphering crimes and establishing paternity.
-The principle of operation of the instrument consists of 3 stages in each cycle: denaturation, annealing of primers suitable for the edges of the segment to be duplicated and elongation via a heat-resistant DNA polymerase called Taq DNA polymerase.The device repeats these steps of the multiplication cycle, several dozen times (usually 25-30), until the desired amplification of the segment.
-The software built in the project will build a primer (13-28 characters long) according to the requirements to search for a specific gene in a PCR machine.
-The software will work in the form of automatic attenuation of the constraints and produce the highest-priority primer without human interference.
-The software will be built as a publicly available network application and will use existing databases for the necessary data on DNA.
+Primeris a short section of nucleic acid that assists in DNA replication.</br>
+The reason for its existence is the inability of the DNA polymerase enzyme to begin creating a new strand of DNA, The enzyme, responsible for cell DNA replication, is able to exclusively extend an existing DNA strand. </br>
+Primer gives the enzyme a starting point for creating a new strand.</br>
+Primers are artificially manufactured by biotech companies and are widely used in genetics and molecular biology, such as PCR.</br>
+PCR is a laboratory method used to rapidly replicate DNA fragments.</br>
+It is customary to use PCR to scan for genetic diseases and to perform comparative analysis of DNA from different populations, including DNA from extinct species. </br>
+The method is essential for deciphering crimes and establishing paternity.</br>
+The principle of operation of the instrument consists of 3 stages in each cycle: denaturation, annealing of primers suitable for the edges of the segment to be duplicated and elongation via a heat-resistant DNA polymerase called Taq DNA polymerase.The device repeats these steps of the multiplication cycle, several dozen times (usually 25-30), until the desired amplification of the segment.</br>
+The software built in the project will build a primer (13-28 characters long) according to the requirements to search for a specific gene in a PCR machine.</br>
+The software will work in the form of automatic attenuation of the constraints and produce the highest-priority primer without human interference.</br>
+The software will be built as a publicly available network application and will use existing databases for the necessary data on DNA.</br>
 
 
 
