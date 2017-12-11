@@ -2,7 +2,7 @@
 
 <a href="https://ibb.co/ckMuFG"><img src="https://preview.ibb.co/nAMuFG/logo.jpg" alt="logo" border="0"></a>
 
-#Introduction
+# Introduction
 
 This project is a software for building primers to DNA genetic testing in a PCR machine.
 What is a primer?
