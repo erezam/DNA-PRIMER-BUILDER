@@ -82,11 +82,14 @@ def transcriptData(species, symbol):
     if transcripts:
         for t in transcripts:
             if t['display_name'] == symbol+"-201":
-                print '{display_name}: ==> {id}'.format(**t);
-                junkArr=junctions(t);
-                cDna = getCdna(t['id']);
+                print '{display_name}: ==> {id}'.format(**t)
+                juncArr=junctions(t)
+                cDna = getCdna(t['id'])
+                cDna = cDna.replace("\n","")
+                print cDna
+                optionalPrimers = getOptionalPrimers(cDna,juncArr)
 
-        print cDna;
+                print optionalPrimers;
 
 # ====================== return all junctions index ========================================
 
@@ -124,8 +127,14 @@ def getCdna(transcriptId):
         sys.exit()
     return r.text
 
+# ======================= get optional primers array ===========================================
 
+def getOptionalPrimers(cdna,junctionArray):
+    optionalPrimers = []
+    for index in junctionArray:
+        optionalPrimers.append(cdna[(index-10):(index+10)])
 
+    return optionalPrimers
 
 
 if __name__ == '__main__':

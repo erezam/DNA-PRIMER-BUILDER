@@ -55,6 +55,7 @@ public class EnsemblRest {
         }
     }
     System.out.println(output);
+    
     int index = output.indexOf("id", output.indexOf(geneName+"-201"))+5;
     String transcriptId= output.substring(index, index+15);
     return transcriptId;
