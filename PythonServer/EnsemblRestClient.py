@@ -3,15 +3,20 @@ import urllib
 import urllib2
 import json
 import time
+import requests
+
+# ===================================================================================
 
 
 class EnsemblRestClient(object):
+    # ===================== init ====================================================
     def __init__(self, server='http://rest.ensembl.org', reqs_per_sec=15):
         self.server = server
         self.reqs_per_sec = reqs_per_sec
         self.req_count = 0
         self.last_req = 0
 
+    # =================== database server connection ================================
     def perform_rest_action(self, endpoint, hdrs=None, params=None):
         if hdrs is None:
             hdrs = {}
@@ -53,6 +58,7 @@ class EnsemblRestClient(object):
 
         return data
 
+    # ===================== get variants query =============================================
     def get_variants(self, species, symbol):
         genes = self.perform_rest_action(
             '/xrefs/symbol/{0}/{1}'.format(species, symbol),
@@ -67,8 +73,9 @@ class EnsemblRestClient(object):
             return variants
         return None
 
+# ======================== get transcript data =============================================
 
-def run(species, symbol):
+def transcriptData(species, symbol):
     client = EnsemblRestClient()
     variants = client.get_variants(species, symbol)
     transcripts = variants['Transcript']
@@ -76,13 +83,56 @@ def run(species, symbol):
         for t in transcripts:
             if t['display_name'] == symbol+"-201":
                 print '{display_name}: ==> {id}'.format(**t);
+                junkArr=junctions(t);
+                cDna = getCdna(t['id']);
+
+        print cDna;
+
+# ====================== return all junctions index ========================================
+
+def junctions(transcript):
+    junctionsArr = [];
+    exonsLen = [];
+    exons = transcript['Exon'];
+    if exons:
+        for e in exons:
+            print 'start : {start} ==> end : {end}'.format(**e);
+            if e == exons[0]:
+                exonsLen.append(transcript['end']-e['start']);
+            elif e == exons[len(exons)-1]:
+                exonsLen.append(e['end'] - transcript['start']);
+            else:
+                exonsLen.append(e['end'] - e['start']);
+    print exonsLen;
+    if exonsLen:
+        sum=0;
+        for i in exonsLen:
+            junctionsArr.append(sum+i);
+            sum=sum+i;
+
+    return junctionsArr;
+
+
+# ======================= get cDna of tarscript ===========================================
+
+def getCdna(transcriptId):
+    server = "http://rest.ensembl.org"
+    ext = "/sequence/id/"+transcriptId+"?type=cdna"
+    r = requests.get(server + ext, headers={"Content-Type": "text/x-fasta"})
+    if not r.ok:
+        r.raise_for_status()
+        sys.exit()
+    return r.text
+
+
+
 
 
 if __name__ == '__main__':
-    #if len(sys.argv) == 3:
-    #   species, symbol = sys.argv[1:]
-    #else:
-    #    species, symbol = 'human', 'BRAF'
-    species = raw_input("Enter specie:")
-    symbol = raw_input("Enter symbol:")
-    run(species, symbol)
+    if len(sys.argv) == 3:
+       species, symbol = sys.argv[1:]
+    else:
+        species, symbol = 'human', 'BRAF'
+    # species = raw_input("Enter specie:")
+    # symbol = raw_input("Enter symbol:")
+    transcriptData(species, symbol);
