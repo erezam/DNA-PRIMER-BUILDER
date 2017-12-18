@@ -85,11 +85,12 @@ def transcriptData(species, symbol):
             if t['display_name'] == symbol+"-201":
                 print '{display_name}: ==> {id}'.format(**t)
                 juncArr=junctions(t)
-                cDna = getCdna(t['id'])
+                cDna = get_cdna(t['id'])
                 cDna = cDna.replace("\n","")
                 print cDna
-                optionalPrimers = getOptionalPrimers(cDna,juncArr)
-                print optionalPrimers
+                optional_primers = getOptional_primers(cDna, juncArr)
+                for primer in optional_primers:
+                    print primer.cCounter()
 
 
 
@@ -97,31 +98,31 @@ def transcriptData(species, symbol):
 # ====================== return all junctions index ========================================
 
 def junctions(transcript):
-    junctionsArr = [];
-    exonsLen = [];
-    exons = transcript['Exon'];
+    junctions_arr = []
+    exons_len = []
+    exons = transcript['Exon']
     if exons:
         for e in exons:
-            print 'start : {start} ==> end : {end}'.format(**e);
+            print 'start : {start} ==> end : {end}'.format(**e)
             if e == exons[0]:
-                exonsLen.append(transcript['end']-e['start']);
+                exons_len.append(transcript['end']-e['start'])
             elif e == exons[len(exons)-1]:
-                exonsLen.append(e['end'] - transcript['start']);
+                exons_len.append(e['end'] - transcript['start'])
             else:
-                exonsLen.append(e['end'] - e['start']);
-    print exonsLen;
-    if exonsLen:
-        sum=0;
-        for i in exonsLen:
-            junctionsArr.append(sum+i);
-            sum=sum+i;
+                exons_len.append(e['end'] - e['start'])
+    print exons_len
+    if exons_len:
+        sum = 0
+        for i in exons_len:
+            junctions_arr.append(sum+i)
+            sum = sum+i
 
-    return junctionsArr;
+    return junctions_arr
 
 
 # ======================= get cDna of tarscript ===========================================
 
-def getCdna(transcriptId):
+def get_cdna(transcriptId):
     server = "http://rest.ensembl.org"
     ext = "/sequence/id/"+transcriptId+"?type=cdna"
     r = requests.get(server + ext, headers={"Content-Type": "text/x-fasta"})
@@ -132,25 +133,25 @@ def getCdna(transcriptId):
 
 # ======================= get all optional primers array ===========================================
 
-def getOptionalPrimers(cdna,junctionArray):
-    lenRange=[14, 15, 16, 17, 18, 19, 20]
+
+def getOptional_primers(cdna,junctionArray):
+    len_range=[14, 15, 16, 17, 18, 19, 20]
     threshold = [0.4, 0.5, 0.6]
-    optionalPrimers = []
+    optional_primers = []
     for th in threshold:
-        for l in lenRange:
+        for l in len_range:
             for index in junctionArray:
                 f = int(round((index-(l*th)), 0))
                 t = int(round((index+(l*(1-th))), 0))
-                tmpPrimer = Primer("forward", cdna[f:t])
-                optionalPrimers.append(tmpPrimer)
+                tmp_primer = Primer("forward", cdna[f:t])
+                optional_primers.append(tmp_primer)
                 if th!=0.5:
                     f = int(round((index - (l * (1 - th))), 0))
                     t = int(round((index + (l * th)), 0))
-                    tmpPrimer = Primer("forward", cdna[f:t])
-                    optionalPrimers.append(tmpPrimer)
+                    tmp_primer = Primer("forward", cdna[f:t])
+                    optional_primers.append(tmp_primer)
 
-    return optionalPrimers
-
+    return optional_primers
 
 
 if __name__ == '__main__':
