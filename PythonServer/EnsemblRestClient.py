@@ -89,8 +89,9 @@ def transcriptData(species, symbol):
                 cDna = cDna.replace("\n","")
                 print cDna
                 optional_primers = getOptional_primers(cDna, juncArr)
-                for primer in optional_primers:
-                    print primer.cCounter()
+                optional_primers.append(Primer("forward", "AGAGAGCGTGCCAATAACTC"))
+                primers = primer_tests(optional_primers)
+                print primers
 
 
 
@@ -153,6 +154,57 @@ def getOptional_primers(cdna,junctionArray):
 
     return optional_primers
 
+# ======================= primers test methods ===========================================
+
+def primer_tests(optional_primers):
+    primers = []
+    for primer in optional_primers:
+        #if tm_test(primer):
+        if gc_test(primer):
+            if syntax_tests(primer):
+                primers.append(primer)
+
+    return primers
+
+
+
+# ======================= tm test ===========================================
+
+def tm_test(primer):
+    if (primer.primerTm() < 50) or (primer.primerTm() > 70):
+        return False
+    return True
+# ======================= %GC test ===========================================
+def gc_test(primer):
+    gc = primer.precentGC()
+    if (primer.precentGC() < 20) or (primer.precentGC() > 80):
+        return False
+    return True
+
+# ======================= %syntaxTests test ===========================================
+
+def syntax_tests(primer):
+    if primer.sequnce[0] == 'G':
+        return False
+
+    if "GGGG" in primer.sequnce:
+        return False
+
+    if "CCCC" in primer.sequnce:
+        return False
+
+    if "AAAAAA" in primer.sequnce:
+        return False
+
+    consecutive_c = 0
+    for index in range(len(primer.sequnce)):
+        if primer.sequnce[index] == 'C':
+            consecutive_c += 1
+        else:
+            consecutive_c = 0
+        if consecutive_c == 2:
+            return False #primer cant have 2 consecutive C in the middle
+    return True
 
 if __name__ == '__main__':
     if len(sys.argv) == 3:

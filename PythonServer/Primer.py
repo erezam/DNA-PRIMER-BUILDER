@@ -33,7 +33,7 @@ class Primer (object):
 
     def precentGC(self):
         prcentGC = int(((self.cCounter()+self.gCounter())/len(self.sequnce))*100)
-        return  prcentGC
+        return prcentGC
 
     def primerTm(self):
         tm = int((64.9 +41 * (self.gCounter() + self.cCounter() - 16.4))/(len(self.sequnce)))
