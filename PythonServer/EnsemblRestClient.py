@@ -6,6 +6,7 @@ import time
 import requests
 
 # ===================================================================================
+from PythonServer.Primer import Primer
 
 
 class EnsemblRestClient(object):
@@ -88,8 +89,10 @@ def transcriptData(species, symbol):
                 cDna = cDna.replace("\n","")
                 print cDna
                 optionalPrimers = getOptionalPrimers(cDna,juncArr)
+                print optionalPrimers
 
-                print optionalPrimers;
+
+
 
 # ====================== return all junctions index ========================================
 
@@ -138,13 +141,16 @@ def getOptionalPrimers(cdna,junctionArray):
             for index in junctionArray:
                 f = int(round((index-(l*th)), 0))
                 t = int(round((index+(l*(1-th))), 0))
-                optionalPrimers.append(cdna[f:t])
+                tmpPrimer = Primer("forward", cdna[f:t])
+                optionalPrimers.append(tmpPrimer)
                 if th!=0.5:
                     f = int(round((index - (l * (1 - th))), 0))
                     t = int(round((index + (l * th)), 0))
-                    optionalPrimers.append(cdna[f:t])
+                    tmpPrimer = Primer("forward", cdna[f:t])
+                    optionalPrimers.append(tmpPrimer)
 
     return optionalPrimers
+
 
 
 if __name__ == '__main__':
