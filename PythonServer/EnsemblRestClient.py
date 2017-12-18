@@ -127,12 +127,22 @@ def getCdna(transcriptId):
         sys.exit()
     return r.text
 
-# ======================= get optional primers array ===========================================
+# ======================= get all optional primers array ===========================================
 
 def getOptionalPrimers(cdna,junctionArray):
+    lenRange=[14, 15, 16, 17, 18, 19, 20]
+    threshold = [0.4, 0.5, 0.6]
     optionalPrimers = []
-    for index in junctionArray:
-        optionalPrimers.append(cdna[(index-10):(index+10)])
+    for th in threshold:
+        for l in lenRange:
+            for index in junctionArray:
+                f = int(round((index-(l*th)), 0))
+                t = int(round((index+(l*(1-th))), 0))
+                optionalPrimers.append(cdna[f:t])
+                if th!=0.5:
+                    f = int(round((index - (l * (1 - th))), 0))
+                    t = int(round((index + (l * th)), 0))
+                    optionalPrimers.append(cdna[f:t])
 
     return optionalPrimers
 
