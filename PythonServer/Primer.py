@@ -1,42 +1,52 @@
 from __future__ import division
 
+
 class Primer (object):
     def __init__(self, kind, sequnce):
         self.kind = kind
         self.sequnce = sequnce
+        self.length = len(sequnce)
+        self.score = 0
 
-    def aCounter(self):
+    def a_counter(self):
         aCount = 0
         for index in self.sequnce:
             if index == 'A':
                 aCount += 1
         return aCount
 
-    def tCounter(self):
+    def t_counter(self):
         tCount = 0
         for index in self.sequnce:
             if index == 'T':
                 tCount += 1
         return tCount
 
-    def gCounter(self):
+    def g_counter(self):
         gCount = 0
         for index in self.sequnce:
             if index == 'G':
                 gCount += 1
         return gCount
 
-    def cCounter(self):
+    def c_counter(self):
         cCount = 0
         for index in self.sequnce:
             if index == 'C':
                 cCount += 1
         return cCount
 
-    def precentGC(self):
-        prcentGC = int(((self.cCounter()+self.gCounter())/len(self.sequnce))*100)
+    def precent_gc(self):
+        prcentGC = int(((self.c_counter()+self.g_counter())/len(self.sequnce))*100)
         return prcentGC
 
-    def primerTm(self):
-        tm = int((64.9 + 41 * (self.gCounter() + self.cCounter() - 16.4)/(len(self.sequnce))))
+    def primer_tm(self):
+        tm = int((64.9 + 41 * (self.g_counter() + self.c_counter() - 16.4)/(len(self.sequnce))))
         return tm
+
+    def add_score(self, add):
+        self.score += add
+
+    def printPrimer(self):
+        print "Kind: %s , Seq: %s , Tm : %s , GC : %s , Score : %s " % (self.kind, self.sequnce,
+                                                                        self.primer_tm(), self.precent_gc(), self.score)

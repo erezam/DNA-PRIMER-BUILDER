@@ -76,7 +76,8 @@ class EnsemblRestClient(object):
 
 # ======================== get transcript data =============================================
 
-def transcriptData(species, symbol):
+
+def transcript_data(species, symbol):
     client = EnsemblRestClient()
     variants = client.get_variants(species, symbol)
     transcripts = variants['Transcript']
@@ -88,15 +89,14 @@ def transcriptData(species, symbol):
                 cDna = get_cdna(t['id'])
                 cDna = cDna.replace("\n","")
                 print cDna
-                optional_primers = getOptional_primers(cDna, juncArr)
-                optional_primers.append(Primer("forward", "AGAGAGCGTGCCAATAACTC"))
+                optional_primers = get_optional_primers(cDna, juncArr)
                 primers = primer_tests(optional_primers)
-                print primers
-
-
-
+                primers_score(primers)
+                for primer in primers:
+                    primer.printPrimer()
 
 # ====================== return all junctions index ========================================
+
 
 def junctions(transcript):
     junctions_arr = []
@@ -105,12 +105,12 @@ def junctions(transcript):
     if exons:
         for e in exons:
             print 'start : {start} ==> end : {end}'.format(**e)
-            if e == exons[0]:
-                exons_len.append(transcript['end']-e['start'])
-            elif e == exons[len(exons)-1]:
-                exons_len.append(e['end'] - transcript['start'])
-            else:
-                exons_len.append(e['end'] - e['start'])
+            #if e == exons[0]:  need to check again!!!
+            #   exons_len.append(transcript['end']-e['start'])
+            #elif e == exons[len(exons)-1]:
+            #    exons_len.append(e['end'] - transcript['start'])
+            #else:
+            exons_len.append(e['end'] - e['start'])
     print exons_len
     if exons_len:
         sum = 0
@@ -135,26 +135,29 @@ def get_cdna(transcriptId):
 # ======================= get all optional primers array ===========================================
 
 
-def getOptional_primers(cdna,junctionArray):
+def get_optional_primers(cdna,junctionArray):
     len_range=[14, 15, 16, 17, 18, 19, 20]
     threshold = [0.4, 0.5, 0.6]
     optional_primers = []
     for th in threshold:
         for l in len_range:
             for index in junctionArray:
-                f = int(round((index-(l*th)), 0))
-                t = int(round((index+(l*(1-th))), 0))
-                tmp_primer = Primer("forward", cdna[f:t])
-                optional_primers.append(tmp_primer)
-                if th!=0.5:
-                    f = int(round((index - (l * (1 - th))), 0))
-                    t = int(round((index + (l * th)), 0))
+                if ((index-(l*th))>=0) and ((index+(l*(1-th))) < len(cdna)):
+                    f = int(round((index-(l*th)), 0))
+                    t = int(round((index+(l*(1-th))), 0))
                     tmp_primer = Primer("forward", cdna[f:t])
                     optional_primers.append(tmp_primer)
+                if th!=0.5:
+                    if ((index+(l*(1-th))) >= 0) and ((index-(l*th)) < len(cdna)):
+                        f = int(round((index - (l * (1 - th))), 0))
+                        t = int(round((index + (l * th)), 0))
+                        tmp_primer = Primer("forward", cdna[f:t])
+                        optional_primers.append(tmp_primer)
 
     return optional_primers
 
 # ======================= primers test methods ===========================================
+
 
 def primer_tests(optional_primers):
     primers = []
@@ -167,21 +170,24 @@ def primer_tests(optional_primers):
     print len(primers)
     return primers
 
-
-
 # ======================= tm test ===========================================
 
+
 def tm_test(primer):
-    if (primer.primerTm() < 45) or (primer.primerTm() > 70):
+    if (primer.primer_tm() < 30) or (primer.primer_tm() > 80):
         return False
     return True
+
 # ======================= %GC test ===========================================
+
+
 def gc_test(primer):
-    if (primer.precentGC() < 20) or (primer.precentGC() > 80):
+    if (primer.precent_gc() < 20) or (primer.precent_gc() > 80):
         return False
     return True
 
 # ======================= %syntaxTests test ===========================================
+
 
 def syntax_tests(primer):
     if primer.sequnce[0] == 'G':
@@ -203,14 +209,53 @@ def syntax_tests(primer):
         else:
             consecutive_c = 0
         if consecutive_c == 2:
-            return False #primer cant have 2 consecutive C in the middle
+            return False    # primer cant have 2 consecutive C in the middle
     return True
 
+# ======================= Primer score ============================================
+
+def primers_score(primers):
+    for primer in primers:
+        # length score
+        if primer.length == 20:
+            primer.add_score(10)
+        elif primer.length == 19:
+            primer.add_score(9)
+        elif primer.length == 18:
+            primer.add_score(8)
+        elif primer.length == 17:
+            primer.add_score(7)
+        elif primer.length == 16:
+            primer.add_score(6)
+        elif primer.length == 15:
+            primer.add_score(5)
+        else:
+            primer.add_score(4)
+
+        # Tm score
+        if (primer.primer_tm() >= 50) and (primer.primer_tm() <= 60):
+            primer.add_score(10)
+        elif (primer.primer_tm() >= 40) and (primer.primer_tm() <= 70):
+            primer.add_score(8)
+        else:
+            primer.add_score(6)
+
+        # GC percent score
+        if (primer.primer_tm() >= 50) and (primer.primer_tm() <= 60):
+            primer.add_score(10)
+        elif (primer.primer_tm() > 40) and (primer.primer_tm() < 70):
+            primer.add_score(8)
+        else:
+            primer.add_score(6)
+
+# ======================= MAIN ====================================================
+
+
 if __name__ == '__main__':
-    if len(sys.argv) == 3:
-       species, symbol = sys.argv[1:]
-    else:
-        species, symbol = 'human', 'BRAF'
-    # species = raw_input("Enter specie:")
-    # symbol = raw_input("Enter symbol:")
-    transcriptData(species, symbol);
+    #if len(sys.argv) == 3:
+    #   species, symbol = sys.argv[1:]
+    #else:
+    #    species, symbol = 'human', 'BRAF'
+    species = raw_input("Enter specie:")
+    symbol = raw_input("Enter symbol:")
+    transcript_data(species, symbol);
