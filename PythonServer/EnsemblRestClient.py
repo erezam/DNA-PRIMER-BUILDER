@@ -159,11 +159,12 @@ def getOptional_primers(cdna,junctionArray):
 def primer_tests(optional_primers):
     primers = []
     for primer in optional_primers:
-        #if tm_test(primer):
-        if gc_test(primer):
-            if syntax_tests(primer):
-                primers.append(primer)
+        if tm_test(primer):
+            if gc_test(primer):
+                if syntax_tests(primer):
+                    primers.append(primer)
 
+    print len(primers)
     return primers
 
 
@@ -171,12 +172,11 @@ def primer_tests(optional_primers):
 # ======================= tm test ===========================================
 
 def tm_test(primer):
-    if (primer.primerTm() < 50) or (primer.primerTm() > 70):
+    if (primer.primerTm() < 45) or (primer.primerTm() > 70):
         return False
     return True
 # ======================= %GC test ===========================================
 def gc_test(primer):
-    gc = primer.precentGC()
     if (primer.precentGC() < 20) or (primer.precentGC() > 80):
         return False
     return True

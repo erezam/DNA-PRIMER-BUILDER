@@ -1,3 +1,5 @@
+from __future__ import division
+
 class Primer (object):
     def __init__(self, kind, sequnce):
         self.kind = kind
@@ -36,5 +38,5 @@ class Primer (object):
         return prcentGC
 
     def primerTm(self):
-        tm = int((64.9 +41 * (self.gCounter() + self.cCounter() - 16.4))/(len(self.sequnce)))
+        tm = int((64.9 + 41 * (self.gCounter() + self.cCounter() - 16.4)/(len(self.sequnce))))
         return tm
