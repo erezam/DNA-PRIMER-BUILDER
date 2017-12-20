@@ -174,7 +174,7 @@ def primer_tests(optional_primers):
 
 
 def tm_test(primer):
-    if (primer.primer_tm() < 30) or (primer.primer_tm() > 80):
+    if (primer.primer_tm() < 40) or (primer.primer_tm() > 70):
         return False
     return True
 
@@ -182,7 +182,7 @@ def tm_test(primer):
 
 
 def gc_test(primer):
-    if (primer.precent_gc() < 20) or (primer.precent_gc() > 80):
+    if (primer.precent_gc() < 40) or (primer.precent_gc() > 60):
         return False
     return True
 
