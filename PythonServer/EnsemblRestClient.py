@@ -215,6 +215,7 @@ def syntax_tests(primer):
 
 # ======================= Primer score ============================================
 
+
 def primers_score(primers):
     for primer in primers:
         # length score
@@ -240,7 +241,7 @@ def primers_score(primers):
             primer.add_score((1 - ((primer.primer_tm() / tm_avg) - 1)) * tm_score_weight)
 
         # GC percent score
-        gc_avg = 20
+        gc_avg = 56
         gc_stdev = 8.3
         gc_score_weight = 20
         if gc_avg-leng_stdev <= primer.precent_gc() <= gc_avg+gc_stdev:
@@ -260,4 +261,4 @@ if __name__ == '__main__':
     #    species, symbol = 'human', 'BRAF'
     species = raw_input("Enter specie:")
     symbol = raw_input("Enter symbol:")
-    transcript_data(species, symbol);
+    transcript_data(species, symbol)
