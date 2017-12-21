@@ -1,3 +1,4 @@
+from __future__ import division
 import sys
 import urllib
 import urllib2
@@ -217,36 +218,37 @@ def syntax_tests(primer):
 def primers_score(primers):
     for primer in primers:
         # length score
-        if primer.length == 20:
-            primer.add_score(10)
-        elif primer.length == 19:
-            primer.add_score(9)
-        elif primer.length == 18:
-            primer.add_score(8)
-        elif primer.length == 17:
-            primer.add_score(7)
-        elif primer.length == 16:
-            primer.add_score(6)
-        elif primer.length == 15:
-            primer.add_score(5)
+        leng_avg = 20
+        leng_stdev = 2.3
+        leng_score_weight = 20
+        if leng_avg-leng_stdev <= primer.length <= leng_avg+leng_stdev:
+            primer.add_score(leng_score_weight)
+        elif primer.length < leng_avg:
+            primer.add_score(primer.length / leng_avg * leng_score_weight)
         else:
-            primer.add_score(4)
+            primer.add_score((1-((primer.length / leng_avg )-1)) * leng_score_weight)
 
         # Tm score
-        if (primer.primer_tm() >= 50) and (primer.primer_tm() <= 60):
-            primer.add_score(10)
-        elif (primer.primer_tm() >= 40) and (primer.primer_tm() <= 70):
-            primer.add_score(8)
+        tm_avg = 57
+        tm_stdev = 1.8
+        tm_score_weight = 20
+        if tm_avg-leng_stdev <= primer.primer_tm() <= tm_avg+tm_stdev:
+            primer.add_score(tm_score_weight)
+        elif primer.primer_tm() <= tm_avg:
+            primer.add_score(primer.primer_tm() / tm_avg * tm_score_weight)
         else:
-            primer.add_score(6)
+            primer.add_score((1 - ((primer.primer_tm() / tm_avg) - 1)) * tm_score_weight)
 
         # GC percent score
-        if (primer.primer_tm() >= 50) and (primer.primer_tm() <= 60):
-            primer.add_score(10)
-        elif (primer.primer_tm() > 40) and (primer.primer_tm() < 70):
-            primer.add_score(8)
+        gc_avg = 20
+        gc_stdev = 8.3
+        gc_score_weight = 20
+        if gc_avg-leng_stdev <= primer.precent_gc() <= gc_avg+gc_stdev:
+            primer.add_score(gc_score_weight)
+        elif primer.precent_gc() <= gc_avg:
+            primer.add_score(primer.precent_gc() / gc_avg * gc_score_weight)
         else:
-            primer.add_score(6)
+            primer.add_score((1 - ((primer.precent_gc() / gc_avg) - 1)) * gc_score_weight)
 
 # ======================= MAIN ====================================================
 
