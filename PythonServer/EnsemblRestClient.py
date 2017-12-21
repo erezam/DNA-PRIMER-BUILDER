@@ -240,6 +240,7 @@ def primers_score(primers):
         else:
             primer.add_score((1 - ((primer.primer_tm() / tm_avg) - 1)) * tm_score_weight)
 
+
         # GC percent score
         gc_avg = 56
         gc_stdev = 8.3
