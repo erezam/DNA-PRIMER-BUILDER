@@ -183,7 +183,7 @@ def tm_test(primer):
 
 
 def gc_test(primer):
-    if (primer.precent_gc() < 40) or (primer.precent_gc() > 60):
+    if (primer.precent_gc() < 30) or (primer.precent_gc() > 60):
         return False
     return True
 
