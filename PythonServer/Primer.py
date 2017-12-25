@@ -2,11 +2,12 @@ from __future__ import division
 
 
 class Primer (object):
-    def __init__(self, kind, sequnce):
+    def __init__(self, kind, sequnce , start_index):
         self.kind = kind
         self.sequnce = sequnce
         self.length = len(sequnce)
         self.score = 0
+        self.start_index = start_index
 
     def a_counter(self):
         aCount = 0
@@ -48,5 +49,5 @@ class Primer (object):
         self.score += add
 
     def printPrimer(self):
-        print "Kind: %s , Seq: %s , Tm : %s , GC : %s , Score : %s " % (self.kind, self.sequnce,
-                                                                        self.primer_tm(), self.precent_gc(), self.score)
+        print "Kind: %s , Seq: %s , Tm : %s , GC : %s , Score : %s , Start index: %s" % \
+              (self.kind, self.sequnce,self.primer_tm(), self.precent_gc(), self.score, self.start_index)

@@ -146,13 +146,13 @@ def get_optional_primers(cdna,junctionArray):
                 if ((index-(l*th))>=0) and ((index+(l*(1-th))) < len(cdna)):
                     f = int(round((index-(l*th)), 0))
                     t = int(round((index+(l*(1-th))), 0))
-                    tmp_primer = Primer("forward", cdna[f:t])
+                    tmp_primer = Primer("forward", cdna[f:t], f)
                     optional_primers.append(tmp_primer)
                 if th!=0.5:
                     if ((index+(l*(1-th))) >= 0) and ((index-(l*th)) < len(cdna)):
                         f = int(round((index - (l * (1 - th))), 0))
                         t = int(round((index + (l * th)), 0))
-                        tmp_primer = Primer("forward", cdna[f:t])
+                        tmp_primer = Primer("forward", cdna[f:t] , f)
                         optional_primers.append(tmp_primer)
 
     return optional_primers
