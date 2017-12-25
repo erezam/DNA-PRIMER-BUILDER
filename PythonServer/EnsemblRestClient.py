@@ -8,6 +8,7 @@ import requests
 
 # ===================================================================================
 from PythonServer.Primer import Primer
+from PythonServer.Primer_set import Primer_set
 
 
 class EnsemblRestClient(object):
@@ -104,6 +105,15 @@ def transcript_data(species, symbol):
                 primers_score(reverse_primers)
                 for primer in reverse_primers:
                     primer.printPrimer()
+
+                # sets
+                primers_optinal_sets = get_optional_sets(forward_primers, reverse_primers)
+                primers_sets = sets_tests(primers_optinal_sets)
+                print len(primers_sets)
+                for set in primers_sets:
+                    set.set_print()
+
+
 
 # ====================== return all junctions index ========================================
 
@@ -298,6 +308,29 @@ def get_reverse_primers(cdna,forward_primers,id_count):
                     optional_reverse_primers.append(tmp_primer)
                     id_count += 1
     return optional_reverse_primers
+
+
+# ====================== Create sets of primers ==================================
+
+def get_optional_sets(forward_primers, reverse_primers):
+    primer_sets = []
+    for rev_primer in reverse_primers:
+        for for_primer in forward_primers:
+            if rev_primer.pair_id == for_primer.id:
+                tmp_set = Primer_set(for_primer, rev_primer)
+                primer_sets.append(tmp_set)
+                break
+    return primer_sets
+
+# ====================== Sets tests ==============================================
+
+
+def sets_tests(primer_optional_sets):
+    primer_sets = []
+    for set in primer_optional_sets:
+        if set.tm_dif() <= 1:
+            primer_sets.append(set)
+    return primer_sets
 
 
 # ======================= MAIN ====================================================
