@@ -90,10 +90,19 @@ def transcript_data(species, symbol):
                 cDna = get_cdna(t['id'])
                 cDna = cDna.replace("\n","")
                 print cDna
-                optional_primers = get_optional_primers(cDna, juncArr)
-                primers = primer_tests(optional_primers)
-                primers_score(primers)
-                for primer in primers:
+                id_count = 1
+                # forward
+                optional_primers = get_optional_primers(cDna, juncArr, id_count)
+                forward_primers = primer_tests(optional_primers)
+                primers_score(forward_primers)
+                for primer in forward_primers:
+                    primer.printPrimer()
+
+                # reverse
+                reverse_optional_primers = get_reverse_primers(cDna, forward_primers, id_count)
+                reverse_primers = primer_tests(reverse_optional_primers)
+                primers_score(reverse_primers)
+                for primer in reverse_primers:
                     primer.printPrimer()
 
 # ====================== return all junctions index ========================================
@@ -136,7 +145,7 @@ def get_cdna(transcriptId):
 # ======================= get all optional primers array ===========================================
 
 
-def get_optional_primers(cdna,junctionArray):
+def get_optional_primers(cdna, junctionArray, id_count):
     len_range=[14, 15, 16, 17, 18, 19, 20]
     threshold = [0.4, 0.5, 0.6]
     optional_primers = []
@@ -146,13 +155,15 @@ def get_optional_primers(cdna,junctionArray):
                 if ((index-(l*th))>=0) and ((index+(l*(1-th))) < len(cdna)):
                     f = int(round((index-(l*th)), 0))
                     t = int(round((index+(l*(1-th))), 0))
-                    tmp_primer = Primer("forward", cdna[f:t], f)
+                    tmp_primer = Primer(id_count, "forward", cdna[f:t], f)
+                    id_count+=1
                     optional_primers.append(tmp_primer)
                 if th!=0.5:
                     if ((index+(l*(1-th))) >= 0) and ((index-(l*th)) < len(cdna)):
                         f = int(round((index - (l * (1 - th))), 0))
                         t = int(round((index + (l * th)), 0))
-                        tmp_primer = Primer("forward", cdna[f:t] , f)
+                        tmp_primer = Primer(id_count , "forward", cdna[f:t] , f)
+                        id_count += 1
                         optional_primers.append(tmp_primer)
 
     return optional_primers
@@ -252,6 +263,43 @@ def primers_score(primers):
         else:
             primer.add_score((1 - ((primer.precent_gc() / gc_avg) - 1)) * gc_score_weight)
 
+
+
+#======================reverse nucleotide=====================
+
+def reverse_nucleotide(sequnce):
+    tmp_str = list(sequnce)
+    for index in range(len(sequnce)):
+        if sequnce[index] == 'A':
+            tmp_str[index] = 'T'
+        elif sequnce[index] == 'T':
+            tmp_str[index] = 'A'
+        elif sequnce[index] == 'G':
+            tmp_str[index] = 'C'
+        else:
+            tmp_str[index] = 'G'
+    sequnce = "".join(tmp_str)
+
+#======================find reverse primers=====================
+
+def get_reverse_primers(cdna,forward_primers,id_count):
+    optional_reverse_primers = []
+    cdna_length = len(cdna)
+    primers_length = [14, 15, 16, 17, 18, 19, 20]
+    for primer in forward_primers:
+        for amplicon_length in range(50,150):
+            for primer_length in primers_length:
+                if cdna_length - primer.start_index >= amplicon_length + primer_length:
+                    f = primer.start_index+amplicon_length
+                    t = primer.start_index+amplicon_length+primer_length
+                    sequence = cdna[f:t]
+                    reverse_nucleotide(sequence)
+                    tmp_primer = Primer(id_count, "reverse", sequence, primer.start_index+amplicon_length, primer.id)
+                    optional_reverse_primers.append(tmp_primer)
+                    id_count += 1
+    return optional_reverse_primers
+
+
 # ======================= MAIN ====================================================
 
 
@@ -263,3 +311,4 @@ if __name__ == '__main__':
     species = raw_input("Enter specie:")
     symbol = raw_input("Enter symbol:")
     transcript_data(species, symbol)
+
