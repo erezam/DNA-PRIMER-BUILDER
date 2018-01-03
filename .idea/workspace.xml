@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72c17765-8351-4616-9594-a9076f28edc8" name="Default" comment="add export to file">
+    <list default="true" id="72c17765-8351-4616-9594-a9076f28edc8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonServer/Primer_set.py" afterPath="$PROJECT_DIR$/PythonServer/Primer_set.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonServer/test.txt" afterPath="$PROJECT_DIR$/PythonServer/test.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -217,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514212157657</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add export to file">
+      <created>1514988655111</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1514988655111</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -279,7 +284,8 @@
     <MESSAGE value="primer tests" />
     <MESSAGE value="test values changings" />
     <MESSAGE value="add method to change nucleotide sequnce to reverse nucleotide sequence.&#10;add method to get optional reverse primers, and reverse primers after tests.&#10;add some attributes to primer object like id etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method to change nucleotide sequnce to reverse nucleotide sequence.&#10;add method to get optional reverse primers, and reverse primers after tests.&#10;add some attributes to primer object like id etc." />
+    <MESSAGE value="add export to file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add export to file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
