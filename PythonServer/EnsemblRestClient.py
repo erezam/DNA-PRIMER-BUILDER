@@ -112,6 +112,7 @@ def transcript_data(species, symbol):
                 print len(primers_sets)
                 for set in primers_sets:
                     set.set_print()
+                export_to_file(primers_sets)
 
 
 
@@ -332,8 +333,17 @@ def sets_tests(primer_optional_sets):
             primer_sets.append(set)
     return primer_sets
 
+#==================================export to file===================================
 
-# ======================= MAIN ====================================================
+
+def export_to_file(primer_sets):
+    new_file = open("test.txt","w")
+    new_file.write("PRIMERS SETS!!! \n")
+    new_file.close()
+    for index in primer_sets:
+        index.write_to_file("test.txt")
+
+#  ======================= MAIN ====================================================
 
 
 if __name__ == '__main__':
