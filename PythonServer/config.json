@@ -1,0 +1,35 @@
+{
+	"Amplicon Length":
+	{
+		"Min":"50",
+		"Max":"200",
+		"Opt Min":"80", 
+		"Opt Max":"150"
+	},
+	
+	"Length":
+	{
+		"Min":"13",
+		"Max":"26",
+		"Opt Min":"18", 
+		"Opt Max":"24"
+	},
+
+	"Tm":
+	{
+		"Min":"59",
+		"Max":"68",
+		"Opt Min":"63", 
+		"Opt Max":"64"
+	},
+
+	"GC Percent":
+	{
+		"Min":"35",
+		"Max":"80",
+		"Opt Min":"60",
+		"Opt Max":"65"
+	}
+}
+
+ 
