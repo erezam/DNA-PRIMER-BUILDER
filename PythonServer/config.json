@@ -17,10 +17,10 @@
 
 	"Tm":
 	{
-		"Min":"59",
+		"Min":"40",
 		"Max":"68",
 		"Avg":"63",
-		"STDDEV":"64"
+		"STDDEV":"1"
 	},
 
 	"GC Percent":
@@ -28,7 +28,7 @@
 		"Min":"35",
 		"Max":"80",
 		"Avg":"60",
-		"STDDEV":"65"
+		"STDDEV":"1"
 	}
 }
 

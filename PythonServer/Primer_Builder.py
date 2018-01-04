@@ -7,6 +7,8 @@ from PythonServer.Primer import Primer
 from PythonServer.Primer_set import Primer_set
 from PythonServer.EnsemblRestClient import EnsemblRestClient
 
+config = json.load(open('config.json'))
+
 
 def transcript_data(species, symbol):
     client = EnsemblRestClient()
@@ -24,20 +26,20 @@ def transcript_data(species, symbol):
                 # forward
                 optional_primers = get_optional_primers(cDna, juncArr, id_count)
                 forward_primers = primer_tests(optional_primers)
-                primers_score(forward_primers)
                 for primer in forward_primers:
                     primer.printPrimer()
 
                 # reverse
                 reverse_optional_primers = get_reverse_primers(cDna, forward_primers, id_count)
                 reverse_primers = primer_tests(reverse_optional_primers)
-                primers_score(reverse_primers)
                 for primer in reverse_primers:
                     primer.printPrimer()
 
                 # sets
                 primers_optinal_sets = get_optional_sets(forward_primers, reverse_primers)
                 primers_sets = sets_tests(primers_optinal_sets)
+                sets_tests(primers_sets)
+                primers_sets.sort(key=get_set_score, reverse=True)
                 print len(primers_sets)
                 for set in primers_sets:
                     set.set_print()
@@ -124,7 +126,7 @@ def primer_tests(optional_primers):
 # ======================= tm test ===========================================
 
 def tm_test(primer):
-    if (primer.primer_tm() < 40) or (primer.primer_tm() > 70):
+    if (primer.primer_tm() < int(config["Tm"]["Min"])) or (primer.primer_tm() > int(config["Tm"]["Max"])):
         return False
     return True
 
@@ -165,41 +167,9 @@ def syntax_tests(primer):
 
 # ======================= Primer score ============================================
 
-def primers_score(primers):
-    for primer in primers:
-        # length score
-        leng_avg = 20
-        leng_stdev = 2.3
-        leng_score_weight = 20
-        if leng_avg - leng_stdev <= primer.length <= leng_avg + leng_stdev:
-            primer.add_score(leng_score_weight)
-        elif primer.length < leng_avg:
-            primer.add_score(primer.length / leng_avg * leng_score_weight)
-        else:
-            primer.add_score((1 - ((primer.length / leng_avg) - 1)) * leng_score_weight)
-
-        # Tm score
-        tm_avg = 57
-        tm_stdev = 1.8
-        tm_score_weight = 20
-        if tm_avg - leng_stdev <= primer.primer_tm() <= tm_avg + tm_stdev:
-            primer.add_score(tm_score_weight)
-        elif primer.primer_tm() <= tm_avg:
-            primer.add_score(primer.primer_tm() / tm_avg * tm_score_weight)
-        else:
-            primer.add_score((1 - ((primer.primer_tm() / tm_avg) - 1)) * tm_score_weight)
-
-        # GC percent score
-        gc_avg = 56
-        gc_stdev = 8.3
-        gc_score_weight = 20
-        if gc_avg - leng_stdev <= primer.precent_gc() <= gc_avg + gc_stdev:
-            primer.add_score(gc_score_weight)
-        elif primer.precent_gc() <= gc_avg:
-            primer.add_score(primer.precent_gc() / gc_avg * gc_score_weight)
-        else:
-            primer.add_score((1 - ((primer.precent_gc() / gc_avg) - 1)) * gc_score_weight)
-
+def primers_score(primer_sets):
+    for primer_set in primer_sets:
+        primer_set.get_primers_set_score()
 
 # ======================reverse nucleotide=====================
 
@@ -270,6 +240,10 @@ def export_to_file(primer_sets):
     for index in primer_sets:
         index.write_to_file("test.txt")
 
+# ================================== return primers set score ===================================
+
+def get_set_score(primer_set):
+    return primer_set.get_primers_set_score()
 
 # ======================= MAIN ====================================================
 
