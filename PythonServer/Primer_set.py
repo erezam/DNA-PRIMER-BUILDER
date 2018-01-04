@@ -1,4 +1,8 @@
+import jason
+
 from PythonServer.Primer import Primer
+
+config = jason.load(open("config.json"))
 
 class Primer_set (object):
     def __init__(self, forward_primer, reverse_primer):
@@ -13,6 +17,7 @@ class Primer_set (object):
 
     def get_amplicon_length(self):
         return self.reverse_primer.start_index - self.forward_primer.start_index
+
     def write_to_file(self,file_name):
         write_file = open(file_name, "a")
         write_file.write("----------------------------------------------------------------------------------------------\n" +
@@ -24,3 +29,26 @@ class Primer_set (object):
                          "Amplicon length: %s \n" %(self.get_amplicon_length()))
 
         write_file.close()
+
+    def get_primers_set_score(self):
+        score = self.forward_primer.get_primer_score() * self.reverse_primer.get_primer_score() * self.get_amplicon_length_score()
+        return  score
+
+    def get_amplicon_length_score(self):
+        Avg = config["Amplicon Length"]["Avg"]
+        min = config["Amplicon Length"]["Min"]
+        max = config["Amplicon Length"]["Max"]
+        std = config["Amplicon Length"]["STDDEV"]
+        if self.get_amplicon_length() < min or self.get_amplicon_length() > max:
+            return 0
+        elif self.get_amplicon_length() == Avg:
+            return self.get_amplicon_length()
+        elif self.get_amplicon_length() + std == Avg or self.get_amplicon_length() - std == Avg:
+            return float(self.get_amplicon_length()) * 0.95
+        elif self.get_amplicon_length() + 1.5 * float(std) == Avg or self.get_amplicon_length() - 1.5 * float(std) == Avg:
+            return float(self.get_amplicon_length()) * 0.9
+        elif self.get_amplicon_length() + 2 * std == Avg or self.get_amplicon_length() - 2 * std == Avg:
+            return float(self.get_amplicon_length()) * 0.85
+        else:
+            return float(self.get_amplicon_length()) * 0.8
+
