@@ -237,8 +237,9 @@ def export_to_file(primer_sets):
     new_file = open("test.txt", "w")
     new_file.write("PRIMERS SETS!!! \n")
     new_file.close()
-    for index in primer_sets:
-        index.write_to_file("test.txt")
+    count = 0;
+    for index in range(0, 100):
+        primer_sets[index].write_to_file("test.txt")
 
 # ================================== return primers set score ===================================
 

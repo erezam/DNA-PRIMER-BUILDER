@@ -68,13 +68,13 @@ class Primer (object):
         std = float(config["Tm"]["STDDEV"])
         if self.primer_tm() < min or self.primer_tm() > max:
                 return 0
-        elif self.primer_tm() == Avg:
+        elif self.primer_tm() == Avg or self.primer_tm() + std == Avg or self.primer_tm() - std == Avg:
             return 1
-        elif self.primer_tm() + std == Avg or self.primer_tm() - std == Avg:
+        elif self.primer_tm() + 1.5*float(std) == Avg or self.primer_tm()- 1.5*float(std) == Avg:
             return 0.95
-        elif self.primer_tm()+ 1.5*float(std) == Avg or self.primer_tm()- 1.5*float(std) == Avg:
-            return 0.9
         elif self.primer_tm() + 2 * std == Avg or self.primer_tm() - 2 * std == Avg:
+            return 0.9
+        elif self.primer_tm() + 2.5 * float(std) == Avg or self.primer_tm() - 2.5 * float(std) == Avg:
             return 0.85
         else:
             return 0.8
@@ -87,13 +87,13 @@ class Primer (object):
         std = float(config["GC Percent"]["STDDEV"])
         if self.precent_gc() < min or self.precent_gc() > max:
             return 0
-        elif self.precent_gc() == Avg:
+        elif self.precent_gc() == Avg or self.precent_gc() + std == Avg or self.precent_gc() - std == Avg:
             return 1
-        elif self.precent_gc() + std == Avg or self.precent_gc() - std == Avg:
-            return 0.95
         elif self.precent_gc() + 1.5 * float(std) == Avg or self.precent_gc() - 1.5 * float(std) == Avg:
-            return 0.9
+            return 0.95
         elif self.precent_gc() + 2 * std == Avg or self.precent_gc() - 2 * std == Avg:
+            return 0.9
+        elif self.precent_gc() + 2.5 * float(std) == Avg or self.precent_gc() - 2.5 * float(std) == Avg:
             return 0.85
         else:
             return 0.8
@@ -106,13 +106,13 @@ class Primer (object):
         std = float(config["Length"]["STDDEV"])
         if self.length < min or self.length > max:
             return 0
-        elif self.length == Avg:
+        elif self.length == Avg or self.length + std == Avg or self.length - std == Avg:
             return 1
-        elif self.length + std == Avg or self.length - std == Avg:
-            return 0.95
         elif self.length + 1.5 * float(std) == Avg or self.length - 1.5 * float(std) == Avg:
-            return 0.9
+            return 0.95
         elif self.length + 2 * std == Avg or self.length - 2 * std == Avg:
+            return 0.9
+        elif self.length + 2.5 * float(std) == Avg or self.length - 2.5 * float(std) == Avg:
             return 0.85
         else:
             return 0.8
