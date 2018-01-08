@@ -25,7 +25,7 @@
 
 	"GC Percent":
 	{
-		"Min":"35",
+		"Min":"30",
 		"Max":"80",
 		"Avg":"60",
 		"STDDEV":"1"

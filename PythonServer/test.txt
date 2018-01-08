@@ -1,10 +1,74 @@
 PRIMERS SETS!!! 
 ----------------------------------------------------------------------------------------------
 FORWARD :
+Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+REVERSE:
+Sequence: ACAACACACAACTTTGTAC length: 19 Tm: 44 GC: 36 start index: 773 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
 Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
 REVERSE:
 Sequence: ACTTACAACACACAACTTTG length: 20 Tm: 45 GC: 35 start index: 769 
 tm difference between F & R: 0 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
+REVERSE:
+Sequence: TCAGGAAAACACGACAT length: 17 Tm: 42 GC: 41 start index: 1590 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGAC length: 16 Tm: 43 GC: 50 start index: 1589 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGACA length: 17 Tm: 44 GC: 47 start index: 1589 
+tm difference between F & R: 0 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGACAT length: 18 Tm: 45 GC: 44 start index: 1589 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: TGTATGAATTGATGACTGG length: 19 Tm: 44 GC: 36 start index: 2013 
+tm difference between F & R: 0 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: TGTATGAATTGATGACTGGA length: 20 Tm: 45 GC: 35 start index: 2013 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGACA length: 17 Tm: 44 GC: 47 start index: 1589 
+tm difference between F & R: 1 
 Amplicon length: 115 
 Score: 40 
 ----------------------------------------------------------------------------------------------
@@ -30,6 +94,62 @@ REVERSE:
 Sequence: AATAGGTGATTTTGGTCTAG length: 20 Tm: 45 GC: 35 start index: 1849 
 tm difference between F & R: 0 
 Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
+REVERSE:
+Sequence: CTACAGTGAAATCTCGATG length: 19 Tm: 46 GC: 42 start index: 1869 
+tm difference between F & R: 1 
+Amplicon length: 135 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
+REVERSE:
+Sequence: TCTCGATGGAGTGGG length: 15 Tm: 44 GC: 60 start index: 1880 
+tm difference between F & R: 1 
+Amplicon length: 146 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
+REVERSE:
+Sequence: CTCGATGGAGTGGGT length: 15 Tm: 44 GC: 60 start index: 1881 
+tm difference between F & R: 1 
+Amplicon length: 147 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
+REVERSE:
+Sequence: TCGATGGAGTGGGTC length: 15 Tm: 44 GC: 60 start index: 1882 
+tm difference between F & R: 1 
+Amplicon length: 148 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTTATAGATATTGCACGAC length: 19 Tm: 44 GC: 36 start index: 1733 
+REVERSE:
+Sequence: TCTCGATGGAGTGGG length: 15 Tm: 44 GC: 60 start index: 1880 
+tm difference between F & R: 0 
+Amplicon length: 147 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTTATAGATATTGCACGAC length: 19 Tm: 44 GC: 36 start index: 1733 
+REVERSE:
+Sequence: CTCGATGGAGTGGGT length: 15 Tm: 44 GC: 60 start index: 1881 
+tm difference between F & R: 0 
+Amplicon length: 148 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTTATAGATATTGCACGAC length: 19 Tm: 44 GC: 36 start index: 1733 
+REVERSE:
+Sequence: TCGATGGAGTGGGTC length: 15 Tm: 44 GC: 60 start index: 1882 
+tm difference between F & R: 0 
+Amplicon length: 149 
 Score: 40 
 ----------------------------------------------------------------------------------------------
 FORWARD :
@@ -41,6 +161,30 @@ Amplicon length: 135
 Score: 40 
 ----------------------------------------------------------------------------------------------
 FORWARD :
+Sequence: ACTTATAGATATTGCACGAC length: 20 Tm: 45 GC: 35 start index: 1732 
+REVERSE:
+Sequence: AGCTACAGTGAAATCTCGA length: 19 Tm: 46 GC: 42 start index: 1867 
+tm difference between F & R: 1 
+Amplicon length: 135 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ACTTATAGATATTGCACGAC length: 20 Tm: 45 GC: 35 start index: 1732 
+REVERSE:
+Sequence: TCTCGATGGAGTGGG length: 15 Tm: 44 GC: 60 start index: 1880 
+tm difference between F & R: 1 
+Amplicon length: 148 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ACTTATAGATATTGCACGAC length: 20 Tm: 45 GC: 35 start index: 1732 
+REVERSE:
+Sequence: CTCGATGGAGTGGGT length: 15 Tm: 44 GC: 60 start index: 1881 
+tm difference between F & R: 1 
+Amplicon length: 149 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
 Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
 REVERSE:
 Sequence: ACTTACAACACACAACTTTG length: 20 Tm: 45 GC: 35 start index: 769 
@@ -49,10 +193,74 @@ Amplicon length: 115
 Score: 40 
 ----------------------------------------------------------------------------------------------
 FORWARD :
+Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+REVERSE:
+Sequence: ACAACACACAACTTTGTAC length: 19 Tm: 44 GC: 36 start index: 773 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
+REVERSE:
+Sequence: TCAGGAAAACACGACAT length: 17 Tm: 42 GC: 41 start index: 1590 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGAC length: 16 Tm: 43 GC: 50 start index: 1589 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGACA length: 17 Tm: 44 GC: 47 start index: 1589 
+tm difference between F & R: 0 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGACAT length: 18 Tm: 45 GC: 44 start index: 1589 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: TGTATGAATTGATGACTGG length: 19 Tm: 44 GC: 36 start index: 2013 
+tm difference between F & R: 0 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: TGTATGAATTGATGACTGGA length: 20 Tm: 45 GC: 35 start index: 2013 
+tm difference between F & R: 1 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
 Sequence: CTGGATCATTTGGAACAGTC length: 20 Tm: 49 GC: 45 start index: 1470 
 REVERSE:
 Sequence: AGTACTCAGGAAAACACGAC length: 20 Tm: 49 GC: 45 start index: 1585 
 tm difference between F & R: 0 
+Amplicon length: 115 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
+REVERSE:
+Sequence: CTCAGGAAAACACGACA length: 17 Tm: 44 GC: 47 start index: 1589 
+tm difference between F & R: 1 
 Amplicon length: 115 
 Score: 40 
 ----------------------------------------------------------------------------------------------
@@ -73,44 +281,52 @@ Amplicon length: 115
 Score: 40 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
 REVERSE:
-Sequence: TCAGGAAAACACGACAT length: 17 Tm: 42 GC: 41 start index: 1590 
+Sequence: CTACAGTGAAATCTCGATG length: 19 Tm: 46 GC: 42 start index: 1869 
 tm difference between F & R: 1 
-Amplicon length: 115 
-Score: 38 
+Amplicon length: 135 
+Score: 40 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
 REVERSE:
-Sequence: CTCAGGAAAACACGACA length: 17 Tm: 44 GC: 47 start index: 1589 
+Sequence: TCTCGATGGAGTGGG length: 15 Tm: 44 GC: 60 start index: 1880 
 tm difference between F & R: 1 
-Amplicon length: 115 
-Score: 38 
+Amplicon length: 146 
+Score: 40 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
 REVERSE:
-Sequence: TCAGGAAAACACGACAT length: 17 Tm: 42 GC: 41 start index: 1590 
+Sequence: CTCGATGGAGTGGGT length: 15 Tm: 44 GC: 60 start index: 1881 
 tm difference between F & R: 1 
-Amplicon length: 115 
-Score: 38 
+Amplicon length: 147 
+Score: 40 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
 REVERSE:
-Sequence: CTCAGGAAAACACGACA length: 17 Tm: 44 GC: 47 start index: 1589 
+Sequence: TCGATGGAGTGGGTC length: 15 Tm: 44 GC: 60 start index: 1882 
 tm difference between F & R: 1 
-Amplicon length: 115 
+Amplicon length: 148 
+Score: 40 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
+tm difference between F & R: 1 
+Amplicon length: 85 
 Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
 REVERSE:
-Sequence: AGAAGAATTGCATGTGGA length: 18 Tm: 43 GC: 38 start index: 733 
+Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
 tm difference between F & R: 0 
-Amplicon length: 75 
-Score: 36 
+Amplicon length: 85 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
@@ -118,15 +334,23 @@ REVERSE:
 Sequence: CATGTGGAAGTGTTGGA length: 17 Tm: 44 GC: 47 start index: 743 
 tm difference between F & R: 1 
 Amplicon length: 85 
-Score: 36 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
 REVERSE:
-Sequence: CTGGAGAAGAATTGCATG length: 18 Tm: 45 GC: 44 start index: 729 
+Sequence: ATTGCATGTGGAAGTGTTG length: 19 Tm: 46 GC: 42 start index: 739 
+tm difference between F & R: 1 
+Amplicon length: 85 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
+REVERSE:
+Sequence: CTACTCTTCATGGGCT length: 16 Tm: 43 GC: 50 start index: 1616 
 tm difference between F & R: 0 
-Amplicon length: 75 
-Score: 36 
+Amplicon length: 145 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
@@ -134,7 +358,47 @@ REVERSE:
 Sequence: CTACTCTTCATGGGCTA length: 17 Tm: 44 GC: 47 start index: 1616 
 tm difference between F & R: 1 
 Amplicon length: 145 
-Score: 36 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGTGCTGTGCTGTTTACAG length: 19 Tm: 48 GC: 47 start index: 654 
+REVERSE:
+Sequence: ATTGCATGTGGAAGTGTTGG length: 20 Tm: 49 GC: 45 start index: 739 
+tm difference between F & R: 1 
+Amplicon length: 85 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCTTCATGGGCTATTC length: 17 Tm: 44 GC: 47 start index: 1619 
+tm difference between F & R: 0 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGGATCATTTGGAACAGTC length: 19 Tm: 46 GC: 42 start index: 1471 
+REVERSE:
+Sequence: CTACTCTTCATGGGCTAT length: 18 Tm: 45 GC: 44 start index: 1616 
+tm difference between F & R: 1 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGGATCATTTGGAACAGTC length: 19 Tm: 46 GC: 42 start index: 1471 
+REVERSE:
+Sequence: CTACTCTTCATGGGCTATT length: 19 Tm: 46 GC: 42 start index: 1616 
+tm difference between F & R: 0 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: ATTCAAACATCAACAACAGG length: 20 Tm: 45 GC: 35 start index: 2043 
+tm difference between F & R: 1 
+Amplicon length: 145 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
@@ -142,15 +406,15 @@ REVERSE:
 Sequence: CTCTTCATGGGCTATTC length: 17 Tm: 44 GC: 47 start index: 1619 
 tm difference between F & R: 1 
 Amplicon length: 145 
-Score: 36 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CATCAGTTTGAACAGTTGTC length: 20 Tm: 47 GC: 40 start index: 1898 
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
 REVERSE:
-Sequence: TACAGCTTTCAGTCAGATGT length: 20 Tm: 47 GC: 40 start index: 1973 
+Sequence: ATCTCGATGGAGTGGG length: 16 Tm: 45 GC: 56 start index: 1879 
 tm difference between F & R: 0 
-Amplicon length: 75 
-Score: 36 
+Amplicon length: 145 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: TGCTGTGCTGTTTACAGA length: 18 Tm: 45 GC: 44 start index: 656 
@@ -158,7 +422,15 @@ REVERSE:
 Sequence: TGCATGTGGAAGTGTTG length: 17 Tm: 44 GC: 47 start index: 741 
 tm difference between F & R: 1 
 Amplicon length: 85 
-Score: 36 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTTATAGATATTGCACGAC length: 19 Tm: 44 GC: 36 start index: 1733 
+REVERSE:
+Sequence: AATCTCGATGGAGTGG length: 16 Tm: 43 GC: 50 start index: 1878 
+tm difference between F & R: 1 
+Amplicon length: 145 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: ACTTATAGATATTGCACGAC length: 20 Tm: 45 GC: 35 start index: 1732 
@@ -166,13 +438,133 @@ REVERSE:
 Sequence: AAATCTCGATGGAGTGG length: 17 Tm: 44 GC: 47 start index: 1877 
 tm difference between F & R: 1 
 Amplicon length: 145 
-Score: 36 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
+tm difference between F & R: 1 
+Amplicon length: 85 
+Score: 38 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
 REVERSE:
-Sequence: CTGGAGAAGAATTGCATG length: 18 Tm: 45 GC: 44 start index: 729 
+Sequence: ATTGCATGTGGAAGTGTTG length: 19 Tm: 46 GC: 42 start index: 739 
+tm difference between F & R: 1 
+Amplicon length: 85 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+REVERSE:
+Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
 tm difference between F & R: 0 
+Amplicon length: 85 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+REVERSE:
+Sequence: CATGTGGAAGTGTTGGA length: 17 Tm: 44 GC: 47 start index: 743 
+tm difference between F & R: 1 
+Amplicon length: 85 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
+REVERSE:
+Sequence: CTACTCTTCATGGGCT length: 16 Tm: 43 GC: 50 start index: 1616 
+tm difference between F & R: 0 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
+REVERSE:
+Sequence: CTACTCTTCATGGGCTA length: 17 Tm: 44 GC: 47 start index: 1616 
+tm difference between F & R: 1 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGTGCTGTGCTGTTTACAG length: 19 Tm: 48 GC: 47 start index: 654 
+REVERSE:
+Sequence: ATTGCATGTGGAAGTGTTGG length: 20 Tm: 49 GC: 45 start index: 739 
+tm difference between F & R: 1 
+Amplicon length: 85 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGGATCATTTGGAACAGTC length: 19 Tm: 46 GC: 42 start index: 1471 
+REVERSE:
+Sequence: CTACTCTTCATGGGCTAT length: 18 Tm: 45 GC: 44 start index: 1616 
+tm difference between F & R: 1 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGGATCATTTGGAACAGTC length: 19 Tm: 46 GC: 42 start index: 1471 
+REVERSE:
+Sequence: CTACTCTTCATGGGCTATT length: 19 Tm: 46 GC: 42 start index: 1616 
+tm difference between F & R: 0 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
+REVERSE:
+Sequence: CTCTTCATGGGCTATTC length: 17 Tm: 44 GC: 47 start index: 1619 
+tm difference between F & R: 0 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: ATTCAAACATCAACAACAGG length: 20 Tm: 45 GC: 35 start index: 2043 
+tm difference between F & R: 1 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
+REVERSE:
+Sequence: CTCTTCATGGGCTATTC length: 17 Tm: 44 GC: 47 start index: 1619 
+tm difference between F & R: 1 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
+REVERSE:
+Sequence: ATCTCGATGGAGTGGG length: 16 Tm: 45 GC: 56 start index: 1879 
+tm difference between F & R: 0 
+Amplicon length: 145 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: AGAAGAATTGCATGTGG length: 17 Tm: 42 GC: 41 start index: 733 
+tm difference between F & R: 0 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: AGAAGAATTGCATGTGGA length: 18 Tm: 43 GC: 38 start index: 733 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+REVERSE:
+Sequence: AGAAGAATTGCATGTGG length: 17 Tm: 42 GC: 41 start index: 733 
+tm difference between F & R: 1 
 Amplicon length: 75 
 Score: 36 
 ----------------------------------------------------------------------------------------------
@@ -187,25 +579,49 @@ Score: 36
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
 REVERSE:
-Sequence: CATGTGGAAGTGTTGGA length: 17 Tm: 44 GC: 47 start index: 743 
+Sequence: AGAAGAATTGCATGTGGAA length: 19 Tm: 44 GC: 36 start index: 733 
 tm difference between F & R: 1 
-Amplicon length: 85 
+Amplicon length: 75 
 Score: 36 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
+Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
 REVERSE:
-Sequence: CTACTCTTCATGGGCTA length: 17 Tm: 44 GC: 47 start index: 1616 
-tm difference between F & R: 1 
-Amplicon length: 145 
+Sequence: CTGGAGAAGAATTGCATG length: 18 Tm: 45 GC: 44 start index: 729 
+tm difference between F & R: 0 
+Amplicon length: 75 
 Score: 36 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
+Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
 REVERSE:
-Sequence: CTCTTCATGGGCTATTC length: 17 Tm: 44 GC: 47 start index: 1619 
+Sequence: CTGGAGAAGAATTGCATGT length: 19 Tm: 46 GC: 42 start index: 729 
 tm difference between F & R: 1 
-Amplicon length: 145 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGTGCTGTGCTGTTTACAG length: 19 Tm: 48 GC: 47 start index: 654 
+REVERSE:
+Sequence: CTGGAGAAGAATTGCATGTG length: 20 Tm: 49 GC: 45 start index: 729 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: TACAGCTTTCAGTCAGAT length: 18 Tm: 43 GC: 38 start index: 1973 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGTC length: 20 Tm: 47 GC: 40 start index: 1898 
+REVERSE:
+Sequence: TACAGCTTTCAGTCAGATG length: 19 Tm: 46 GC: 42 start index: 1973 
+tm difference between F & R: 1 
+Amplicon length: 75 
 Score: 36 
 ----------------------------------------------------------------------------------------------
 FORWARD :
@@ -219,42 +635,10 @@ Score: 36
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
 REVERSE:
-Sequence: AGAAGAATTGCATGTGGA length: 18 Tm: 43 GC: 38 start index: 733 
-tm difference between F & R: 1 
-Amplicon length: 75 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
 Sequence: AGAAGAATTGCATGTGG length: 17 Tm: 42 GC: 41 start index: 733 
-tm difference between F & R: 1 
+tm difference between F & R: 0 
 Amplicon length: 75 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
-tm difference between F & R: 0 
-Amplicon length: 85 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: CTACTCTTCATGGGCT length: 16 Tm: 43 GC: 50 start index: 1616 
-tm difference between F & R: 0 
-Amplicon length: 145 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: ATCTCGATGGAGTGGG length: 16 Tm: 45 GC: 56 start index: 1879 
-tm difference between F & R: 0 
-Amplicon length: 145 
-Score: 35 
+Score: 36 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
@@ -262,7 +646,23 @@ REVERSE:
 Sequence: AGAAGAATTGCATGTGGA length: 18 Tm: 43 GC: 38 start index: 733 
 tm difference between F & R: 1 
 Amplicon length: 75 
-Score: 35 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
+REVERSE:
+Sequence: CTGGAGAAGAATTGCATG length: 18 Tm: 45 GC: 44 start index: 729 
+tm difference between F & R: 0 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
+REVERSE:
+Sequence: CTGGAGAAGAATTGCATGT length: 19 Tm: 46 GC: 42 start index: 729 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
@@ -270,532 +670,132 @@ REVERSE:
 Sequence: AGAAGAATTGCATGTGG length: 17 Tm: 42 GC: 41 start index: 733 
 tm difference between F & R: 1 
 Amplicon length: 75 
-Score: 35 
+Score: 36 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
 REVERSE:
-Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
-tm difference between F & R: 0 
-Amplicon length: 85 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: CTACTCTTCATGGGCT length: 16 Tm: 43 GC: 50 start index: 1616 
-tm difference between F & R: 0 
-Amplicon length: 145 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: ATCTCGATGGAGTGGG length: 16 Tm: 45 GC: 56 start index: 1879 
-tm difference between F & R: 0 
-Amplicon length: 145 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: TCTCGATGGAGTGGG length: 15 Tm: 44 GC: 60 start index: 1880 
-tm difference between F & R: 1 
-Amplicon length: 146 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: CTCGATGGAGTGGGT length: 15 Tm: 44 GC: 60 start index: 1881 
-tm difference between F & R: 1 
-Amplicon length: 147 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: TCGATGGAGTGGGTC length: 15 Tm: 44 GC: 60 start index: 1882 
-tm difference between F & R: 1 
-Amplicon length: 148 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: ACTTATAGATATTGCACGAC length: 20 Tm: 45 GC: 35 start index: 1732 
-REVERSE:
-Sequence: TCTCGATGGAGTGGG length: 15 Tm: 44 GC: 60 start index: 1880 
-tm difference between F & R: 1 
-Amplicon length: 148 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: ACTTATAGATATTGCACGAC length: 20 Tm: 45 GC: 35 start index: 1732 
-REVERSE:
-Sequence: CTCGATGGAGTGGGT length: 15 Tm: 44 GC: 60 start index: 1881 
-tm difference between F & R: 1 
-Amplicon length: 149 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: TCTCGATGGAGTGGG length: 15 Tm: 44 GC: 60 start index: 1880 
-tm difference between F & R: 1 
-Amplicon length: 146 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: CTCGATGGAGTGGGT length: 15 Tm: 44 GC: 60 start index: 1881 
-tm difference between F & R: 1 
-Amplicon length: 147 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TTATAGATATTGCACGACAG length: 20 Tm: 45 GC: 35 start index: 1734 
-REVERSE:
-Sequence: TCGATGGAGTGGGTC length: 15 Tm: 44 GC: 60 start index: 1882 
-tm difference between F & R: 1 
-Amplicon length: 148 
-Score: 34 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
-REVERSE:
-Sequence: AGAAGAATTGCATGTGG length: 17 Tm: 42 GC: 41 start index: 733 
+Sequence: AGAAGAATTGCATGTGGA length: 18 Tm: 43 GC: 38 start index: 733 
 tm difference between F & R: 0 
 Amplicon length: 75 
-Score: 33 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
-REVERSE:
-Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
-tm difference between F & R: 1 
-Amplicon length: 85 
-Score: 33 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
-REVERSE:
-Sequence: AGAAGAATTGCATGTGG length: 17 Tm: 42 GC: 41 start index: 733 
-tm difference between F & R: 0 
-Amplicon length: 75 
-Score: 33 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
-REVERSE:
-Sequence: CATGTGGAAGTGTTGG length: 16 Tm: 43 GC: 50 start index: 743 
-tm difference between F & R: 1 
-Amplicon length: 85 
-Score: 33 
+Score: 36 
 ----------------------------------------------------------------------------------------------
 FORWARD :
 Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+REVERSE:
+Sequence: AGAAGAATTGCATGTGGAA length: 19 Tm: 44 GC: 36 start index: 733 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGTGCTGTGCTGTTTACAG length: 19 Tm: 48 GC: 47 start index: 654 
+REVERSE:
+Sequence: CTGGAGAAGAATTGCATGTG length: 20 Tm: 49 GC: 45 start index: 729 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
+REVERSE:
+Sequence: TACAGCTTTCAGTCAGAT length: 18 Tm: 43 GC: 38 start index: 1973 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGTC length: 20 Tm: 47 GC: 40 start index: 1898 
+REVERSE:
+Sequence: TACAGCTTTCAGTCAGATG length: 19 Tm: 46 GC: 42 start index: 1973 
+tm difference between F & R: 1 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CATCAGTTTGAACAGTTGTC length: 20 Tm: 47 GC: 40 start index: 1898 
+REVERSE:
+Sequence: TACAGCTTTCAGTCAGATGT length: 20 Tm: 47 GC: 40 start index: 1973 
+tm difference between F & R: 0 
+Amplicon length: 75 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: TGCTGTGCTGTTTACAGAA length: 19 Tm: 46 GC: 42 start index: 656 
+REVERSE:
+Sequence: CTGGCTTACTGGAGAAG length: 17 Tm: 47 GC: 52 start index: 721 
+tm difference between F & R: 1 
+Amplicon length: 65 
+Score: 34 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: CTGGCTTACTGGAGA length: 15 Tm: 41 GC: 53 start index: 721 
+tm difference between F & R: 1 
+Amplicon length: 63 
+Score: 32 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: CTGGCTTACTGGAGAA length: 16 Tm: 43 GC: 50 start index: 721 
+tm difference between F & R: 1 
+Amplicon length: 63 
+Score: 32 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: TGGCTTACTGGAGAAG length: 16 Tm: 43 GC: 50 start index: 722 
+tm difference between F & R: 1 
+Amplicon length: 64 
+Score: 32 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
 REVERSE:
 Sequence: CTTACTGGAGAAGAATTG length: 18 Tm: 43 GC: 38 start index: 725 
-tm difference between F & R: 0 
+tm difference between F & R: 1 
 Amplicon length: 67 
 Score: 32 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
 REVERSE:
 Sequence: TTACTGGAGAAGAATTGC length: 18 Tm: 43 GC: 38 start index: 726 
-tm difference between F & R: 0 
+tm difference between F & R: 1 
 Amplicon length: 68 
 Score: 32 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
 REVERSE:
-Sequence: TACTGGAGAAGAATTGCA length: 18 Tm: 43 GC: 38 start index: 727 
+Sequence: TACTGGAGAAGAATTGC length: 17 Tm: 42 GC: 41 start index: 727 
 tm difference between F & R: 0 
 Amplicon length: 69 
 Score: 32 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
 REVERSE:
-Sequence: ACTGGAGAAGAATTGCAT length: 18 Tm: 43 GC: 38 start index: 728 
+Sequence: TACTGGAGAAGAATTGCA length: 18 Tm: 43 GC: 38 start index: 727 
+tm difference between F & R: 1 
+Amplicon length: 69 
+Score: 32 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
+REVERSE:
+Sequence: ACTGGAGAAGAATTGCA length: 17 Tm: 42 GC: 41 start index: 728 
 tm difference between F & R: 0 
 Amplicon length: 70 
 Score: 32 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
+Sequence: CTGTGCTGTTTACAGAA length: 17 Tm: 42 GC: 41 start index: 658 
 REVERSE:
-Sequence: TGGAGAAGAATTGCATGT length: 18 Tm: 43 GC: 38 start index: 730 
-tm difference between F & R: 0 
-Amplicon length: 72 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: AAGAATTGCATGTGGAAG length: 18 Tm: 43 GC: 38 start index: 735 
-tm difference between F & R: 0 
-Amplicon length: 77 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: AGAATTGCATGTGGAAGT length: 18 Tm: 43 GC: 38 start index: 736 
-tm difference between F & R: 0 
-Amplicon length: 78 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: AATTGCATGTGGAAGTGT length: 18 Tm: 43 GC: 38 start index: 738 
-tm difference between F & R: 0 
-Amplicon length: 80 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: ATTGCATGTGGAAGTGTT length: 18 Tm: 43 GC: 38 start index: 739 
-tm difference between F & R: 0 
-Amplicon length: 81 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: AAGTGTTGGAGAATGTTC length: 18 Tm: 43 GC: 38 start index: 750 
-tm difference between F & R: 0 
-Amplicon length: 92 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: CACTTACAACACACAACT length: 18 Tm: 43 GC: 38 start index: 768 
-tm difference between F & R: 0 
-Amplicon length: 110 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: ACAACACACAACTTTGTAC length: 19 Tm: 44 GC: 36 start index: 773 
+Sequence: ACTGGAGAAGAATTGCAT length: 18 Tm: 43 GC: 38 start index: 728 
 tm difference between F & R: 1 
-Amplicon length: 115 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: CAACACACAACTTTGTAC length: 18 Tm: 43 GC: 38 start index: 774 
-tm difference between F & R: 0 
-Amplicon length: 116 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: AACACACAACTTTGTACG length: 18 Tm: 43 GC: 38 start index: 775 
-tm difference between F & R: 0 
-Amplicon length: 117 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: ACACACAACTTTGTACGA length: 18 Tm: 43 GC: 38 start index: 776 
-tm difference between F & R: 0 
-Amplicon length: 118 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CTGTGCTGTTTACAGAAT length: 18 Tm: 43 GC: 38 start index: 658 
-REVERSE:
-Sequence: CACACAACTTTGTACGAA length: 18 Tm: 43 GC: 38 start index: 777 
-tm difference between F & R: 0 
-Amplicon length: 119 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: TGGCTTACTGGAGAAGAA length: 18 Tm: 45 GC: 44 start index: 722 
-tm difference between F & R: 0 
-Amplicon length: 68 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: TTACTGGAGAAGAATTGCAT length: 20 Tm: 45 GC: 35 start index: 726 
-tm difference between F & R: 0 
-Amplicon length: 72 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: TTGCATGTGGAAGTGTTG length: 18 Tm: 45 GC: 44 start index: 740 
-tm difference between F & R: 0 
-Amplicon length: 86 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: ATGTGGAAGTGTTGGAGA length: 18 Tm: 45 GC: 44 start index: 744 
-tm difference between F & R: 0 
-Amplicon length: 90 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: TGTGGAAGTGTTGGAGAA length: 18 Tm: 45 GC: 44 start index: 745 
-tm difference between F & R: 0 
-Amplicon length: 91 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: TGGAAGTGTTGGAGAATG length: 18 Tm: 45 GC: 44 start index: 747 
-tm difference between F & R: 0 
-Amplicon length: 93 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: CACTTACAACACACAACTTT length: 20 Tm: 45 GC: 35 start index: 768 
-tm difference between F & R: 0 
-Amplicon length: 114 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: CTTACAACACACAACTTTGT length: 20 Tm: 45 GC: 35 start index: 770 
-tm difference between F & R: 0 
-Amplicon length: 116 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: TACAACACACAACTTTGTAC length: 20 Tm: 45 GC: 35 start index: 772 
-tm difference between F & R: 0 
-Amplicon length: 118 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: AACACACAACTTTGTACGAA length: 20 Tm: 45 GC: 35 start index: 775 
-tm difference between F & R: 0 
-Amplicon length: 121 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: ACACACAACTTTGTACGAAA length: 20 Tm: 45 GC: 35 start index: 776 
-tm difference between F & R: 0 
-Amplicon length: 122 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: CACACAACTTTGTACGAAAA length: 20 Tm: 45 GC: 35 start index: 777 
-tm difference between F & R: 0 
-Amplicon length: 123 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: CACAACTTTGTACGAAAAAC length: 20 Tm: 45 GC: 35 start index: 779 
-tm difference between F & R: 0 
-Amplicon length: 125 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: ACAACTTTGTACGAAAAACG length: 20 Tm: 45 GC: 35 start index: 780 
-tm difference between F & R: 0 
-Amplicon length: 126 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: AGTGCTGTGCTGTTTACA length: 18 Tm: 45 GC: 44 start index: 654 
-REVERSE:
-Sequence: CAACTTTGTACGAAAAACGT length: 20 Tm: 45 GC: 35 start index: 781 
-tm difference between F & R: 0 
-Amplicon length: 127 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
-REVERSE:
-Sequence: AATGTTGAATGTGACAGC length: 18 Tm: 43 GC: 38 start index: 1525 
-tm difference between F & R: 0 
-Amplicon length: 50 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
-REVERSE:
-Sequence: ATGTTGAATGTGACAGCA length: 18 Tm: 43 GC: 38 start index: 1526 
-tm difference between F & R: 0 
-Amplicon length: 51 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
-REVERSE:
-Sequence: AATGAAGTAGGAGTACTC length: 18 Tm: 43 GC: 38 start index: 1574 
-tm difference between F & R: 0 
-Amplicon length: 99 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
-REVERSE:
-Sequence: ATGAAGTAGGAGTACTCA length: 18 Tm: 43 GC: 38 start index: 1575 
-tm difference between F & R: 0 
-Amplicon length: 100 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
-REVERSE:
-Sequence: TAGGAGTACTCAGGAAAA length: 18 Tm: 43 GC: 38 start index: 1581 
-tm difference between F & R: 0 
-Amplicon length: 106 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
-REVERSE:
-Sequence: ACACGACATGTGAATATC length: 18 Tm: 43 GC: 38 start index: 1598 
-tm difference between F & R: 0 
-Amplicon length: 123 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TCATTTGGAACAGTCTAC length: 18 Tm: 43 GC: 38 start index: 1475 
-REVERSE:
-Sequence: TACTCTTCATGGGCTATT length: 18 Tm: 43 GC: 38 start index: 1617 
-tm difference between F & R: 0 
-Amplicon length: 142 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: AATGTTGAATGTGACAGC length: 18 Tm: 43 GC: 38 start index: 1525 
-tm difference between F & R: 0 
-Amplicon length: 54 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: ATGTTGAATGTGACAGCA length: 18 Tm: 43 GC: 38 start index: 1526 
-tm difference between F & R: 0 
-Amplicon length: 55 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: AATGAAGTAGGAGTACTC length: 18 Tm: 43 GC: 38 start index: 1574 
-tm difference between F & R: 0 
-Amplicon length: 103 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: ATGAAGTAGGAGTACTCA length: 18 Tm: 43 GC: 38 start index: 1575 
-tm difference between F & R: 0 
-Amplicon length: 104 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: TAGGAGTACTCAGGAAAA length: 18 Tm: 43 GC: 38 start index: 1581 
-tm difference between F & R: 0 
-Amplicon length: 110 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: ACACGACATGTGAATATC length: 18 Tm: 43 GC: 38 start index: 1598 
-tm difference between F & R: 0 
-Amplicon length: 127 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TGGATCATTTGGAACAGT length: 18 Tm: 43 GC: 38 start index: 1471 
-REVERSE:
-Sequence: TACTCTTCATGGGCTATT length: 18 Tm: 43 GC: 38 start index: 1617 
-tm difference between F & R: 0 
-Amplicon length: 146 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: ATCATTTGGAACAGTCTAC length: 19 Tm: 44 GC: 36 start index: 1474 
-REVERSE:
-Sequence: CTCAGGAAAACACGACAT length: 18 Tm: 45 GC: 44 start index: 1589 
-tm difference between F & R: 1 
-Amplicon length: 115 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CATCAGTTTGAACAGTTGT length: 19 Tm: 44 GC: 36 start index: 1898 
-REVERSE:
-Sequence: TGTATGAATTGATGACTGGA length: 20 Tm: 45 GC: 35 start index: 2013 
-tm difference between F & R: 1 
-Amplicon length: 115 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
-REVERSE:
-Sequence: AAATGTTGAATGTGACAGCA length: 20 Tm: 45 GC: 35 start index: 1524 
-tm difference between F & R: 0 
-Amplicon length: 50 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
-REVERSE:
-Sequence: TGTTGAATGTGACAGCAC length: 18 Tm: 45 GC: 44 start index: 1527 
-tm difference between F & R: 0 
-Amplicon length: 53 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
-REVERSE:
-Sequence: CTTCAAAAATGAAGTAGGAG length: 20 Tm: 45 GC: 35 start index: 1567 
-tm difference between F & R: 0 
-Amplicon length: 93 
-Score: 32 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: ATCATTTGGAACAGTCTACA length: 20 Tm: 45 GC: 35 start index: 1474 
-REVERSE:
-Sequence: CAAAAATGAAGTAGGAGTAC length: 20 Tm: 45 GC: 35 start index: 1570 
-tm difference between F & R: 0 
-Amplicon length: 96 
+Amplicon length: 70 
 Score: 32 

@@ -43,7 +43,7 @@ def transcript_data(species, symbol):
                 print len(primers_sets)
                 for set in primers_sets:
                     set.set_print()
-                export_to_file(primers_sets)
+                export_to_file(primers_sets,species,symbol)
 
 
 # ====================== return all junctions index ========================================
@@ -233,13 +233,13 @@ def sets_tests(primer_optional_sets):
 
 # ==================================export to file===================================
 
-def export_to_file(primer_sets):
-    new_file = open("test.txt", "w")
-    new_file.write("PRIMERS SETS!!! \n")
+def export_to_file(primer_sets,species,symbol):
+    new_file = open("primer_list_"+species+"_"+symbol+".txt", "w")
+    new_file.write("PRIMERS SETS: species: "+ species +" Gene: "+ symbol+" \n")
     new_file.close()
     count = 0;
     for index in range(0, 100):
-        primer_sets[index].write_to_file("test.txt")
+        primer_sets[index].write_to_file("primer_list_"+species+"_"+symbol+".txt")
 
 # ================================== return primers set score ===================================
 
