@@ -1,5 +1,7 @@
 import sys
 import json
+
+import os
 import requests
 
 # ===================================================================================
@@ -234,12 +236,12 @@ def sets_tests(primer_optional_sets):
 # ==================================export to file===================================
 
 def export_to_file(primer_sets,species,symbol):
-    new_file = open("primer_list_"+species+"_"+symbol+".txt", "w")
+    new_file = open("../output/primer_list_"+species+"_"+symbol+".txt", "w")
     new_file.write("PRIMERS SETS: species: "+ species +" Gene: "+ symbol+" \n")
     new_file.close()
     count = 0;
     for index in range(0, 100):
-        primer_sets[index].write_to_file("primer_list_"+species+"_"+symbol+".txt")
+        primer_sets[index].write_to_file("../output/primer_list_"+species+"_"+symbol+".txt")
 
 # ================================== return primers set score ===================================
 
