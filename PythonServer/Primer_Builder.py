@@ -19,32 +19,32 @@ def transcript_data(species, symbol):
     if transcripts:
         for t in transcripts:
             if t['display_name'] == symbol + "-201":
-                print '{display_name}: ==> {id}'.format(**t)
+                #print '{display_name}: ==> {id}'.format(**t)
                 juncArr = junctions(t)
                 cDna = get_cdna(t['id'])
                 cDna = cDna.replace("\n", "")
-                print cDna
+                #print cDna
                 id_count = 1
                 # forward
                 optional_primers = get_optional_primers(cDna, juncArr, id_count)
                 forward_primers = primer_tests(optional_primers)
-                for primer in forward_primers:
-                    primer.printPrimer()
+                #for primer in forward_primers:
+                 #   primer.printPrimer()
 
                 # reverse
                 reverse_optional_primers = get_reverse_primers(cDna, forward_primers, id_count)
                 reverse_primers = primer_tests(reverse_optional_primers)
-                for primer in reverse_primers:
-                    primer.printPrimer()
+                #for primer in reverse_primers:
+                 #   primer.printPrimer()
 
                 # sets
                 primers_optinal_sets = get_optional_sets(forward_primers, reverse_primers)
                 primers_sets = sets_tests(primers_optinal_sets)
                 sets_tests(primers_sets)
                 primers_sets.sort(key=get_set_score, reverse=True)
-                print len(primers_sets)
-                for set in primers_sets:
-                    set.set_print()
+                #print len(primers_sets)
+                #for set in primers_sets:
+                 #   set.set_print()
                 export_to_file(primers_sets,species,symbol)
 
 
@@ -56,14 +56,14 @@ def junctions(transcript):
     exons = transcript['Exon']
     if exons:
         for e in exons:
-            print 'start : {start} ==> end : {end}'.format(**e)
+            #print 'start : {start} ==> end : {end}'.format(**e)
             # if e == exons[0]:  need to check again!!!
             #   exons_len.append(transcript['end']-e['start'])
             # elif e == exons[len(exons)-1]:
             #    exons_len.append(e['end'] - transcript['start'])
             # else:
             exons_len.append(e['end'] - e['start'])
-    print exons_len
+    #print exons_len
     if exons_len:
         sum = 0
         for i in exons_len:
@@ -121,7 +121,7 @@ def primer_tests(optional_primers):
                 if syntax_tests(primer):
                     primers.append(primer)
 
-    print len(primers)
+    #print len(primers)
     return primers
 
 
@@ -136,7 +136,8 @@ def tm_test(primer):
 # ======================= %GC test ===========================================
 
 def gc_test(primer):
-    if (primer.precent_gc() < 30) or (primer.precent_gc() > 60):
+    if (primer.precent_gc() < int(config["GC Percent"]["Min"])) \
+            or (primer.precent_gc() > int(config["GC Percent"]["Max"])):
         return False
     return True
 
@@ -237,8 +238,9 @@ def sets_tests(primer_optional_sets):
 
 def export_to_file(primer_sets,species,symbol):
     new_file = open("../output/primer_list_"+species+"_"+symbol+".txt", "w")
-    new_file.write("PRIMERS SETS: species: "+ species +" Gene: "+ symbol+" \n")
+    new_file.write("PRIMERS SETS of "+symbol+"("+species+" Gene):\n")
     new_file.close()
+    print "Proceed to the output folder to view the results."
     count = 0;
     for index in range(0, 100):
         primer_sets[index].write_to_file("../output/primer_list_"+species+"_"+symbol+".txt")

@@ -52,13 +52,13 @@ class Primer (object):
         tm = int((64.9 + 41 * (self.g_counter() + self.c_counter() - 16.4)/(len(self.sequnce))))
         return tm
 
-# ====================================calculate the score of the primer, based on multiplication of the score of each parameter ===========
+# ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
 
     def get_primer_score(self):
         return float(self.get_tm_score()) * float(self.get_gc_score()) * float(self.get_length_score())
 
 
-# ================================calculate score for each parameter============================================
+# ================================ calculate score for each parameter============================================
 
 # =========================== get Tm score ======================================================================
     def get_tm_score(self):
@@ -67,14 +67,14 @@ class Primer (object):
         max = int(config["Tm"]["Max"])
         std = float(config["Tm"]["STDDEV"])
         if self.primer_tm() < min or self.primer_tm() > max:
-                return 0
-        elif self.primer_tm() == Avg or self.primer_tm() + std == Avg or self.primer_tm() - std == Avg:
+            return 0
+        elif self.primer_tm() + 0.5 * float(std) >= Avg >= self.primer_tm() - 0.5 * float(std):
             return 1
-        elif self.primer_tm() + 1.5*float(std) == Avg or self.primer_tm()- 1.5*float(std) == Avg:
+        elif self.primer_tm() + 1 * float(std) >= Avg >= self.primer_tm() - 1 * float(std):
             return 0.95
-        elif self.primer_tm() + 2 * std == Avg or self.primer_tm() - 2 * std == Avg:
+        elif self.primer_tm() + 1.5 * float(std) >= Avg >= self.primer_tm() - 1.5 * float(std):
             return 0.9
-        elif self.primer_tm() + 2.5 * float(std) == Avg or self.primer_tm() - 2.5 * float(std) == Avg:
+        elif self.primer_tm() + 2 * float(std) >= Avg >= self.primer_tm() - 2 * float(std):
             return 0.85
         else:
             return 0.8
@@ -106,13 +106,13 @@ class Primer (object):
         std = float(config["Length"]["STDDEV"])
         if self.length < min or self.length > max:
             return 0
-        elif self.length <= Avg + 0.5 * float(std) or self.length >= Avg - 0.5 * float(std):
+        elif self.length + 0.5 * float(std) >= Avg >= self.length - 0.5 * float(std):
             return 1
-        elif self.length <= Avg + float(std) or self.length >= Avg - float(std):
+        elif self.length + 1 * float(std) >= Avg >= self.length - 1 * float(std):
             return 0.95
-        elif self.length + 2 * std == Avg or self.length - 2 * std == Avg:
+        elif self.length + 1.5 * float(std) >= Avg >= self.length - 1.5 * float(std):
             return 0.9
-        elif self.length + 2.5 * float(std) == Avg or self.length - 2.5 * float(std) == Avg:
+        elif self.length + 2 * float(std) >= Avg >= self.length - 2 * float(std):
             return 0.85
         else:
             return 0.8

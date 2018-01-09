@@ -48,7 +48,7 @@ class Primer_set (object):
         std = float(config["Amplicon Length"]["STDDEV"])
         if self.get_amplicon_length() < min or self.get_amplicon_length() > max:
             return 0
-        elif self.get_amplicon_length() + 0.5*float(std) >= Avg >= self.get_amplicon_length() - 0.5*float(std):
+        elif self.get_amplicon_length() + 0.5 * float(std) >= Avg >= self.get_amplicon_length() - 0.5 * float(std):
             return 1
         elif self.get_amplicon_length() + 1 * float(std) >= Avg >= self.get_amplicon_length() - 1 * float(std):
             return 0.95
