@@ -145,21 +145,21 @@ def gc_test(primer):
 # ======================= %syntaxTests test ===========================================
 
 def syntax_tests(primer):
-    if primer.sequnce[0] == 'G':
+    if primer.sequence[0] == 'G':
         return False
 
-    if "GGGG" in primer.sequnce:
+    if "GGGG" in primer.sequence:
         return False
 
-    if "CCCC" in primer.sequnce:
+    if "CCCC" in primer.sequence:
         return False
 
-    if "AAAAAA" in primer.sequnce:
+    if "AAAAAA" in primer.sequence:
         return False
 
     consecutive_c = 0
-    for index in range(len(primer.sequnce)):
-        if primer.sequnce[index] == 'C':
+    for index in range(len(primer.sequence)):
+        if primer.sequence[index] == 'C':
             consecutive_c += 1
         else:
             consecutive_c = 0
@@ -176,18 +176,18 @@ def primers_score(primer_sets):
 
 # ======================reverse nucleotide=====================
 
-def reverse_nucleotide(sequnce):
-    tmp_str = list(sequnce)
-    for index in range(len(sequnce)):
-        if sequnce[index] == 'A':
+def reverse_nucleotide(sequence):
+    tmp_str = list(sequence)
+    for index in range(len(sequence)):
+        if sequence[index] == 'A':
             tmp_str[index] = 'T'
-        elif sequnce[index] == 'T':
+        elif sequence[index] == 'T':
             tmp_str[index] = 'A'
-        elif sequnce[index] == 'G':
+        elif sequence[index] == 'G':
             tmp_str[index] = 'C'
         else:
             tmp_str[index] = 'G'
-    sequnce = "".join(tmp_str)
+        sequence = "".join(tmp_str)
 
 
 # ======================find reverse primers=====================

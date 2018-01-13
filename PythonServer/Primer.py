@@ -4,38 +4,38 @@ import json
 config = json.load(open("config.json"))
 
 class Primer (object):
-    def __init__(self, id, kind, sequnce , start_index, pair_id=0):
+    def __init__(self, id, kind, sequence , start_index, pair_id=0):
         self.id = id
         self.kind = kind
-        self.sequnce = sequnce
-        self.length = len(sequnce)
+        self.sequence = sequence
+        self.length = len(sequence)
         self.start_index = start_index
         self.pair_id = pair_id
 
     def a_counter(self):
         aCount = 0
-        for index in self.sequnce:
+        for index in self.sequence:
             if index == 'A':
                 aCount += 1
         return aCount
 
     def t_counter(self):
         tCount = 0
-        for index in self.sequnce:
+        for index in self.sequence:
             if index == 'T':
                 tCount += 1
         return tCount
 
     def g_counter(self):
         gCount = 0
-        for index in self.sequnce:
+        for index in self.sequence:
             if index == 'G':
                 gCount += 1
         return gCount
 
     def c_counter(self):
         cCount = 0
-        for index in self.sequnce:
+        for index in self.sequence:
             if index == 'C':
                 cCount += 1
         return cCount
@@ -43,13 +43,13 @@ class Primer (object):
 # ==============================================================================================
 
     def precent_gc(self):
-        prcentGC = int(((self.c_counter()+self.g_counter())/len(self.sequnce))*100)
+        prcentGC = int(((self.c_counter()+self.g_counter())/len(self.sequence))*100)
         return prcentGC
 
 # ==============================================================================================
 
     def primer_tm(self):
-        tm = int((64.9 + 41 * (self.g_counter() + self.c_counter() - 16.4)/(len(self.sequnce))))
+        tm = int((64.9 + 41 * (self.g_counter() + self.c_counter() - 16.4)/(len(self.sequence))))
         return tm
 
 # ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
@@ -120,4 +120,4 @@ class Primer (object):
 # ================================print primer============================================
     def printPrimer(self):
         print "Id:%s, Pair id:%s, Kind: %s , Seq: %s , Tm : %s , GC : %s , Start index: %s" % \
-              (self.id, self.pair_id, self.kind, self.sequnce,self.primer_tm(), self.precent_gc(), self.start_index)
+              (self.id, self.pair_id, self.kind, self.sequence,self.primer_tm(), self.precent_gc(), self.start_index)
