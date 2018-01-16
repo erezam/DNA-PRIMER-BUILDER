@@ -88,8 +88,15 @@ def get_cdna(transcriptId):
 # ======================= get all optional primers array ===========================================
 
 def get_optional_primers(cdna, junctionArray, id_count):
-    len_range = [14, 15, 16, 17, 18, 19, 20]
-    threshold = [0.4, 0.5, 0.6]
+    config = json.load(open("config.json"))
+    len_range = []
+    threshold = []
+    # get the sequence length range from config file
+    for i in range(int(config["Length"]["Min"]), int(config["Length"]["Max"])+1):
+        len_range.append(i)
+    # get the junction percentage range from config file
+    for i in frange(float(config["Threshold"]["Min"]), float(config["Threshold"]["Max"])+0.1, 0.1):
+        threshold.append(i)
     optional_primers = []
     for th in threshold:
         for l in len_range:
@@ -249,7 +256,11 @@ def export_to_file(primer_sets,species,symbol):
 
 def get_set_score(primer_set):
     return primer_set.get_primers_set_score()
-
+# ================ method to run between 2 float numbers with float jumping ======================
+def frange(x, y, jump):
+  while x < y:
+    yield x
+    x += jump
 # ======================= MAIN ====================================================
 
 if __name__ == '__main__':

@@ -785,17 +785,17 @@ Amplicon length: 133
 Score: 68 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TGCTGTGCTGTTTACAGA length: 18 Tm: 45 GC: 44 start index: 656 
+Sequence: ATCATTTGGAACAGTCTACAA length: 21 Tm: 46 GC: 33 start index: 1474 
 REVERSE:
-Sequence: CACTTACAACACACAACTT length: 19 Tm: 44 GC: 36 start index: 768 
+Sequence: AGTAGGAGTACTCAGGAA length: 18 Tm: 45 GC: 44 start index: 1579 
 tm difference between F & R: 1 
-Amplicon length: 112 
+Amplicon length: 105 
 Score: 68 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TGCTGTGCTGTTTACAGA length: 18 Tm: 45 GC: 44 start index: 656 
+Sequence: ATCATTTGGAACAGTCTACAA length: 21 Tm: 46 GC: 33 start index: 1474 
 REVERSE:
-Sequence: CTTACAACACACAACTTTG length: 19 Tm: 44 GC: 36 start index: 770 
+Sequence: AGGAGTACTCAGGAAAAC length: 18 Tm: 45 GC: 44 start index: 1582 
 tm difference between F & R: 1 
-Amplicon length: 114 
+Amplicon length: 108 
 Score: 68 
