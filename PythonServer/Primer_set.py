@@ -1,6 +1,5 @@
 import json
 
-from PythonServer.Primer import Primer
 
 config = json.load(open("config.json"))
 
