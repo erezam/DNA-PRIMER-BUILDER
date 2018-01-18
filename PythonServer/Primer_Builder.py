@@ -218,16 +218,21 @@ def reverse_nucleotide(sequence):
 def get_reverse_primers(cdna, forward_primers, id_count):
     optional_reverse_primers = []
     cdna_length = len(cdna)
-    primers_length = [14, 15, 16, 17, 18, 19, 20]
+    primers_length = []
+    amplicon_length = []
+    for i in range(int(config["Length"]["Min"]), int(config["Length"]["Max"])+1):
+        primers_length.append(i)
+    for i in range(int(config["Amplicon Length"]["Min"]), int(config["Amplicon Length"]["Max"])+1):
+        amplicon_length.append(i)
     for primer in forward_primers:
-        for amplicon_length in range(50, 150):
+        for amplic_len in amplicon_length:
             for primer_length in primers_length:
-                if cdna_length - primer.start_index >= amplicon_length + primer_length:
-                    f = primer.start_index + amplicon_length
-                    t = primer.start_index + amplicon_length + primer_length
+                if cdna_length - primer.start_index >= amplic_len + primer_length:
+                    f = primer.start_index + amplic_len
+                    t = primer.start_index + amplic_len + primer_length
                     sequence = cdna[f:t]
                     reverse_nucleotide(sequence)
-                    tmp_primer = Primer(id_count, "reverse", sequence, primer.start_index + amplicon_length,
+                    tmp_primer = Primer(id_count, "reverse", sequence, primer.start_index + amplic_len,
                                         primer.id)
                     optional_reverse_primers.append(tmp_primer)
                     id_count += 1
@@ -296,11 +301,16 @@ def export_to_file(on_junk_sets,primer_sets,species,symbol):
     new_file.write("PRIMERS SETS of " + symbol + "(" + species + " Gene):\n")
     new_file.close()
 
-    for index in range(0, 100):        # On junk sets
+    max_range = 100
+    if len(on_junk_sets) < max_range:
+        max_range = len(on_junk_sets)
+    for index in range(0, max_range):        # On junk sets
         on_junk_sets[index].write_to_file("../output/primer_list_junktion_"+species+"_"+symbol+".txt")
 
-    count = 0;
-    for index in range(0, 100):
+    max_range = 100
+    if len(primer_sets) < max_range:
+        max_range = len(primer_sets)
+    for index in range(0, max_range):
         primer_sets[index].write_to_file("../output/primer_list_"+species+"_"+symbol+".txt")
 
     print "Proceed to the output folder to view the results."
