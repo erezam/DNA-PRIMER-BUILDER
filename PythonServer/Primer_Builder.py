@@ -40,7 +40,6 @@ def transcript_data(species, symbol):
                 # sets
                 primers_optinal_sets = get_optional_sets(forward_primers, reverse_primers)
                 primers_sets = sets_tests(primers_optinal_sets)
-                sets_tests(primers_sets)
                 primers_sets.sort(key=get_set_score, reverse=True)
                 #print len(primers_sets)
                 #for set in primers_sets:
@@ -234,10 +233,15 @@ def get_optional_sets(forward_primers, reverse_primers):
 # ====================== Sets tests ==============================================
 
 def sets_tests(primer_optional_sets):
+    tm_diff_range = [];
+    #getting tm difference ranges from config file
+    for i in range(int(config["Temperature difference"]["Min"]), int(config["Temperature difference"]["Max"]) + 1):
+        tm_diff_range.append(i)
     primer_sets = []
     for set in primer_optional_sets:
-        if set.tm_dif() <= 1:
-            primer_sets.append(set)
+        for index in tm_diff_range:
+            if set.tm_dif() <= index:
+             primer_sets.append(set)
     return primer_sets
 
 

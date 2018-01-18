@@ -34,7 +34,13 @@
 	{
 		"Min":"0.4",
 		"Max":"0.6"
+	},
+		"Temperature difference":
+	{
+		"Min":"0",
+		"Max":"5"
 	}
+
 }
 
  
