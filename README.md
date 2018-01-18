@@ -45,6 +45,14 @@ We're trying to use the best tools and practices in order to produce a quality e
 | Contributors | [![GitHub contributors](https://img.shields.io/github/contributors/erezam/DNA-PRIMER-BUILDER.svg)](https://github.com/erezam/DNA-PRIMER-BUILDER/graphs/contributors)|
 
 
+## Included files and folders :
+
+* PythonServer folder - Contains all the server side code , the API request and primer builder algorithem.
+* client - Contains all the client side code.
+* output - A folder designed to contain the output files (lists of primers found).
+* docs - Contains the project documentation files (in Hebrew).
+
+
 ## Application Screenshots
 
 
