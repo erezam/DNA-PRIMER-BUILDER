@@ -2,7 +2,7 @@
 	"Amplicon Length":
 	{
 		"Min":"50",
-		"Max":"200",
+		"Max":"150",
 		"Avg":"115",
 		"STDDEV":"20"
 	},
@@ -17,7 +17,7 @@
 
 	"Tm":
 	{
-		"Min":"40",
+		"Min":"56",
 		"Max":"68",
 		"Avg":"45",
 		"STDDEV":"1"
@@ -25,8 +25,8 @@
 
 	"GC Percent":
 	{
-		"Min":"30",
-		"Max":"80",
+		"Min":"40",
+		"Max":"60",
 		"Avg":"45",
 		"STDDEV":"1"
 	},
@@ -38,7 +38,7 @@
 		"Temperature difference":
 	{
 		"Min":"0",
-		"Max":"5"
+		"Max":"1"
 	}
 
 }
