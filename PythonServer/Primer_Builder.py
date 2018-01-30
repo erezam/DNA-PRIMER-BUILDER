@@ -5,9 +5,9 @@ import os
 import requests
 
 # ===================================================================================
-from PythonServer.Primer import Primer
-from PythonServer.Primer_set import Primer_set
-from PythonServer.EnsemblRestClient import EnsemblRestClient
+from Primer import Primer
+from Primer_set import Primer_set
+from EnsemblRestClient import EnsemblRestClient
 
 config = json.load(open('config.json'))
 
