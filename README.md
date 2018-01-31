@@ -66,8 +66,6 @@ Please visit our wiki for furthur project info:
 ## Development
 
 
-### [Team Page](../../wiki/team)
-
 ### Project Documents
 - [Schedule tasks](https://github.com/erezam/DNA-PRIMER-BUILDER/projects/1)
 - [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
