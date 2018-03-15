@@ -21,7 +21,7 @@ The software will be built as a publicly available network application and will 
 
 
 press on the following image to view the primer creation process:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DjNGgte52lI/0.jpg)](https://www.youtube.com/watch?v=DjNGgte52lI)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DjNGgte52lI/0.jpg)](https://drive.google.com/open?id=1YLIsTbq396yoMWBPsfy9MXJnehTe3h0r)
 
  # About Us
  
