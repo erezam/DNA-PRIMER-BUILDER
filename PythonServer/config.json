@@ -17,17 +17,17 @@
 
 	"Tm":
 	{
-		"Min":"56",
+		"Min":"50",
 		"Max":"68",
-		"Avg":"45",
+		"Avg":"53",
 		"STDDEV":"1"
 	},
 
 	"GC Percent":
 	{
 		"Min":"40",
-		"Max":"60",
-		"Avg":"45",
+		"Max":"62",
+		"Avg":"53",
 		"STDDEV":"1"
 	},
 		"Threshold":
@@ -38,7 +38,7 @@
 		"Temperature difference":
 	{
 		"Min":"0",
-		"Max":"1"
+		"Max":"2"
 	}
 
 }

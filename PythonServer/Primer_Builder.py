@@ -1,9 +1,9 @@
+from __future__ import division
 import sys
 import json
 
 import os
 import requests
-from __future__ import division
 # ===================================================================================
 from Primer import Primer
 from Primer_set import Primer_set
@@ -41,10 +41,10 @@ def transcript_data(species, symbol):
                 print len(junc_optional_forward)
                 print "test reverse nucleotide function"
                 for primer in junc_optional_forward:
-                    if primer.sequence == "GCCTTTTTGCTACAGGGTTTCAT":
+                    if primer.sequence == "AAGATCCCGGTGATCATCGA":
                         primer.printPrimer()
                 for primer in junc_optional_reverse:
-                    if primer.sequence == "AGCAATCATCCTCTGCAGCTC":
+                    if primer.sequence == "GCGCCGGATGATCTTGAC":
                         primer.printPrimer()
 
                 # reverse
@@ -131,11 +131,11 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
                     f = index - th  #int(round((index - (l * th)), 0))
                     t = index + (l-th)
                     if kind == "forward":
-                        tmp_primer = Primer(id_count, "forward", cdna[f:t], f, th/l)
+                        tmp_primer = Primer(id_count, "forward", cdna[f:t], f, round(th/l, 2))
                     else:
                         rev_seq = cdna[f:t]
                         rev_seq = reverse_nucleotide(rev_seq)
-                        tmp_primer = Primer(id_count, "reverse", rev_seq, f, th/l)
+                        tmp_primer = Primer(id_count, "reverse", rev_seq, f, round(th/l, 2))
                     id_count += 1
                     optional_primers.append(tmp_primer)
                 if th != l*0.5:       # add both sides
@@ -143,15 +143,15 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
                         f = index - (l-th)
                         t = index + th
                         if kind == "forward":
-                            tmp_primer = Primer(id_count, "forward", cdna[f:t],  f, th/l)
+                            tmp_primer = Primer(id_count, "forward", cdna[f:t],  f, round(th/l, 2))
                         else:
                             rev_seq = cdna[f:t]
                             rev_seq = reverse_nucleotide(rev_seq)
-                            tmp_primer = Primer(id_count, "reverse", rev_seq,  f, th/l)
+                            tmp_primer = Primer(id_count, "reverse", rev_seq,  f, round(th/l, 2))
                         id_count += 1
                         optional_primers.append(tmp_primer)
 
-    #optional_primers = primer_tests(optional_primers)
+    optional_primers = primer_tests(optional_primers)
     return optional_primers
 
 
