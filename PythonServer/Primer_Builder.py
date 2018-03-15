@@ -113,6 +113,7 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
         len_range.append(i)
     # test
     print len_range
+    
     # get the junction percentage range from config file
     for i in frange(float(config["Threshold"]["Min"]), float(config["Threshold"]["Max"])+0.1, 0.05):
         threshold.append(i)
