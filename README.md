@@ -20,7 +20,7 @@ The software will be built as a publicly available network application and will 
 
 
 
-press here to view our project video : [!video](https://drive.google.com/open?id=1YLIsTbq396yoMWBPsfy9MXJnehTe3h0r)]
+press here to view our project video : [video](https://drive.google.com/open?id=1YLIsTbq396yoMWBPsfy9MXJnehTe3h0r)
 
 
  # About Us
