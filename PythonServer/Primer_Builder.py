@@ -3,7 +3,7 @@ import json
 
 import os
 import requests
-
+from __future__ import division
 # ===================================================================================
 from Primer import Primer
 from Primer_set import Primer_set
@@ -29,6 +29,10 @@ def transcript_data(species, symbol):
                 #print len(cDna)
                 id_count = 1
 
+                print "seq reverse:"
+                seq = "AGCAATCATCCTCTGCAGCTC"
+                print reverse_nucleotide(seq)
+
                 # On junction options
                 print "Searching for FORWARD Primers..."
                 junc_optional_forward = get_optional_primers(cDna, juncArr, id_count, "forward")
@@ -37,10 +41,10 @@ def transcript_data(species, symbol):
                 print len(junc_optional_forward)
                 print "test reverse nucleotide function"
                 for primer in junc_optional_forward:
-                    if primer.sequence == "ACAGTGCCTATAAAATAGGTGACGAG":
+                    if primer.sequence == "GCCTTTTTGCTACAGGGTTTCAT":
                         primer.printPrimer()
                 for primer in junc_optional_reverse:
-                    if primer.sequence == "AATCCCATAAAAGCTCCTTGACC":
+                    if primer.sequence == "AGCAATCATCCTCTGCAGCTC":
                         primer.printPrimer()
 
                 # reverse
@@ -113,36 +117,37 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
         len_range.append(i)
     # test
     print len_range
-    
-    # get the junction percentage range from config file
-    for i in frange(float(config["Threshold"]["Min"]), float(config["Threshold"]["Max"])+0.1, 0.05):
-        threshold.append(i)
     optional_primers = []
-    for th in threshold:
-        print th
-        for l in len_range:
+    for l in len_range:
+        # get the junction percentage range from config file
+        min_threshold = int(round(l*float(config["Threshold"]["Min"]),0))
+        max_threshold = int(round(l*float(config["Threshold"]["Max"]),0))
+        threshold = range(min_threshold,max_threshold+1)
+        #test
+        print threshold
+        for th in threshold:
             for index in junctionArray:
-                if ((index - (l * th)) >= 0) and ((index + (l * (1 - th))) < len(cdna)):
-                    f = int(round((index - (l * th)), 0))
-                    t = int(round((index + (l * (1 - th))), 0))
+                if ((index - th) >= 0) and ((index + (l-th)) < len(cdna)):
+                    f = index - th  #int(round((index - (l * th)), 0))
+                    t = index + (l-th)
                     if kind == "forward":
-                        tmp_primer = Primer(id_count, "forward", cdna[f:t], f, th)
+                        tmp_primer = Primer(id_count, "forward", cdna[f:t], f, th/l)
                     else:
                         rev_seq = cdna[f:t]
                         rev_seq = reverse_nucleotide(rev_seq)
-                        tmp_primer = Primer(id_count, "reverse", rev_seq, f, th)
+                        tmp_primer = Primer(id_count, "reverse", rev_seq, f, th/l)
                     id_count += 1
                     optional_primers.append(tmp_primer)
-                if th != 0.5:       # add both sides
-                    if ((index + (l * (1 - th))) >= 0) and ((index - (l * th)) < len(cdna)):
-                        f = int(round((index - (l * (1 - th))), 0))
-                        t = int(round((index + (l * th)), 0))
+                if th != l*0.5:       # add both sides
+                    if ((index - (l - th)) >= 0) and ((index + th) < len(cdna)):
+                        f = index - (l-th)
+                        t = index + th
                         if kind == "forward":
-                            tmp_primer = Primer(id_count, "forward", cdna[f:t],  f, th)
+                            tmp_primer = Primer(id_count, "forward", cdna[f:t],  f, th/l)
                         else:
                             rev_seq = cdna[f:t]
                             rev_seq = reverse_nucleotide(rev_seq)
-                            tmp_primer = Primer(id_count, "reverse", rev_seq,  f, th)
+                            tmp_primer = Primer(id_count, "reverse", rev_seq,  f, th/l)
                         id_count += 1
                         optional_primers.append(tmp_primer)
 

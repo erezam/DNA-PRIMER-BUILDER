@@ -32,7 +32,7 @@
 	},
 		"Threshold":
 	{
-		"Min":"0.2",
+		"Min":"0",
 		"Max":"0.8"
 	},
 		"Temperature difference":
