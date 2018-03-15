@@ -20,8 +20,8 @@ The software will be built as a publicly available network application and will 
 
 
 
-press on the following image to view the primer creation process:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DjNGgte52lI/0.jpg)](https://www.youtube.com/watch?v=DjNGgte52lI)
+press here to view our project video : [video](https://drive.google.com/open?id=1YLIsTbq396yoMWBPsfy9MXJnehTe3h0r)
+
 
  # About Us
  
@@ -65,8 +65,6 @@ Please visit our wiki for furthur project info:
 
 ## Development
 
-
-### [Team Page](../../wiki/team)
 
 ### Project Documents
 - [Schedule tasks](https://github.com/erezam/DNA-PRIMER-BUILDER/projects/1)
