@@ -2,7 +2,7 @@
 	"Amplicon Length":
 	{
 		"Min":"50",
-		"Max":"150",
+		"Max":"200",
 		"Avg":"115",
 		"STDDEV":"20"
 	},
@@ -10,7 +10,7 @@
 	"Length":
 	{
 		"Min":"13",
-		"Max":"26",
+		"Max":"27",
 		"Avg":"20",
 		"STDDEV":"2"
 	},
@@ -32,8 +32,8 @@
 	},
 		"Threshold":
 	{
-		"Min":"0.4",
-		"Max":"0.6"
+		"Min":"0.2",
+		"Max":"0.8"
 	},
 		"Temperature difference":
 	{

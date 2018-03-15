@@ -4,13 +4,14 @@ import json
 config = json.load(open("config.json"))
 
 class Primer (object):
-    def __init__(self, id, kind, sequence , start_index, pair_id=0):
+    def __init__(self, id, kind, sequence, start_index, junc_prec=0, pair_id=0):
         self.id = id
         self.kind = kind
         self.sequence = sequence
         self.length = len(sequence)
         self.start_index = start_index
         self.pair_id = pair_id
+        self.junc_prec = junc_prec
 
     def a_counter(self):
         aCount = 0
@@ -119,5 +120,5 @@ class Primer (object):
 
 # ================================print primer============================================
     def printPrimer(self):
-        print "Id:%s, Pair id:%s, Kind: %s , Seq: %s , Tm : %s , GC : %s , Start index: %s" % \
-              (self.id, self.pair_id, self.kind, self.sequence,self.primer_tm(), self.precent_gc(), self.start_index)
+        print "Id:%s, Pair id:%s, Kind: %s , Seq: %s , Tm : %s , GC : %s , Start index: %s , jubction prec: %s" % \
+              (self.id, self.pair_id, self.kind, self.sequence,self.primer_tm(), self.precent_gc(), self.start_index ,self.junc_prec)

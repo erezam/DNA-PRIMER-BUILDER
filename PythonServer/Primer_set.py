@@ -16,7 +16,7 @@ class Primer_set (object):
         print "Forward id: %s - Reverse id:%s" %(self.forward_primer.id , self.reverse_primer.id)
 
     def get_amplicon_length(self):
-        return self.reverse_primer.start_index - self.forward_primer.start_index
+        return (self.reverse_primer.start_index+self.reverse_primer.length) - self.forward_primer.start_index
 
     def write_to_file(self, file_name):
         write_file = open(file_name, "a")
