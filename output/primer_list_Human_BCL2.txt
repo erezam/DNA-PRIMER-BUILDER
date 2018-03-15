@@ -1,0 +1,97 @@
+PRIMERS SETS of BCL2(human Gene):
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTAA length: 19 Tm: 44 GC: 36 start index: 601 
+REVERSE:
+Sequence: CGAAAGGAATTGGAATAAAA length: 20 Tm: 43 GC: 30 start index: 698 
+tm difference between F & R: 1 
+Amplicon length: 97 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTAA length: 19 Tm: 44 GC: 36 start index: 601 
+REVERSE:
+Sequence: CGAAAGGAATTGGAATAAAA length: 20 Tm: 43 GC: 30 start index: 698 
+tm difference between F & R: 1 
+Amplicon length: 97 
+Score: 38 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: CGAAAGGAATTGGAATAAA length: 19 Tm: 42 GC: 31 start index: 698 
+tm difference between F & R: 1 
+Amplicon length: 97 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: CGAAAGGAATTGGAATAAAA length: 20 Tm: 43 GC: 30 start index: 698 
+tm difference between F & R: 0 
+Amplicon length: 97 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: CGAAAGGAATTGGAATAAA length: 19 Tm: 42 GC: 31 start index: 698 
+tm difference between F & R: 1 
+Amplicon length: 97 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: CGAAAGGAATTGGAATAAAA length: 20 Tm: 43 GC: 30 start index: 698 
+tm difference between F & R: 0 
+Amplicon length: 97 
+Score: 36 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTAA length: 19 Tm: 44 GC: 36 start index: 601 
+REVERSE:
+Sequence: ACTTACTAATAATAACGTGC length: 20 Tm: 43 GC: 30 start index: 661 
+tm difference between F & R: 1 
+Amplicon length: 60 
+Score: 32 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTAA length: 19 Tm: 44 GC: 36 start index: 601 
+REVERSE:
+Sequence: ACTTACTAATAATAACGTGC length: 20 Tm: 43 GC: 30 start index: 661 
+tm difference between F & R: 1 
+Amplicon length: 60 
+Score: 32 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: ACTTACTAATAATAACGTGC length: 20 Tm: 43 GC: 30 start index: 661 
+tm difference between F & R: 0 
+Amplicon length: 60 
+Score: 31 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: CTTACTAATAATAACGTGC length: 19 Tm: 42 GC: 31 start index: 662 
+tm difference between F & R: 1 
+Amplicon length: 61 
+Score: 31 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: ACTTACTAATAATAACGTGC length: 20 Tm: 43 GC: 30 start index: 661 
+tm difference between F & R: 0 
+Amplicon length: 60 
+Score: 31 
+----------------------------------------------------------------------------------------------
+FORWARD :
+Sequence: AGGATCATGCTGTACTTA length: 18 Tm: 43 GC: 38 start index: 601 
+REVERSE:
+Sequence: CTTACTAATAATAACGTGC length: 19 Tm: 42 GC: 31 start index: 662 
+tm difference between F & R: 1 
+Amplicon length: 61 
+Score: 31 
