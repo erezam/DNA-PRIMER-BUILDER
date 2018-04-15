@@ -66,7 +66,7 @@ class EnsemblRestClient(object):
             stable_id = genes[0]['id']
             variants = self.perform_rest_action(
                 '/lookup/id/{0}'.format(stable_id),
-                params={'expand': '1'}
+                params={'expand': '1', 'utr': '1'}
             )
             return variants
         return None

@@ -21,12 +21,13 @@ def transcript_data(species, symbol):
             if t['display_name'] == symbol + "-201":
                 #print '{display_name}: ==> {id}'.format(**t)
                 juncArr = junctions(t)
-                #print t['id']
+                print t['UTR']
                 cDna = get_cdna(t['id'])
                 cDna = cDna.replace("\n", "")
                 cDna = cDna.replace(">"+t['id'], "")
+                cDna = remove_utr(cDna, t['UTR'])
                 print cDna
-                #print len(cDna)
+                print len(cDna)
                 id_count = 1
 
                 print "seq reverse:"
@@ -62,6 +63,13 @@ def transcript_data(species, symbol):
                  #   set.set_print()
                 print "Export to output file..."
                 export_to_file(on_junk_sets,primers_sets,species,symbol)
+# ====================== remove UTR ========================================
+def remove_utr(cdna,utr_object):
+    start_utr = (utr_object[0]['end']-utr_object[0]['start'])+1#include the letter in the end
+    end_utr = (utr_object[1]['end'] - utr_object[1]['start']) + 1  # include the letter in the end
+    print start_utr
+    print end_utr
+    return cdna[start_utr:len(cdna)-end_utr]
 
 
 # ====================== return all junctions index ========================================
