@@ -12,6 +12,7 @@ class Primer (object):
         self.start_index = start_index
         self.pair_id = pair_id
         self.junc_prec = junc_prec
+        self.getPairsVector()
 
     def a_counter(self):
         aCount = 0
@@ -53,10 +54,21 @@ class Primer (object):
         tm = int((64.9 + 41 * (self.g_counter() + self.c_counter() - 16.4)/(len(self.sequence))))
         return tm
 
+# ========================== Build letter pairs vector ============================================
+    def getPairsVector(self):
+        pairs = {'AA':0, 'AC':0, 'AG':0, 'AT':0, 'CC':0, 'CG':0, 'CT':0, 'GG':0, 'GT':0, 'TT':0}
+        for index, l in enumerate(self.sequence):
+            if index+2 <= len(self.sequence):
+                list_pair = sorted(self.sequence[index:index+2])
+                str_pair = ''.join(list_pair)
+                pairs[str_pair] = pairs.get(str_pair)+1
+        print pairs
+
 # ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
 
     def get_primer_score(self):
         return float(self.get_tm_score()) * float(self.get_gc_score()) * float(self.get_length_score())
+
 
 
 # ================================ calculate score for each parameter============================================
@@ -118,7 +130,9 @@ class Primer (object):
         else:
             return 0.8
 
+
 # ================================print primer============================================
     def printPrimer(self):
         print "Id:%s, Pair id:%s, Kind: %s , Seq: %s , Tm : %s , GC : %s , Start index: %s , jubction prec: %s" % \
               (self.id, self.pair_id, self.kind, self.sequence,self.primer_tm(), self.precent_gc(), self.start_index ,self.junc_prec)
+
