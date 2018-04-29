@@ -13,6 +13,7 @@ class Primer (object):
         self.pair_id = pair_id
         self.junc_prec = junc_prec
         self.getPairsVector()
+        self.palindrome_check()
 
     def a_counter(self):
         aCount = 0
@@ -64,6 +65,20 @@ class Primer (object):
                 pairs[str_pair] = pairs.get(str_pair)+1
         print pairs
 
+# ========================== palindrome check ============================================
+
+    def palindrome_check(self):
+        wrongs_counter = 0
+        pal_counter = 0
+        for index, c in enumerate(self.sequence):
+            tail_char = self.sequence[len(self.sequence)-(index + 1)]
+            pair = ''.join(sorted(c+tail_char))
+            if pair == 'AT' or pair == 'CG':
+                pal_counter += 1
+            else:
+                wrongs_counter += 1
+            if wrongs_counter == 2:
+                return pal_counter
 # ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
 
     def get_primer_score(self):
