@@ -4,6 +4,8 @@ import json
 
 import os
 import requests
+from Tkinter import *
+
 # ===================================================================================
 from Primer import Primer
 from Primer_set import Primer_set
@@ -21,32 +23,32 @@ def transcript_data(species, symbol):
             if t['display_name'] == symbol + "-201":
                 #print '{display_name}: ==> {id}'.format(**t)
                 juncArr = junctions(t)
-                print t['UTR']
+                #print t['UTR']
                 cDna = get_cdna(t['id'])
                 cDna = cDna.replace("\n", "")
                 cDna = cDna.replace(">"+t['id'], "")
                 cDna = remove_utr(cDna, t['UTR'])
-                print cDna
-                print len(cDna)
+                #print cDna
+                #print len(cDna)
                 id_count = 1
 
-                print "seq reverse:"
-                seq = "AGCAATCATCCTCTGCAGCTC"
-                print reverse_nucleotide(seq)
+                #print "seq reverse:"
+                #seq = "AGCAATCATCCTCTGCAGCTC"
+                #print reverse_nucleotide(seq)
 
                 # On junction options
                 print "Searching for FORWARD Primers..."
                 junc_optional_forward = get_optional_primers(cDna, juncArr, id_count, "forward")
                 junc_optional_reverse = get_optional_primers(cDna, juncArr, id_count, "reverse")
                 on_junk_sets = junktion_sets(junc_optional_forward,junc_optional_reverse)
-                print len(junc_optional_forward)
-                print "test reverse nucleotide function"
-                for primer in junc_optional_forward:
-                    if primer.sequence == "AAGATCCCGGTGATCATCGA":
-                        primer.printPrimer()
-                for primer in junc_optional_reverse:
-                    if primer.sequence == "GCGCCGGATGATCTTGAC":
-                        primer.printPrimer()
+                #print len(junc_optional_forward)
+                #print "test reverse nucleotide function"
+                #for primer in junc_optional_forward:
+                #    if primer.sequence == "AAGATCCCGGTGATCATCGA":
+                #        primer.printPrimer()
+                #for primer in junc_optional_reverse:
+                #    if primer.sequence == "GCGCCGGATGATCTTGAC":
+                #        primer.printPrimer()
 
                 # reverse
                 print "Searching for REVERSE Primers..."
@@ -67,8 +69,8 @@ def transcript_data(species, symbol):
 def remove_utr(cdna,utr_object):
     start_utr = (utr_object[0]['end']-utr_object[0]['start'])+1#include the letter in the end
     end_utr = (utr_object[1]['end'] - utr_object[1]['start']) + 1  # include the letter in the end
-    print start_utr
-    print end_utr
+    #print start_utr
+    #print end_utr
     return cdna[start_utr:len(cdna)-end_utr]
 
 
@@ -124,7 +126,7 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
     for i in range(int(config["Length"]["Min"]), int(config["Length"]["Max"])+1):
         len_range.append(i)
     # test
-    print len_range
+    #print len_range
     optional_primers = []
     for l in len_range:
         # get the junction percentage range from config file
@@ -132,7 +134,7 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
         max_threshold = int(round(l*float(config["Threshold"]["Max"]),0))
         threshold = range(min_threshold,max_threshold+1)
         #test
-        print threshold
+        #print threshold
         for th in threshold:
             for index in junctionArray:
                 if ((index - th) >= 0) and ((index + (l-th)) < len(cdna)):
@@ -362,13 +364,45 @@ def frange(x, y, jump):
     x += jump
 # ======================= MAIN ====================================================
 
+def onClick():
+    name = "Thanks for the click"
+    labelText.set(name)
+    transcript_data(specie.get(), symbol.get())
+    app.destroy()
+    return
+
 if __name__ == '__main__':
     # if len(sys.argv) == 3:
     #   species, symbol = sys.argv[1:]
     # else:
     #    species, symbol = 'human', 'BRAF'
-    species = raw_input("Enter specie:")
-    symbol = raw_input("Enter symbol:")
-    transcript_data(species, symbol)
+    app = Tk()
+    app.title("Primer Builder")
+
+    labelText = StringVar()
+    labelText.set("Enter specie")
+    label1 = Label(app, textvariable=labelText, height=1 , width=50)
+    label1.pack()
+
+    specie = StringVar(None)
+    specieInput = Entry(app, textvariable=specie)
+    specieInput.pack(pady=5)
+
+    labelText2 = StringVar()
+    labelText2.set("Enter gene symbol")
+    label2 = Label(app, textvariable=labelText2, height=1)
+    label2.pack()
+
+    symbol = StringVar(None)
+    symbolInput = Entry(app, textvariable=symbol)
+    symbolInput.pack(pady=5)
+
+    button = Button(app, text="Get Primers", width = 20, command=onClick)
+    button.pack(side='bottom', padx=10, pady=10)
+    app.mainloop()
+
+    #species = raw_input("Enter specie:")
+    #symbol = raw_input("Enter symbol:")
+    #transcript_data(species, symbol)
 
 

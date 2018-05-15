@@ -63,7 +63,7 @@ class Primer (object):
                 list_pair = sorted(self.sequence[index:index+2])
                 str_pair = ''.join(list_pair)
                 pairs[str_pair] = pairs.get(str_pair)+1
-        print pairs
+        #print pairs
 
 # ========================== palindrome check ============================================
 
