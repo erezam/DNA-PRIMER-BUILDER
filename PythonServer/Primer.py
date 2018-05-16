@@ -68,18 +68,23 @@ class Primer (object):
 # ========================== palindrome check ============================================
 
     def palindrome_check(self):
-        wrongs_counter = 0
-        pal_counter = 0
-        for index, c in enumerate(self.sequence):
-            tail_char = self.sequence[len(self.sequence)-(index + 1)]
-            pair = ''.join(sorted(c+tail_char))
-            if pair == 'AT' or pair == 'CG':
-                pal_counter += 1
-            else:
-                wrongs_counter += 1
-            if wrongs_counter == 2:
-                return pal_counter
-# ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
+        pal_max_length = 0
+        pal_dict = dict()
+        for i in range(3,len(self.sequence)):
+            wrongs_counter = 0
+            for j in range(i+1):
+                start_palindrom = self.sequence[j:j+i]
+                for z in range(j+i, len(self.sequence)):
+                    x = self.sequence[z:z+i]
+                    x = reverse_nucleotide(self.sequence[z:z+i])
+                    end_palindrom = x #reversed(reverse_nucleotide(self.sequence[z:z+i]))
+                    if start_palindrom == end_palindrom:
+                        pal_max_length = i
+                        pal_dict.update({start_palindrom : i})
+        return pal_dict
+
+
+    # ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
 
     def get_primer_score(self):
         return float(self.get_tm_score()) * float(self.get_gc_score()) * float(self.get_length_score())
@@ -151,3 +156,20 @@ class Primer (object):
         print "Id:%s, Pair id:%s, Kind: %s , Seq: %s , Tm : %s , GC : %s , Start index: %s , jubction prec: %s" % \
               (self.id, self.pair_id, self.kind, self.sequence,self.primer_tm(), self.precent_gc(), self.start_index ,self.junc_prec)
 
+# ======================reverse nucleotide=====================
+
+
+def reverse_nucleotide(sequence):
+    tmp_str = list(sequence)
+    for index in range(len(sequence)):
+        if sequence[index] == 'A':
+            tmp_str[index] = 'T'
+        elif sequence[index] == 'T':
+            tmp_str[index] = 'A'
+        elif sequence[index] == 'G':
+            tmp_str[index] = 'C'
+        else:
+            tmp_str[index] = 'G'
+        sequence = "".join(tmp_str)
+    sequence = sequence[::-1]
+    return sequence
