@@ -4,7 +4,6 @@ import json
 
 import os
 import requests
-from Tkinter import *
 
 # ===================================================================================
 from Primer import Primer
@@ -362,47 +361,3 @@ def frange(x, y, jump):
   while x < y:
     yield x
     x += jump
-# ======================= MAIN ====================================================
-
-def onClick():
-    name = "Thanks for the click"
-    labelText.set(name)
-    transcript_data(specie.get(), symbol.get())
-    app.destroy()
-    return
-
-if __name__ == '__main__':
-    # if len(sys.argv) == 3:
-    #   species, symbol = sys.argv[1:]
-    # else:
-    #    species, symbol = 'human', 'BRAF'
-    app = Tk()
-    app.title("Primer Builder")
-
-    labelText = StringVar()
-    labelText.set("Enter specie")
-    label1 = Label(app, textvariable=labelText, height=1 , width=50)
-    label1.pack()
-
-    specie = StringVar(None)
-    specieInput = Entry(app, textvariable=specie)
-    specieInput.pack(pady=5)
-
-    labelText2 = StringVar()
-    labelText2.set("Enter gene symbol")
-    label2 = Label(app, textvariable=labelText2, height=1)
-    label2.pack()
-
-    symbol = StringVar(None)
-    symbolInput = Entry(app, textvariable=symbol)
-    symbolInput.pack(pady=5)
-
-    button = Button(app, text="Get Primers", width = 20, command=onClick)
-    button.pack(side='bottom', padx=10, pady=10)
-    app.mainloop()
-
-    #species = raw_input("Enter specie:")
-    #symbol = raw_input("Enter symbol:")
-    #transcript_data(species, symbol)
-
-
