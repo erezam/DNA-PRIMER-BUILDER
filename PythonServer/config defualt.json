@@ -1,0 +1,46 @@
+{
+	"Amplicon Length":
+	{
+		"Min":"50",
+		"Max":"200",
+		"Avg":"115",
+		"STDDEV":"20"
+	},
+	
+	"Length":
+	{
+		"Min":"13",
+		"Max":"27",
+		"Avg":"20",
+		"STDDEV":"2"
+	},
+
+	"Tm":
+	{
+		"Min":"50",
+		"Max":"68",
+		"Avg":"53",
+		"STDDEV":"1"
+	},
+
+	"GC Percent":
+	{
+		"Min":"40",
+		"Max":"62",
+		"Avg":"53",
+		"STDDEV":"1"
+	},
+		"Threshold":
+	{
+		"Min":"0",
+		"Max":"0.8"
+	},
+		"Temperature difference":
+	{
+		"Min":"0",
+		"Max":"2"
+	}
+
+}
+
+ 
