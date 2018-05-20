@@ -13,7 +13,7 @@ class Primer (object):
         self.pair_id = pair_id
         self.junc_prec = junc_prec
         self.getPairsVector()
-        self.palindrome_check()
+        #self.palindrome_check()
 
     def a_counter(self):
         aCount = 0
@@ -70,17 +70,37 @@ class Primer (object):
     def palindrome_check(self):
         pal_max_length = 0
         pal_dict = dict()
-        for i in range(3,len(self.sequence)):
+        num_of_mismatches = 0
+        palindrome_flag = True
+        for i in range(3,len(self.sequence)):# num of nucleotide to check
             wrongs_counter = 0
-            for j in range(i+1):
-                start_palindrom = self.sequence[j:j+i]
+            for j in range(i):
+                start_palindrome = self.sequence[j:j+i]
                 for z in range(j+i, len(self.sequence)):
                     x = self.sequence[z:z+i]
                     x = reverse_nucleotide(self.sequence[z:z+i])
-                    end_palindrom = x #reversed(reverse_nucleotide(self.sequence[z:z+i]))
-                    if start_palindrom == end_palindrom:
-                        pal_max_length = i
-                        pal_dict.update({start_palindrom : i})
+                    end_palindrome = x
+                    if(len(start_palindrome) == len(end_palindrome)):
+                        for nucleotide in range(len(end_palindrome)):
+                            if start_palindrome[nucleotide] == end_palindrome[nucleotide]:
+                                continue
+                            elif num_of_mismatches < 2: #if there is only one mismatch
+                                num_of_mismatches += 1
+                                if num_of_mismatches == 2:# 2 mismatches - not a palindrome
+                                    palindrome_flag = False
+                                    num_of_mismatches = 0
+                                    break
+                                continue
+                            else:# more than one mismatch, not palindrome
+                                palindrome_flag = False
+                                num_of_mismatches = 0
+                                break
+                        if palindrome_flag: #there is a palindrome
+                            pal_max_length = i
+                            print("start pal: {}\tend pal: {}".format(start_palindrome, reverse_nucleotide(end_palindrome)))
+                            pal_dict.update({start_palindrome: i})
+                        else:# not a palindrome, reset flag
+                            palindrome_flag = True
         return pal_dict
 
 

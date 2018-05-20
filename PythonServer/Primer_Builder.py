@@ -31,6 +31,13 @@ def transcript_data(species, symbol):
                 #print len(cDna)
                 id_count = 1
 
+                #---------Test----------
+               #tempo_primer = Primer(0,  "forward", "AAAGGATCATATCGTCC", 0)
+               # dicten  = tempo_primer.palindrome_check()
+               # print(dicten)
+              #  print ("done pal")
+
+
                 #print "seq reverse:"
                 #seq = "AGCAATCATCCTCTGCAGCTC"
                 #print reverse_nucleotide(seq)
