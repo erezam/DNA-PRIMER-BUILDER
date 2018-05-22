@@ -8,7 +8,7 @@ def on_close_click():
     return
 
 def set_default_values():
-    config_default = json.load(open("config.json"))
+    config_default = json.load(open("config defualt.json"))
     amplicon_max.set(config_default["Amplicon Length"]["Max"])
     amplicon_min.set(config_default["Amplicon Length"]["Min"])
     leng_max.set(config_default["Length"]["Max"])
@@ -45,7 +45,7 @@ def on_submit_click():
 if __name__ == '__main__':
     config = json.load(open("config.json"))
     root = Tk()
-    root.title('Model Definition')
+    root.title('Primer Builder')
     root.geometry('{}x{}'.format(500, 250))
     # create all of the main containers
     top_frame = Frame(root, bg='red', width=450, height=50, pady=3)
@@ -61,11 +61,13 @@ if __name__ == '__main__':
     btm_frame.grid(row=3, sticky="ew")
 
     # create the widgets for the top frame
+    main_label = StringVar()
+    main_label.set("Primer Builder")
     specie = StringVar()
     specie.set("")
     symbol = StringVar()
     symbol.set("")
-    primer_label = Label(top_frame, text='Primer Builder', bg="yellow")
+    primer_label = Label(top_frame, textvariable=main_label, bg="yellow")
     specie_label = Label(top_frame, text='Specie:')
     symbol_label = Label(top_frame, text='Symbol:')
     entry_specie = Entry(top_frame, textvariable=specie)
@@ -97,29 +99,29 @@ if __name__ == '__main__':
     entry_len_min = Entry(center, textvariable=leng_min)
 
     tm_max = StringVar()
-    tm_max.set(config["Length"]["Max"])
+    tm_max.set(config["Tm"]["Max"])
     tm_min = StringVar()
-    tm_min.set(config["Length"]["Min"])
+    tm_min.set(config["Tm"]["Min"])
     tm_max_label = Label(center, text='Primer max Tm:')
     tm_min_label = Label(center, text='Primer min Tm:')
     entry_tm_max = Entry(center, textvariable=tm_max)
     entry_tm_min = Entry(center, textvariable=tm_min)
 
     gc_max = StringVar()
-    gc_max.set(config["Length"]["Max"])
+    gc_max.set(config["GC Percent"]["Max"])
     gc_min = StringVar()
-    gc_min.set(config["Length"]["Min"])
+    gc_min.set(config["GC Percent"]["Min"])
     gc_max_label = Label(center, text='Primer max GC%:')
     gc_min_label = Label(center, text='Primer min GC%:')
     entry_gc_max = Entry(center, textvariable=gc_max)
     entry_gc_min = Entry(center, textvariable=gc_min)
 
     tm_dif_max = StringVar()
-    tm_dif_max.set(config["Length"]["Max"])
+    tm_dif_max.set(config["Temperature difference"]["Max"])
     tm_dif_min = StringVar()
-    tm_dif_min.set(config["Length"]["Min"])
-    tm_dif_max_label = Label(center, text='Primer max Tm:')
-    tm_dif_min_label = Label(center, text='Primer min Tm:')
+    tm_dif_min.set(config["Temperature difference"]["Min"])
+    tm_dif_max_label = Label(center, text='Primers Tm max dif:')
+    tm_dif_min_label = Label(center, text='Primer Tm max dif:')
     entry_tm_dif_max = Entry(center, textvariable=tm_dif_max)
     entry_tm_dif_min = Entry(center, textvariable=tm_dif_min)
 
