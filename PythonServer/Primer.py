@@ -3,6 +3,7 @@ import json
 
 config = json.load(open("config.json"))
 
+
 class Primer (object):
     def __init__(self, id, kind, sequence, start_index, junc_prec=0, pair_id=0):
         self.id = id

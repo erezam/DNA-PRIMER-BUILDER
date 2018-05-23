@@ -20,55 +20,31 @@ def transcript_data(species, symbol):
     if transcripts:
         for t in transcripts:
             if t['display_name'] == symbol + "-201":
-                #print '{display_name}: ==> {id}'.format(**t)
                 juncArr = junctions(t)
-                #print t['UTR']
                 cDna = get_cdna(t['id'])
                 cDna = cDna.replace("\n", "")
                 cDna = cDna.replace(">"+t['id'], "")
                 cDna = remove_utr(cDna, t['UTR'])
-                #print cDna
-                #print len(cDna)
                 id_count = 1
-
-                #---------Test----------
-               #tempo_primer = Primer(0,  "forward", "AAAGGATCATATCGTCC", 0)
-               # dicten  = tempo_primer.palindrome_check()
-               # print(dicten)
-              #  print ("done pal")
-
-
-                #print "seq reverse:"
-                #seq = "AGCAATCATCCTCTGCAGCTC"
-                #print reverse_nucleotide(seq)
 
                 # On junction options
                 print "Searching for FORWARD Primers..."
                 junc_optional_forward = get_optional_primers(cDna, juncArr, id_count, "forward")
                 junc_optional_reverse = get_optional_primers(cDna, juncArr, id_count, "reverse")
                 on_junk_sets = junktion_sets(junc_optional_forward,junc_optional_reverse)
-                #print len(junc_optional_forward)
-                #print "test reverse nucleotide function"
-                #for primer in junc_optional_forward:
-                #    if primer.sequence == "AAGATCCCGGTGATCATCGA":
-                #        primer.printPrimer()
-                #for primer in junc_optional_reverse:
-                #    if primer.sequence == "GCGCCGGATGATCTTGAC":
-                #        primer.printPrimer()
 
                 # reverse
                 print "Searching for REVERSE Primers..."
                 reverse_primers = get_reverse_primers(cDna, junc_optional_forward, id_count)
-                #for primer in reverse_primers:
-                 #   primer.printPrimer()
+                for primer in reverse_primers:
+                    primer.printPrimer()
 
                 # sets
                 print "Creating Primers pairs and giving scores..."
                 primers_sets = get_optional_sets(junc_optional_forward, reverse_primers)
                 primers_sets.sort(key=get_set_score, reverse=True)
-                #print len(primers_sets)
-                #for set in primers_sets:
-                 #   set.set_print()
+
+
                 print "Export to output file..."
                 export_to_file(on_junk_sets,primers_sets,species,symbol)
 # ====================== remove UTR ========================================
@@ -126,25 +102,22 @@ def get_cdna(transcriptId):
 
 def get_optional_primers(cdna, junctionArray, id_count ,kind):
     config = json.load(open("config.json"))
-    len_range = []
-    threshold = []
+    optional_primers = []   # list of primers
     # get the sequence length range from config file
+    len_range = []
     for i in range(int(config["Length"]["Min"]), int(config["Length"]["Max"])+1):
         len_range.append(i)
-    # test
-    #print len_range
-    optional_primers = []
+
     for l in len_range:
         # get the junction percentage range from config file
-        min_threshold = int(round(l*float(config["Threshold"]["Min"]),0))
-        max_threshold = int(round(l*float(config["Threshold"]["Max"]),0))
-        threshold = range(min_threshold,max_threshold+1)
-        #test
-        #print threshold
+        min_threshold = int(round(l * float(config["Threshold"]["Min"]), 0))
+        max_threshold = int(round(l * float(config["Threshold"]["Max"]), 0))
+        threshold = range(min_threshold, max_threshold + 1)
+
         for th in threshold:
             for index in junctionArray:
                 if ((index - th) >= 0) and ((index + (l-th)) < len(cdna)):
-                    f = index - th  #int(round((index - (l * th)), 0))
+                    f = index - th
                     t = index + (l-th)
                     if kind == "forward":
                         tmp_primer = Primer(id_count, "forward", cdna[f:t], f, round(th/l, 2))
@@ -154,7 +127,7 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
                         tmp_primer = Primer(id_count, "reverse", rev_seq, f, round(th/l, 2))
                     id_count += 1
                     optional_primers.append(tmp_primer)
-                if th != l*0.5:       # add both sides
+                if th != l*0.5:       # add both sides , to avoid duplicate primer on half len
                     if ((index - (l - th)) >= 0) and ((index + th) < len(cdna)):
                         f = index - (l-th)
                         t = index + th
@@ -275,12 +248,11 @@ def get_reverse_primers(cdna, forward_primers, id_count):
                     t = primer.start_index + amplic_len + primer_length
                     sequence = cdna[f:t]
                     sequence = reverse_nucleotide(sequence)
-                    tmp_primer = Primer(id_count, "reverse", sequence, primer.start_index + amplic_len,
-                                        primer.id)
+                    tmp_primer = Primer(id_count, "reverse", sequence, primer.start_index + amplic_len, pair_id=primer.id)
                     optional_reverse_primers.append(tmp_primer)
                     id_count += 1
 
-    #optional_reverse_primers = primer_tests(optional_reverse_primers)
+    optional_reverse_primers = primer_tests(optional_reverse_primers)
     return optional_reverse_primers
 
 
@@ -336,23 +308,31 @@ def junktion_sets(forward_on_junk , reverse_on_junk):
 # ==================================export to file===================================
 
 def export_to_file(on_junk_sets,primer_sets,species,symbol):
-    new_file_junk = open("../output/primer_list_junktion_"+species+"_"+symbol+".txt", "w")
-    new_file_junk.write("Forward & Reverse on junktion PRIMERS SETS of "+symbol+"("+species+" Gene):\n")
-    new_file_junk.close()
+    #new_file_junk = open("../output/primer_list_junktion_"+species+"_"+symbol+".txt", "w")
+   # new_file_junk.write("Forward & Reverse on junktion PRIMERS SETS of "+symbol+"("+species+" Gene):\n")
+    #new_file_junk.close()
 
     new_file = open("../output/primer_list_" + species + "_" + symbol + ".txt", "w")
-    new_file.write("PRIMERS SETS of " + symbol + "(" + species + " Gene):\n")
+    new_file.write("\n"+
+                   "*************************************************************************************************\n"+
+                   "********************Forward & Reverse on junktion PRIMERS SETS of "+symbol+"("+species+" Gene):**************\n"+
+                   "*************************************************************************************************\n\n")
     new_file.close()
 
-    max_range = 100
+    max_range = 15
     if len(on_junk_sets) < max_range:
         max_range = len(on_junk_sets)
     for index in range(0, max_range):        # On junk sets
-        on_junk_sets[index].write_to_file("../output/primer_list_junktion_"+species+"_"+symbol+".txt")
+        on_junk_sets[index].write_to_file("../output/primer_list_"+species+"_"+symbol+".txt")
 
-    max_range = 100
+    max_range = 15
     if len(primer_sets) < max_range:
         max_range = len(primer_sets)
+    with open("../output/primer_list_" + species + "_" + symbol + ".txt", "a") as f:
+        f.write("\n"+
+        "******************************************************************************************************\n"+
+                "********************************PRIMERS SETS of " + symbol + "(" + species + " Gene):*************************************\n"+
+                "******************************************************************************************************\n\n")
     for index in range(0, max_range):
         primer_sets[index].write_to_file("../output/primer_list_"+species+"_"+symbol+".txt")
 
