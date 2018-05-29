@@ -1,11 +1,17 @@
-
+import os
 from PythonServer.Primer_Builder import *
 from Tkinter import *
 
 
 def on_close_click():
-    app.destroy()
+    root.destroy()
     return
+
+
+def open_output_file(specie_name, symbol_name):
+    file = "cd ../output & notepad.exe primer_list_" + specie_name + "_" + symbol_name + ".txt"
+    os.system(file)
+
 
 def set_default_values():
     config_default = json.load(open("config defualt.json"))
@@ -23,6 +29,8 @@ def set_default_values():
 
 def on_submit_click():
     # Update config
+    specie_name = specie.get()
+    symbol_name = symbol.get()
     config["Amplicon Length"]["Max"] = amplicon_max.get()
     config["Amplicon Length"]["Min"] = amplicon_min.get()
     config["Length"]["Max"] = leng_max.get()
@@ -37,8 +45,23 @@ def on_submit_click():
     jsonFile.write(json.dumps(config))
     jsonFile.close()
 
+
     # Start primer builder
-    transcript_data(specie.get(), symbol.get())
+    transcript_data(specie_name, symbol_name)
+
+    # After finish
+    root.geometry('{}x{}'.format(400, 100))
+    center.destroy()
+    specie_label_txt.set("Done! the primers file saved in the output folder.")
+    symbol_label.destroy()
+    entry_symbol.destroy()
+    entry_specie.destroy()
+    button_submit.destroy()
+
+    button_close = Button(btm_frame, text="Close", width=20, command=on_close_click)
+    button_file = Button(btm_frame, text="Open file", width=20, command= lambda: open_output_file(specie_name, symbol_name))
+    button_close.grid(row=0, column=0, padx=(40, 0))
+    button_file.grid(row=0, column=1, padx=(5, 0))
     return
 
 
@@ -64,11 +87,13 @@ if __name__ == '__main__':
     main_label = StringVar()
     main_label.set("Primer Builder")
     specie = StringVar()
-    specie.set("")
+    specie.set("human")
     symbol = StringVar()
-    symbol.set("")
+    symbol.set("BRAF")
+    specie_label_txt = StringVar()
+    specie_label_txt.set("specie:")
     primer_label = Label(top_frame, textvariable=main_label, bg="yellow")
-    specie_label = Label(top_frame, text='Specie:')
+    specie_label = Label(top_frame, textvariable=specie_label_txt)
     symbol_label = Label(top_frame, text='Symbol:')
     entry_specie = Entry(top_frame, textvariable=specie)
     entry_symbol = Entry(top_frame, textvariable=symbol)
