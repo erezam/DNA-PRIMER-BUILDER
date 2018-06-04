@@ -30,17 +30,28 @@ def transcript_data(species, symbol):
                 # On junction options
                 print "Searching for FORWARD Primers..."
                 junc_optional_forward = get_optional_primers(cDna, juncArr, id_count, "forward")
-                junc_optional_reverse = get_optional_primers(cDna, juncArr, id_count, "reverse")
-                on_junk_sets = junktion_sets(junc_optional_forward,junc_optional_reverse)
 
                 # reverse
                 print "Searching for REVERSE Primers..."
+                # on junction reverse
+                junc_optional_reverse = get_optional_primers(cDna, juncArr, id_count, "reverse")
+
+                cr = 0
+                for rprimer in junc_optional_reverse:
+                    if rprimer.id == 4163:
+                        cr += 1
+                cf = 0
+                for fprimer in junc_optional_forward:
+                    if fprimer.id == 4126:
+                        cf += 1
+
+                # other
                 reverse_primers = get_reverse_primers(cDna, junc_optional_forward, id_count)
-                for primer in reverse_primers:
-                    primer.printPrimer()
 
                 # sets
                 print "Creating Primers pairs and giving scores..."
+                on_junk_sets = junktion_sets(junc_optional_forward, junc_optional_reverse)
+                on_junk_sets.sort(key=get_set_score, reverse=True)
                 primers_sets = get_optional_sets(junc_optional_forward, reverse_primers)
                 primers_sets.sort(key=get_set_score, reverse=True)
 
@@ -118,7 +129,9 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
             for index in junctionArray:
                 if ((index - th) >= 0) and ((index + (l-th)) < len(cdna)):
                     f = index - th
-                    t = index + (l-th)
+                    if f == 1445:
+                        pass
+                    t = f+l
                     if kind == "forward":
                         tmp_primer = Primer(id_count, "forward", cdna[f:t], f, round(th/l, 2))
                     else:
@@ -130,7 +143,9 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
                 if th != l*0.5:       # add both sides , to avoid duplicate primer on half len
                     if ((index - (l - th)) >= 0) and ((index + th) < len(cdna)):
                         f = index - (l-th)
-                        t = index + th
+                        if f == 1445:
+                            pass
+                        t = f + l
                         if kind == "forward":
                             tmp_primer = Primer(id_count, "forward", cdna[f:t],  f, round(th/l, 2))
                         else:
@@ -152,7 +167,8 @@ def primer_tests(optional_primers):
         if tm_test(primer):
             if gc_test(primer):
                 if syntax_tests(primer):
-                    primers.append(primer)
+                    if palindrome_test(primer):
+                        primers.append(primer)
 
     #print len(primers)
 
@@ -175,6 +191,12 @@ def gc_test(primer):
         return False
     return True
 
+# ======================= palindrome test ===========================================
+
+def palindrome_test(primer):
+    if primer.palindrome_check() > 5:
+        return False
+    return True
 
 # ======================= %syntaxTests test ===========================================
 
@@ -276,26 +298,24 @@ def get_optional_sets(forward_primers, reverse_primers):
 def sets_tests(primer_optional_sets):
     tm_diff_range = []
     #getting tm difference ranges from config file
-    for i in range(int(config["Temperature difference"]["Min"]), int(config["Temperature difference"]["Max"]) + 1):
-        tm_diff_range.append(i)
+    tm_dif_min = int(config["Temperature difference"]["Min"])
+    tm_dif_max = int(config["Temperature difference"]["Max"])
     primer_sets = []
     for set in primer_optional_sets:
-        for index in tm_diff_range:
-            if set.tm_dif() <= index:
-             primer_sets.append(set)
+        if tm_dif_min <= set.tm_dif() <= tm_dif_max:
+            primer_sets.append(set)
     return primer_sets
 
 
 # ============== Check for sets of forward&reverse on junktion  ==============================================
 
-def junktion_sets(forward_on_junk , reverse_on_junk):
-    on_junc_sets=[]
+def junktion_sets(forward_on_junk, reverse_on_junk):
+    on_junc_sets = []
     for forward_primer in forward_on_junk:
         for reverse_primer in reverse_on_junk:
-            if (reverse_primer.start_index+reverse_primer.length) - forward_primer.start_index in range\
-                        ((int(config["Amplicon Length"]["Min"])), (int(config["Amplicon Length"]["Max"]))+1):
-                        set = Primer_set(forward_primer, reverse_primer)
-                        on_junc_sets.append(set)
+            if (reverse_primer.start_index+reverse_primer.length)-forward_primer.start_index in range((int(config["Amplicon Length"]["Min"])), (int(config["Amplicon Length"]["Max"]))+1):
+                set = Primer_set(forward_primer, reverse_primer)
+                on_junc_sets.append(set)
 
     on_junc_sets = sets_tests(on_junc_sets)
     return on_junc_sets

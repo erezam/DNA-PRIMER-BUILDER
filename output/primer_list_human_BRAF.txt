@@ -5,124 +5,124 @@
 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CAGCTGATGCGCTGTCTT length: 18 Tm: 50 GC: 55 start index: 1188 
+id: 4126 Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
 REVERSE:
-Sequence: AAGACAGCGCATCAGCTG length: 18 Tm: 50 GC: 55 start index: 1188 
-tm difference between F & R: 0 
-Amplicon length: 18 
-Score: 33 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CAGCTGATGCGCTGTCTT length: 18 Tm: 50 GC: 55 start index: 1188 
-REVERSE:
-Sequence: AAGACAGCGCATCAGCTG length: 18 Tm: 50 GC: 55 start index: 1188 
-tm difference between F & R: 0 
-Amplicon length: 18 
-Score: 33 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CAGCTGATGCGCTGTCTT length: 18 Tm: 50 GC: 55 start index: 1188 
-REVERSE:
-Sequence: AAGACAGCGCATCAGCTG length: 18 Tm: 50 GC: 55 start index: 1188 
-tm difference between F & R: 0 
-Amplicon length: 18 
-Score: 33 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: CAGCTGATGCGCTGTCTT length: 18 Tm: 50 GC: 55 start index: 1188 
-REVERSE:
-Sequence: CGAAGACAGCGCATCAGC length: 18 Tm: 52 GC: 61 start index: 1190 
-tm difference between F & R: 2 
-Amplicon length: 20 
-Score: 37 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
-REVERSE:
-Sequence: CTGAGGTGTAGGTGCTGT length: 18 Tm: 50 GC: 55 start index: 1581 
-tm difference between F & R: 0 
-Amplicon length: 154 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
-REVERSE:
-Sequence: CTGAGGTGTAGGTGCTGT length: 18 Tm: 50 GC: 55 start index: 1581 
-tm difference between F & R: 0 
-Amplicon length: 154 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
-REVERSE:
-Sequence: CTGAGGTGTAGGTGCTGT length: 18 Tm: 50 GC: 55 start index: 1581 
-tm difference between F & R: 0 
-Amplicon length: 154 
-Score: 35 
-----------------------------------------------------------------------------------------------
-FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
-REVERSE:
-Sequence: TGAGGTGTAGGTGCTGTC length: 18 Tm: 50 GC: 55 start index: 1580 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
 Amplicon length: 153 
-Score: 35 
+Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
+id: 4126 Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
 REVERSE:
-Sequence: TGAGGTGTAGGTGCTGTC length: 18 Tm: 50 GC: 55 start index: 1580 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
 Amplicon length: 153 
-Score: 35 
+Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
+id: 4162 Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
 REVERSE:
-Sequence: TGAGGTGTAGGTGCTGTC length: 18 Tm: 50 GC: 55 start index: 1580 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
-Amplicon length: 153 
-Score: 35 
+Amplicon length: 152 
+Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
+id: 4162 Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
 REVERSE:
-Sequence: AGGTGTAGGTGCTGTCAC length: 18 Tm: 50 GC: 55 start index: 1578 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
-Amplicon length: 151 
-Score: 35 
+Amplicon length: 152 
+Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
+id: 4234 Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
 REVERSE:
-Sequence: AGGTGTAGGTGCTGTCAC length: 18 Tm: 50 GC: 55 start index: 1578 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
-Amplicon length: 151 
-Score: 35 
+Amplicon length: 150 
+Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
+id: 4234 Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
 REVERSE:
-Sequence: AGGTGTAGGTGCTGTCAC length: 18 Tm: 50 GC: 55 start index: 1578 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
-Amplicon length: 151 
-Score: 35 
+Amplicon length: 150 
+Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
+id: 4557 Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
 REVERSE:
-Sequence: TGAGGTGTAGGTGCTGTCA length: 19 Tm: 51 GC: 52 start index: 1579 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
+tm difference between F & R: 0 
+Amplicon length: 150 
+Score: 69 
+----------------------------------------------------------------------------------------------
+FORWARD :
+id: 4557 Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
+REVERSE:
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
+tm difference between F & R: 0 
+Amplicon length: 150 
+Score: 69 
+----------------------------------------------------------------------------------------------
+FORWARD :
+id: 4629 Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
+REVERSE:
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
+tm difference between F & R: 0 
+Amplicon length: 152 
+Score: 69 
+----------------------------------------------------------------------------------------------
+FORWARD :
+id: 4629 Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
+REVERSE:
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
+tm difference between F & R: 0 
+Amplicon length: 152 
+Score: 69 
+----------------------------------------------------------------------------------------------
+FORWARD :
+id: 3496 Sequence: TAGACGGGACTCGAGTGATG length: 20 Tm: 53 GC: 55 start index: 1445 
+REVERSE:
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 1 
 Amplicon length: 153 
-Score: 44 
+Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGA length: 18 Tm: 50 GC: 55 start index: 1445 
+id: 3496 Sequence: TAGACGGGACTCGAGTGATG length: 20 Tm: 53 GC: 55 start index: 1445 
 REVERSE:
-Sequence: TGAGGTGTAGGTGCTGTCA length: 19 Tm: 51 GC: 52 start index: 1579 
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 1 
 Amplicon length: 153 
-Score: 44 
+Score: 65 
+----------------------------------------------------------------------------------------------
+FORWARD :
+id: 3532 Sequence: AGACGGGACTCGAGTGATGA length: 20 Tm: 53 GC: 55 start index: 1446 
+REVERSE:
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
+tm difference between F & R: 1 
+Amplicon length: 152 
+Score: 65 
+----------------------------------------------------------------------------------------------
+FORWARD :
+id: 3532 Sequence: AGACGGGACTCGAGTGATGA length: 20 Tm: 53 GC: 55 start index: 1446 
+REVERSE:
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
+tm difference between F & R: 1 
+Amplicon length: 152 
+Score: 65 
+----------------------------------------------------------------------------------------------
+FORWARD :
+id: 3640 Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
+REVERSE:
+Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
+tm difference between F & R: 1 
+Amplicon length: 149 
+Score: 65 
 
 ******************************************************************************************************
 ********************************PRIMERS SETS of BRAF(human Gene):*************************************
@@ -130,7 +130,7 @@ Score: 44
 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
+id: 4126 Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
@@ -138,7 +138,7 @@ Amplicon length: 153
 Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
+id: 4162 Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
@@ -146,7 +146,7 @@ Amplicon length: 152
 Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
+id: 4234 Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
@@ -154,7 +154,7 @@ Amplicon length: 150
 Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
+id: 4557 Sequence: ACGGGACTCGAGTGATGATTG length: 21 Tm: 54 GC: 52 start index: 1448 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
@@ -162,7 +162,7 @@ Amplicon length: 150
 Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
+id: 4629 Sequence: AGACGGGACTCGAGTGATGAT length: 21 Tm: 54 GC: 52 start index: 1446 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 0 
@@ -170,7 +170,7 @@ Amplicon length: 152
 Score: 69 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CTCGAGTGATGATTGGGAG length: 19 Tm: 51 GC: 52 start index: 1454 
+id: 3171 Sequence: CTCGAGTGATGATTGGGAG length: 19 Tm: 51 GC: 52 start index: 1454 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 3 
@@ -178,7 +178,7 @@ Amplicon length: 144
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CTCGAGTGATGATTGGGAG length: 19 Tm: 51 GC: 52 start index: 1454 
+id: 3208 Sequence: CTCGAGTGATGATTGGGAG length: 19 Tm: 51 GC: 52 start index: 1454 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 3 
@@ -186,7 +186,7 @@ Amplicon length: 144
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGATG length: 20 Tm: 53 GC: 55 start index: 1445 
+id: 3496 Sequence: TAGACGGGACTCGAGTGATG length: 20 Tm: 53 GC: 55 start index: 1445 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 1 
@@ -194,7 +194,7 @@ Amplicon length: 153
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: AGACGGGACTCGAGTGATGA length: 20 Tm: 53 GC: 55 start index: 1446 
+id: 3532 Sequence: AGACGGGACTCGAGTGATGA length: 20 Tm: 53 GC: 55 start index: 1446 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 1 
@@ -202,7 +202,7 @@ Amplicon length: 152
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
+id: 3640 Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 1 
@@ -210,7 +210,7 @@ Amplicon length: 149
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
+id: 3640 Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
 REVERSE:
 Sequence: AACTGCTGAGGTGTAGGTGCT length: 21 Tm: 54 GC: 52 start index: 1583 
 tm difference between F & R: 1 
@@ -218,7 +218,7 @@ Amplicon length: 155
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
+id: 3909 Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCACA length: 21 Tm: 54 GC: 52 start index: 1577 
 tm difference between F & R: 1 
@@ -226,7 +226,7 @@ Amplicon length: 149
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
+id: 3909 Sequence: CGGGACTCGAGTGATGATTG length: 20 Tm: 53 GC: 55 start index: 1449 
 REVERSE:
 Sequence: AACTGCTGAGGTGTAGGTGCT length: 21 Tm: 54 GC: 52 start index: 1583 
 tm difference between F & R: 1 
@@ -234,7 +234,7 @@ Amplicon length: 155
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
+id: 4126 Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
 REVERSE:
 Sequence: TGAGGTGTAGGTGCTGTCAC length: 20 Tm: 53 GC: 55 start index: 1578 
 tm difference between F & R: 1 
@@ -242,7 +242,7 @@ Amplicon length: 153
 Score: 65 
 ----------------------------------------------------------------------------------------------
 FORWARD :
-Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
+id: 4126 Sequence: TAGACGGGACTCGAGTGATGA length: 21 Tm: 54 GC: 52 start index: 1445 
 REVERSE:
 Sequence: CTGAGGTGTAGGTGCTGTCA length: 20 Tm: 53 GC: 55 start index: 1579 
 tm difference between F & R: 1 

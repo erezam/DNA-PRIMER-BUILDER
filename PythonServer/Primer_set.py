@@ -23,8 +23,8 @@ class Primer_set (object):
         write_file.write(
             "----------------------------------------------------------------------------------------------\n" +
             "FORWARD :\n" +
-            "Sequence: %s length: %s Tm: %s GC: %s start index: %s \n" % (
-            self.forward_primer.sequence, self.forward_primer.length, self.forward_primer.primer_tm(),
+            "id: %s Sequence: %s length: %s Tm: %s GC: %s start index: %s \n" % (
+            self.forward_primer.id, self.forward_primer.sequence, self.forward_primer.length, self.forward_primer.primer_tm(),
             self.forward_primer.precent_gc(), self.forward_primer.start_index) +
             "REVERSE:\n" +
             "Sequence: %s length: %s Tm: %s GC: %s start index: %s \n" % (
