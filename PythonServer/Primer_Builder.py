@@ -129,9 +129,9 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
             for index in junctionArray:
                 if ((index - th) >= 0) and ((index + (l-th)) < len(cdna)):
                     f = index - th
-                    if f == 1445:
-                        pass
                     t = f+l
+                    if cdna[f:t] == reverse_nucleotide("TGAGGTGTAGGTGCTGTCACA"):
+                        pass
                     if kind == "forward":
                         tmp_primer = Primer(id_count, "forward", cdna[f:t], f, round(th/l, 2))
                     else:
@@ -140,12 +140,13 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
                         tmp_primer = Primer(id_count, "reverse", rev_seq, f, round(th/l, 2))
                     id_count += 1
                     optional_primers.append(tmp_primer)
+                    '''
                 if th != l*0.5:       # add both sides , to avoid duplicate primer on half len
                     if ((index - (l - th)) >= 0) and ((index + th) < len(cdna)):
                         f = index - (l-th)
-                        if f == 1445:
-                            pass
                         t = f + l
+                        if cdna[f:t] == reverse_nucleotide("TGAGGTGTAGGTGCTGTCACA"):
+                            pass
                         if kind == "forward":
                             tmp_primer = Primer(id_count, "forward", cdna[f:t],  f, round(th/l, 2))
                         else:
@@ -153,7 +154,7 @@ def get_optional_primers(cdna, junctionArray, id_count ,kind):
                             rev_seq = reverse_nucleotide(rev_seq)
                             tmp_primer = Primer(id_count, "reverse", rev_seq,  f, round(th/l, 2))
                         id_count += 1
-                        optional_primers.append(tmp_primer)
+                        optional_primers.append(tmp_primer)'''
 
     optional_primers = primer_tests(optional_primers)
     return optional_primers
@@ -167,8 +168,8 @@ def primer_tests(optional_primers):
         if tm_test(primer):
             if gc_test(primer):
                 if syntax_tests(primer):
-                    if palindrome_test(primer):
-                        primers.append(primer)
+                    #if palindrome_test(primer):
+                    primers.append(primer)
 
     #print len(primers)
 

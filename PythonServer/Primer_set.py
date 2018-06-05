@@ -27,8 +27,8 @@ class Primer_set (object):
             self.forward_primer.id, self.forward_primer.sequence, self.forward_primer.length, self.forward_primer.primer_tm(),
             self.forward_primer.precent_gc(), self.forward_primer.start_index) +
             "REVERSE:\n" +
-            "Sequence: %s length: %s Tm: %s GC: %s start index: %s \n" % (
-            self.reverse_primer.sequence, self.reverse_primer.length, self.reverse_primer.primer_tm(),
+            "id: %s Sequence: %s length: %s Tm: %s GC: %s start index: %s \n" % (
+                self.reverse_primer.id, self.reverse_primer.sequence, self.reverse_primer.length, self.reverse_primer.primer_tm(),
             self.reverse_primer.precent_gc(), self.reverse_primer.start_index) +
             "tm difference between F & R: %s \n" % (self.tm_dif()) +
             "Amplicon length: %s \n" % (self.get_amplicon_length()) +
