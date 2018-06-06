@@ -1,6 +1,9 @@
 import os
+from urllib2 import URLError
+
 from PythonServer.Primer_Builder import *
 from Tkinter import *
+import tkMessageBox
 
 
 def on_close_click():
@@ -27,6 +30,29 @@ def set_default_values():
     tm_dif_min.set(config_default["Temperature difference"]["Min"])
 
 
+def finish_view(specie_name, symbol_name):
+    root.geometry('{}x{}'.format(400, 100))
+    center.destroy()
+    specie_label_txt.set("Done! the primers file saved in the output folder.")
+    symbol_label.destroy()
+    entry_symbol.destroy()
+    entry_specie.destroy()
+    button_submit.destroy()
+    button_close = Button(btm_frame, text="Close", width=20, command=on_close_click)
+    button_file = Button(btm_frame, text="Open file", width=20,
+                         command=lambda: open_output_file(specie_name, symbol_name))
+    button_close.grid(row=0, column=0, padx=(40, 0))
+    button_file.grid(row=0, column=1, padx=(5, 0))
+    return
+
+
+def error_view(error):
+    if error == "type":
+        tkMessageBox.showerror("Error", "Wrong specie or symbol name")
+    elif error == "url":
+        tkMessageBox.showerror("Error", "No internet connection ")
+
+
 def on_submit_click():
     # Update config
     specie_name = specie.get()
@@ -45,23 +71,14 @@ def on_submit_click():
     jsonFile.write(json.dumps(config))
     jsonFile.close()
 
-
     # Start primer builder
-    transcript_data(specie_name, symbol_name)
-
-    # After finish
-    root.geometry('{}x{}'.format(400, 100))
-    center.destroy()
-    specie_label_txt.set("Done! the primers file saved in the output folder.")
-    symbol_label.destroy()
-    entry_symbol.destroy()
-    entry_specie.destroy()
-    button_submit.destroy()
-
-    button_close = Button(btm_frame, text="Close", width=20, command=on_close_click)
-    button_file = Button(btm_frame, text="Open file", width=20, command= lambda: open_output_file(specie_name, symbol_name))
-    button_close.grid(row=0, column=0, padx=(40, 0))
-    button_file.grid(row=0, column=1, padx=(5, 0))
+    try:
+        transcript_data(specie_name, symbol_name)
+        finish_view(specie_name, symbol_name)
+    except TypeError:
+        error_view("type")
+    except URLError:
+        error_view("url")
     return
 
 
