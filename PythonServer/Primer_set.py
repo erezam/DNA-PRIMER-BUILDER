@@ -4,7 +4,8 @@ import json
 config = json.load(open("config.json"))
 
 class Primer_set (object):
-    def __init__(self, forward_primer, reverse_primer):
+    def __init__(self, forward_primer, reverse_primer, id):
+        self.id = id
         self.forward_primer = forward_primer
         self.reverse_primer = reverse_primer
 
@@ -22,14 +23,15 @@ class Primer_set (object):
         write_file = open(file_name, "a")
         write_file.write(
             "----------------------------------------------------------------------------------------------\n" +
+            "set ID: {}\n".format(self.id) +
             "FORWARD :\n" +
-            "id: %s Sequence: %s length: %s Tm: %s GC: %s start index: %s \n" % (
+            "id: %s Sequence: %s length: %s Tm: %s GC: %s Palindrome: %s start index: %s \n" % (
             self.forward_primer.id, self.forward_primer.sequence, self.forward_primer.length, self.forward_primer.primer_tm(),
-            self.forward_primer.precent_gc(), self.forward_primer.start_index) +
+            self.forward_primer.precent_gc(), self.forward_primer.palindrome_length, self.forward_primer.start_index) +
             "REVERSE:\n" +
-            "id: %s Sequence: %s length: %s Tm: %s GC: %s start index: %s \n" % (
+            "id: %s Sequence: %s length: %s Tm: %s GC: %s Palindrome: %s start index: %s \n" % (
                 self.reverse_primer.id, self.reverse_primer.sequence, self.reverse_primer.length, self.reverse_primer.primer_tm(),
-            self.reverse_primer.precent_gc(), self.reverse_primer.start_index) +
+            self.reverse_primer.precent_gc(), self.forward_primer.palindrome_length, self.reverse_primer.start_index) +
             "tm difference between F & R: %s \n" % (self.tm_dif()) +
             "Amplicon length: %s \n" % (self.get_amplicon_length()) +
             "Score: %s \n" % (self.get_primers_set_score()))

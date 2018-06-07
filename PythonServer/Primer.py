@@ -14,7 +14,7 @@ class Primer (object):
         self.pair_id = pair_id
         self.junc_prec = junc_prec
         self.getPairsVector()
-        #self.palindrome_check()
+        self.palindrome_length = self.palindrome_check()
 
     def a_counter(self):
         aCount = 0
@@ -98,7 +98,10 @@ class Primer (object):
                                 num_of_mismatches = 0
                                 break
                         if palindrome_flag: #there is a palindrome
-                            pal_max_length = i
+                            if num_of_mismatches == 1:
+                                i = -i
+                            if abs(i) > abs(pal_max_length):
+                                pal_max_length = i
                             pal_dict.update({start_palindrome: i})
                         else:# not a palindrome, reset flag
                             palindrome_flag = True
@@ -115,18 +118,37 @@ class Primer (object):
         else:
             score = 1
 
-        return score
+        #return score
+        return pal_max_length
 
 
-    # ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
+# ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
 
     def get_primer_score(self):
-        return float(self.get_tm_score()) * float(self.get_gc_score()) * float(self.get_length_score()) #* float(self.palindrome_check())
-
+        return float(self.get_tm_score()) * float(self.get_gc_score()) * float(self.get_length_score()) * float(self.get_palindrome_score())
 
 
 # ================================ calculate score for each parameter============================================
 
+# =========================== get palindrom score ======================================================================
+
+    def get_palindrome_score(self):
+        score = 0
+
+        if self.palindrome_length >= 5:
+            score = 0
+        elif self.palindrome_length == 4:
+            score = 0.8
+        elif self.palindrome_length == 3:
+            score = 0.85
+        elif self.palindrome_length == 2:
+            score = 0.9
+        elif self.palindrome_length == 1:
+            score = 0.95
+        else:
+            score = 1
+
+        return score
 # =========================== get Tm score ======================================================================
     def get_tm_score(self):
         Avg = int(config["Tm"]["Avg"])

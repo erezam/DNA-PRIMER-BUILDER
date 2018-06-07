@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c17765-8351-4616-9594-a9076f28edc8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/primer_list_junktion_human_BRAF.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonServer/Primer.py" afterPath="$PROJECT_DIR$/PythonServer/Primer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonServer/Primer_Builder.py" afterPath="$PROJECT_DIR$/PythonServer/Primer_Builder.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonServer/Primer_set.py" afterPath="$PROJECT_DIR$/PythonServer/Primer_set.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonServer/config.json" afterPath="$PROJECT_DIR$/PythonServer/config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/primer_list_human_BRAF.txt" afterPath="$PROJECT_DIR$/output/primer_list_human_BRAF.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/primer_list_rat_Map1lc3a.txt" afterPath="$PROJECT_DIR$/output/primer_list_rat_Map1lc3a.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,20 +23,8 @@
       <file leaf-file-name="EnsemblRestClient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonServer/EnsemblRestClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="256">
               <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Primer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonServer/Primer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2315">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -46,9 +36,9 @@
         <entry file="file://$PROJECT_DIR$/PythonServer/config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="369" lean-forward="false" selection-start-line="0" selection-start-column="369" selection-end-line="0" selection-end-column="369" />
+              <caret line="0" column="367" lean-forward="false" selection-start-line="0" selection-start-column="367" selection-end-line="0" selection-end-column="367" />
               <folding>
-                <marker date="1527928568016" expanded="true" signature="0:1" ph="{...}" />
+                <marker date="1528364115597" expanded="true" signature="0:1" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -57,19 +47,45 @@
       <file leaf-file-name="Primer_set.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonServer/Primer_set.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="-392">
+              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Primer_Builder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Primer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonServer/Primer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3550">
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Primer_Builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonServer/Primer_Builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4325">
-              <caret line="228" column="4" lean-forward="false" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="1925">
+              <caret line="378" column="16" lean-forward="true" selection-start-line="378" selection-start-column="16" selection-end-line="378" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonServer/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1750">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,19 +102,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>GC</find>
-      <find>cdna</find>
-      <find>score</find>
-      <find>prin</find>
-      <find>species</find>
-      <find>sequnce</find>
-      <find>Primer_B</find>
-      <find>transcript_data</find>
       <find>config</find>
       <find>get_cdna</find>
       <find>genes</find>
       <find>len_range</find>
-      <find>get_optional_sets</find>
       <find>sets_tests</find>
       <find>reverse_nucleotide</find>
       <find>reverse_nuc</find>
@@ -106,14 +113,25 @@
       <find>labelText</find>
       <find>forw</find>
       <find>palindrom</find>
-      <find>primer_tests</find>
       <find>confi</find>
-      <find>id_count</find>
-      <find>write_to_file</find>
       <find>print</find>
-      <find>export_to_file</find>
       <find>get_optional_primers</find>
+      <find>con</find>
       <find>get_reverse_primers</find>
+      <find>reverse_primers</find>
+      <find>primers_sets</find>
+      <find>export_to_file</find>
+      <find>try</find>
+      <find>primer(</find>
+      <find>primer_tests</find>
+      <find>exc</find>
+      <find>remo</find>
+      <find>get_start_utr_length</find>
+      <find>write_to_file</find>
+      <find>id_count</find>
+      <find>get_optional_sets</find>
+      <find>Creating Primers pairs and giving scores</find>
+      <find>junktion_sets</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,9 +145,9 @@
         <option value="$PROJECT_DIR$/server/Primer.py" />
         <option value="$PROJECT_DIR$/PythonServer/EnsemblRestClient.py" />
         <option value="$PROJECT_DIR$/PythonServer/test.py" />
-        <option value="$PROJECT_DIR$/PythonServer/Main.py" />
         <option value="$PROJECT_DIR$/PythonServer/config.json" />
         <option value="$PROJECT_DIR$/PythonServer/Primer.py" />
+        <option value="$PROJECT_DIR$/PythonServer/Main.py" />
         <option value="$PROJECT_DIR$/PythonServer/Primer_set.py" />
         <option value="$PROJECT_DIR$/PythonServer/Primer_Builder.py" />
       </list>
@@ -155,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,7 +191,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527071335145</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fixing bugs">
+      <created>1528110591416</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1528110591417</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -429,14 +454,14 @@
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47760418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35206422" sideWeight="0.45364583" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22706422" sideWeight="0.4359375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22706422" sideWeight="0.5640625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31995413" sideWeight="0.48972973" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4392202" sideWeight="0.592973" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17708333" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35206422" sideWeight="0.5463542" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -517,7 +542,8 @@
     <MESSAGE value="Add palindrom method" />
     <MESSAGE value="update palindrom method" />
     <MESSAGE value="update export to file method" />
-    <option name="LAST_COMMIT_MESSAGE" value="update export to file method" />
+    <MESSAGE value="fixing bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -529,13 +555,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/PythonServer/Primer_Builder.py</url>
-          <line>341</line>
-          <option name="timeStamp" value="78" />
+          <line>330</line>
+          <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/PythonServer/Primer_Builder.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="80" />
+          <line>373</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonServer/Primer_Builder.py</url>
+          <line>378</line>
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -545,9 +576,13 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="81" />
+      <option name="time" value="122" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="symbol" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/PythonServer/Primer.py">
@@ -805,45 +840,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonServer/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="105" column="42" lean-forward="false" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonServer/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="369" lean-forward="false" selection-start-line="0" selection-start-column="369" selection-end-line="0" selection-end-column="369" />
+          <caret line="0" column="367" lean-forward="false" selection-start-line="0" selection-start-column="367" selection-end-line="0" selection-end-column="367" />
           <folding>
-            <marker date="1527928568016" expanded="true" signature="0:1" ph="{...}" />
+            <marker date="1528364115597" expanded="true" signature="0:1" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonServer/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonServer/EnsemblRestClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="256">
           <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonServer/Primer_set.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonServer/Primer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2315">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -852,9 +872,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonServer/Primer_Builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4325">
-          <caret line="228" column="4" lean-forward="false" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
+        <state relative-caret-position="1925">
+          <caret line="378" column="16" lean-forward="true" selection-start-line="378" selection-start-column="16" selection-end-line="378" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonServer/Primer_set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonServer/Primer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3550">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
