@@ -7,14 +7,13 @@ import requests
 from Primer import Primer
 from Primer_set import Primer_set
 from EnsemblRestClient import EnsemblRestClient
-
+from TmPredictor import TmPredictor
 config = json.load(open('config.json'))
 
 
-
-
-
 def transcript_data(species, symbol):
+    tm_predictor = TmPredictor()
+    print(tm_predictor.regr)
     client = EnsemblRestClient()
     variants = client.get_variants(species, symbol)
     transcripts = variants['Transcript']
