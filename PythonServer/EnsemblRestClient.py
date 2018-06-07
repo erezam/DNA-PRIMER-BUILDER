@@ -1,7 +1,7 @@
-from __future__ import division
+
 import sys
-import urllib
-import urllib2
+import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.error, urllib.parse
 import json
 import time
 
@@ -23,7 +23,7 @@ class EnsemblRestClient(object):
             hdrs['Content-Type'] = 'application/json'
 
         if params:
-            endpoint += '?' + urllib.urlencode(params)
+            endpoint += '?' + urllib.parse.urlencode(params)
 
         data = None
 
@@ -36,14 +36,14 @@ class EnsemblRestClient(object):
             self.req_count = 0
 
         try:
-            request = urllib2.Request(self.server + endpoint, headers=hdrs)
-            response = urllib2.urlopen(request)
+            request = urllib.request.Request(self.server + endpoint, headers=hdrs)
+            response = urllib.request.urlopen(request)
             content = response.read()
             if content:
                 data = json.loads(content)
             self.req_count += 1
 
-        except urllib2.HTTPError, e:
+        except urllib.error.HTTPError as e:
             # check if we are being rate limited by the server
             if e.code == 429:
                 if 'Retry-After' in e.headers:

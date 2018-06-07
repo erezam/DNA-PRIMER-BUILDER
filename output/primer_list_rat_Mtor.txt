@@ -1,0 +1,14 @@
+
+*************************************************************************************************
+********************Forward & Reverse on junktion PRIMERS SETS of Mtor(rat Gene):**************
+*************************************************************************************************
+
+----------------------------------------------------------------------------------------------
+set ID: 1
+FORWARD :
+id: 8684 Sequence: CCTCAGTGGTACAGGCACACA length: 21 Tm: 57.845480493152515 GC: 57 Palindrome: -4 start index: 704 
+REVERSE:
+id: 7341 Sequence: CTCAGACGCTCTCCCTCCAT length: 20 Tm: 58.27733667358347 GC: 60 Palindrome: -4 start index: 842 
+tm difference between F & R: 0.4318561804309553 
+Amplicon length: 158 
+Score: 64 

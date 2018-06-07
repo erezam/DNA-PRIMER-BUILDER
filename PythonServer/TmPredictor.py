@@ -8,27 +8,27 @@ from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 
 
-class TmPredictor(object):
-    def __init__(self):
-        # Create linear regression object
-        global regr
-        regr = linear_model.LinearRegression()
-        # read data from json
-        data = json.load(open("Data.json"))
-        pairs_vectors = []
-        tm = []
-        for primer in data["Primers"]:
-            pairs_vectors.append(get_pairs_vector(primer["seq"]))
-            tm.append(float(primer["tm"]))
+def init():
+    # Create linear regression object
+    global regr
+    regr = linear_model.LinearRegression()
+    # read data from json
+    data = json.load(open("Data.json"))
+    pairs_vectors = []
+    tm = []
+    for primer in data["Primers"]:
+        pairs_vectors.append(get_pairs_vector(primer["seq"]))
+        tm.append(float(primer["tm"]))
 
-        pairs_vectors_sums = []
-        for vector in pairs_vectors:
-            vector = list(vector.values())
-            vector.append(1)
-            pairs_vectors_sums.append(vector)
+    pairs_vectors_sums = []
+    for vector in pairs_vectors:
+        vector = list(vector.values())
+        #vector.append(1)
+        pairs_vectors_sums.append(vector)
 
-        # Train the model using the training sets
-        regr.fit(pairs_vectors_sums, tm)
+    # Train the model using the training sets
+    regr.fit(pairs_vectors_sums, tm)
+    #print('Coefficients: \n', regr.coef_)
 
 
 def get_pairs_vector(seq):

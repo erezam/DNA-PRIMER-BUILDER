@@ -1,9 +1,9 @@
 import os
-from urllib.error import URLError
+from urllib2 import URLError
 
 from PythonServer.Primer_Builder import *
-from tkinter import *
-import tkinter.messagebox
+from Tkinter import *
+import tkMessageBox
 
 
 def on_close_click():
@@ -48,9 +48,9 @@ def finish_view(specie_name, symbol_name):
 
 def error_view(error):
     if error == "type":
-        tkinter.messagebox.showerror("Error", "Wrong specie or symbol name")
+        tkMessageBox.showerror("Error", "Wrong specie or symbol name")
     elif error == "url":
-        tkinter.messagebox.showerror("Error", "No internet connection ")
+        tkMessageBox.showerror("Error", "No internet connection ")
 
 
 def on_submit_click():

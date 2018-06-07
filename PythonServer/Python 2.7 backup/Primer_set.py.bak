@@ -14,7 +14,7 @@ class Primer_set (object):
         return tm_difference
 
     def set_print(self):
-        print("Forward id: %s - Reverse id:%s" %(self.forward_primer.id , self.reverse_primer.id))
+        print "Forward id: %s - Reverse id:%s" %(self.forward_primer.id , self.reverse_primer.id)
 
     def get_amplicon_length(self):
         return (self.reverse_primer.start_index+self.reverse_primer.length) - self.forward_primer.start_index

@@ -25,9 +25,9 @@
 
 	"GC Percent":
 	{
-		"Min":"40",
-		"Max":"62",
-		"Avg":"53",
+		"Min":"42",
+		"Max":"71",
+		"Avg":"55",
 		"STDDEV":"1"
 	},
 		"Threshold":

@@ -8,7 +8,7 @@ import time
 
 class EnsemblRestClient(object):
     # ===================== init ====================================================
-    def __init__(self, server='https://blast.ncbi.nlm.nih.gov', reqs_per_sec=15):
+    def __init__(self, server='http://rest.ensembl.org', reqs_per_sec=15):
         self.server = server
         self.reqs_per_sec = reqs_per_sec
         self.req_count = 0
@@ -20,7 +20,7 @@ class EnsemblRestClient(object):
             hdrs = {}
 
         if 'Content-Type' not in hdrs:
-            hdrs['Content-Type'] = 'application/x-www-form-urlencoded'
+            hdrs['Content-Type'] = 'application/json'
 
         if params:
             endpoint += '?' + urllib.urlencode(params)
@@ -59,7 +59,7 @@ class EnsemblRestClient(object):
     # ===================== get variants query =============================================
     def get_variants(self, species, symbol):
         genes = self.perform_rest_action(
-            '/blast/Blast.cgi/{0}/{1}'.format(species, symbol),
+            '/xrefs/symbol/{0}/{1}'.format(species, symbol),
             params={'object_type': 'gene'}
         )
         if genes:
