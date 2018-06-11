@@ -6,15 +6,20 @@ from tkinter import *
 import tkinter.messagebox
 
 
+# ==================== On close ================================
 def on_close_click():
     root.destroy()
     return
 
 
+# ==================== Open output file on finish ================================
+
 def open_output_file(specie_name, symbol_name):
     file = "cd ../output & notepad.exe primer_list_" + specie_name + "_" + symbol_name + ".txt"
     os.system(file)
 
+
+# ==================== Back to default values ================================
 
 def set_default_values():
     config_default = json.load(open("config defualt.json"))
@@ -29,6 +34,8 @@ def set_default_values():
     tm_dif_max.set(config_default["Temperature difference"]["Max"])
     tm_dif_min.set(config_default["Temperature difference"]["Min"])
 
+
+# ==================== Create finish view ================================
 
 def finish_view(specie_name, symbol_name):
     root.geometry('{}x{}'.format(400, 100))
@@ -46,12 +53,16 @@ def finish_view(specie_name, symbol_name):
     return
 
 
+# ==================== error alert box ================================
+
 def error_view(error):
     if error == "type":
         tkinter.messagebox.showerror("Error", "Wrong specie or symbol name")
     elif error == "url":
         tkinter.messagebox.showerror("Error", "No internet connection ")
 
+
+# ==================== Submit, start primer building ================================
 
 def on_submit_click():
     # Update config
@@ -73,7 +84,7 @@ def on_submit_click():
 
     # Start primer builder
     try:
-        transcript_data(specie_name, symbol_name)
+        build(specie_name, symbol_name)
         finish_view(specie_name, symbol_name)
     except TypeError:
         error_view("type")
@@ -82,11 +93,13 @@ def on_submit_click():
     return
 
 
+# ==================== main , init GUI user interface ================================
+
 if __name__ == '__main__':
     config = json.load(open("config.json"))
     root = Tk()
     root.title('Primer Builder')
-    root.geometry('{}x{}'.format(500, 250))
+    root.geometry('{}x{}'.format(550, 250))
     # create all of the main containers
     top_frame = Frame(root, bg='red', width=450, height=50, pady=3)
     center = Frame(root, width=490, height=20, padx=3, pady=3)
@@ -104,9 +117,9 @@ if __name__ == '__main__':
     main_label = StringVar()
     main_label.set("Primer Builder")
     specie = StringVar()
-    specie.set("human")
+    specie.set("")
     symbol = StringVar()
-    symbol.set("BRAF")
+    symbol.set("")
     specie_label_txt = StringVar()
     specie_label_txt.set("specie:")
     primer_label = Label(top_frame, textvariable=main_label, bg="yellow")
@@ -116,8 +129,8 @@ if __name__ == '__main__':
     entry_symbol = Entry(top_frame, textvariable=symbol)
 
     # layout the widgets in the top frame
-    primer_label.grid(row=0, columnspan=100, padx=(50, 0), pady=10)
-    specie_label.grid(row=1, column=0, padx=(50, 10))
+    primer_label.grid(row=0, columnspan=100, padx=(80, 0), pady=10)
+    specie_label.grid(row=1, column=0, padx=(80, 10))
     symbol_label.grid(row=1, column=2, padx=10)
     entry_specie.grid(row=1, column=1, padx=2)
     entry_symbol.grid(row=1, column=3, padx=2)
@@ -194,5 +207,5 @@ if __name__ == '__main__':
 
     button_submit = Button(btm_frame, text="Get Primers", width=20, command=on_submit_click)
     button_default = Button(btm_frame, text="Default values", width=20, command=set_default_values)
-    button_submit.grid(row=0, column=0, padx=(170, 0))
+    button_submit.grid(row=0, column=0, padx=(195, 0))
     root.mainloop()

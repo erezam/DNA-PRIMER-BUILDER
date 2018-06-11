@@ -73,7 +73,6 @@ class Primer (object):
     def palindrome_check(self):
         pal_max_length = 0
         pal_dict = dict()
-        score = 0
         num_of_mismatches = 0
         palindrome_flag = True
         for i in range(3,len(self.sequence)):# num of nucleotide to check
@@ -107,27 +106,14 @@ class Primer (object):
                             pal_dict.update({start_palindrome: i})
                         else:# not a palindrome, reset flag
                             palindrome_flag = True
-        if pal_max_length >= 5:
-            score = 0
-        elif pal_max_length == 4:
-            score = 0.8
-        elif pal_max_length == 3:
-            score = 0.85
-        elif pal_max_length == 2:
-            score = 0.9
-        elif pal_max_length == 1:
-            score = 0.95
-        else:
-            score = 1
 
-        #return score
         return pal_max_length
 
 
 # ========== calculate the score of the primer, based on multiplication of the score of each parameter ===========
 
     def get_primer_score(self):
-        return float(self.get_tm_score()) * float(self.get_gc_score()) * float(self.get_length_score()) * float(self.get_palindrome_score())
+        return 50*float(self.get_tm_score()) + 20*float(self.get_gc_score()) + 20*float(self.get_length_score()) + 10*float(self.get_palindrome_score())
 
 
 # ================================ calculate score for each parameter============================================
@@ -136,19 +122,25 @@ class Primer (object):
 
     def get_palindrome_score(self):
         score = 0
+        mismatch_flag = False
+        if self.palindrome_length < 0:#there is one mismatch in the palindrome
+            mismatch_flag = True
 
-        if self.palindrome_length >= 5:
+        if abs(self.palindrome_length) > 6:
             score = 0
-        elif self.palindrome_length == 4:
+        if abs(self.palindrome_length) == 6:
             score = 0.8
-        elif self.palindrome_length == 3:
+        if abs(self.palindrome_length) == 5:
             score = 0.85
-        elif self.palindrome_length == 2:
+        elif abs(self.palindrome_length) == 4:
             score = 0.9
-        elif self.palindrome_length == 1:
+        elif abs(self.palindrome_length) == 3:
             score = 0.95
         else:
             score = 1
+
+        if mismatch_flag:
+            score += 0.05
 
         return score
 # =========================== get Tm score ======================================================================

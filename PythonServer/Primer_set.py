@@ -22,24 +22,27 @@ class Primer_set (object):
     def write_to_file(self, file_name):
         write_file = open(file_name, "a")
         write_file.write(
-            "----------------------------------------------------------------------------------------------\n" +
+            "----------------------------------------------------------------------------------\n" +
             "set ID: {}\n".format(self.id) +
-            "FORWARD :\n" +
-            "id: %s Sequence: %s length: %s Tm: %s GC: %s Palindrome: %s start index: %s \n" % (
+            "FORWARD:\n" +
+            "\tid:%s, Sequence:%s, length: %s\n\tTm:%.2f, GC:%s, Palindrome:%s, start index:%s\n" % (
             self.forward_primer.id, self.forward_primer.sequence, self.forward_primer.length, self.forward_primer.primer_tm(),
             self.forward_primer.precent_gc(), self.forward_primer.palindrome_length, self.forward_primer.start_index) +
             "REVERSE:\n" +
-            "id: %s Sequence: %s length: %s Tm: %s GC: %s Palindrome: %s start index: %s \n" % (
+            "\tid:%s, Sequence:%s, length: %s\n\tTm:%.2f, GC:%s, Palindrome:%s, start index:%s\n" % (
                 self.reverse_primer.id, self.reverse_primer.sequence, self.reverse_primer.length, self.reverse_primer.primer_tm(),
             self.reverse_primer.precent_gc(), self.forward_primer.palindrome_length, self.reverse_primer.start_index) +
-            "tm difference between F & R: %s \n" % (self.tm_dif()) +
+            "tm difference between F & R: %.2f \n" % (self.tm_dif()) +
             "Amplicon length: %s \n" % (self.get_amplicon_length()) +
             "Score: %s \n" % (self.get_primers_set_score()))
         write_file.close()
 
+# =========================== get primers set score ======================================================================
     def get_primers_set_score(self):
-        return int((self.forward_primer.get_primer_score() *
-                    self.reverse_primer.get_primer_score() * self.get_amplicon_length_score())*100)
+        forward_scr = self.forward_primer.get_primer_score()
+        reverse_scr = self.reverse_primer.get_primer_score()
+        amplicon_scr = 100*self.get_amplicon_length_score()
+        return int(0.45*forward_scr + 0.45*reverse_scr + 0.1*amplicon_scr)
 
 
     def get_amplicon_length_score(self):
