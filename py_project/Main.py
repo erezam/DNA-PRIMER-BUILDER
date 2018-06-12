@@ -1,10 +1,10 @@
 import os
 from urllib.error import URLError
 
-from PythonServer.Primer_Builder import *
+import Primer_Builder
 from tkinter import *
 import tkinter.messagebox
-
+import json
 
 # ==================== On close ================================
 def on_close_click():
@@ -92,7 +92,7 @@ def on_submit_click():
 
     # Start primer builder
     try:
-        build(specie_name, symbol_name)
+        Primer_Builder.build(specie_name, symbol_name)
         finish_view(specie_name, symbol_name)
     except TypeError:
         error_view("type")

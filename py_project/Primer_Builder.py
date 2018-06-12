@@ -4,9 +4,9 @@ import json
 import requests
 
 # ===================================================================================
-from .Primer import Primer
-from .Primer_set import Primer_set
-from .EnsemblRestClient import EnsemblRestClient
+from Primer import Primer
+from Primer_set import Primer_set
+from EnsemblRestClient import EnsemblRestClient
 import TmPredictor
 # load config file with the parameters ranges
 config = json.load(open('config.json'))

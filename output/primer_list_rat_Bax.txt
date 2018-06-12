@@ -1,0 +1,14 @@
+
+*************************************************************************************************
+********************Forward & Reverse on junktion PRIMERS SETS of Bax(rat Gene):**************
+*************************************************************************************************
+
+----------------------------------------------------------------------------------------------
+set ID: 1
+FORWARD :
+id: 853 Sequence: CTGCAGAGGATGATTGCTGATG length: 22 Tm: 59.163552501229596 GC: 50 Palindrome: -5 start index: 225 
+REVERSE:
+id: 564 Sequence: CAGGGCCTTGAGCACCAGT length: 19 Tm: 58.92758304944452 GC: 63 Palindrome: -5 start index: 356 
+tm difference between F & R: 0.2359694517850741 
+Amplicon length: 150 
+Score: 51 

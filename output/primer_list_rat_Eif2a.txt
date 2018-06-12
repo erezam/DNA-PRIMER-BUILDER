@@ -1,0 +1,14 @@
+
+*************************************************************************************************
+********************Forward & Reverse on junktion PRIMERS SETS of Eif2a(rat Gene):**************
+*************************************************************************************************
+
+----------------------------------------------------------------------------------------------
+set ID: 1
+FORWARD :
+id: 1973 Sequence: GTTCCAAGCTGCATGAAGAGG length: 21 Tm: 58.87166110168705 GC: 52 Palindrome: -5 start index: 1396 
+REVERSE:
+id: 1974 Sequence: TTCTTGCCTCCTGTTTTGCAG length: 21 Tm: 59.467822989879245 GC: 47 Palindrome: -5 start index: 1510 
+tm difference between F & R: 0.5961618881921922 
+Amplicon length: 135 
+Score: 93 
