@@ -35,9 +35,7 @@ def build(species, symbol):
     # forward
     print("Searching for FORWARD Primers...")
     junc_optional_forward = get_optional_primers(cDna, juncArr, id_count, "forward")
-    for primer in junc_optional_forward:
-        if primer.id == 1034:
-            print ("juncccccc")
+
     # reverse
     print("Searching for REVERSE Primers...")
     # on junction reverse
@@ -182,8 +180,6 @@ def primer_tests(optional_primers):
                 #if syntax_tests(primer):
                 if palindrome_test(primer):
                     primers.append(primer)
-
-    print(len(optional_primers)-len(primers))
     return primers
 
 
