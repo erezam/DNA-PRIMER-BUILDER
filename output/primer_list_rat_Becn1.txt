@@ -4,1102 +4,1102 @@
 **********************************************************************************
 
 ----------------------------------------------------------------------------------
-set ID: 41097
+set ID: 42630
 FORWARD:
 	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
-	Tm:57.62, GC:42, Palindrome:-3, start index:125
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.33 
 Amplicon length: 148 
 Score: 99 
 ----------------------------------------------------------------------------------
-set ID: 57598
+set ID: 59762
 FORWARD:
 	id:601, Sequence:ACAGCTCCATTACTTACCACA, length: 21
-	Tm:57.63, GC:42, Palindrome:-3, start index:125
+	Tm:57.63, GC:42, Palindrome:-2.5, start index:125
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.32 
 Amplicon length: 148 
 Score: 99 
 ----------------------------------------------------------------------------------
-set ID: 59214
+set ID: 61404
 FORWARD:
 	id:621, Sequence:TCACAGCTCCATTACTTACCA, length: 21
-	Tm:57.68, GC:42, Palindrome:-3, start index:123
+	Tm:57.68, GC:42, Palindrome:-2.5, start index:123
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.28 
 Amplicon length: 150 
 Score: 99 
 ----------------------------------------------------------------------------------
-set ID: 63170
-FORWARD:
-	id:661, Sequence:GAACTCACAGCTCCATTACTT, length: 21
-	Tm:57.60, GC:42, Palindrome:-5, start index:119
-REVERSE:
-	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-5, start index:252
-tm difference between F & R: 0.35 
-Amplicon length: 154 
-Score: 99 
-----------------------------------------------------------------------------------
-set ID: 34530
-FORWARD:
-	id:364, Sequence:TCAAGGTCACTGGAGACC, length: 18
-	Tm:57.78, GC:55, Palindrome:-6, start index:342
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.36 
-Amplicon length: 157 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 34532
-FORWARD:
-	id:364, Sequence:TCAAGGTCACTGGAGACC, length: 18
-	Tm:57.78, GC:55, Palindrome:-6, start index:342
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.58 
-Amplicon length: 152 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 35365
-FORWARD:
-	id:374, Sequence:CTCAAGGTCACTGGAGAC, length: 18
-	Tm:57.50, GC:55, Palindrome:-6, start index:341
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.64 
-Amplicon length: 158 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 35367
-FORWARD:
-	id:374, Sequence:CTCAAGGTCACTGGAGAC, length: 18
-	Tm:57.50, GC:55, Palindrome:-6, start index:341
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.85 
-Amplicon length: 153 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 36436
-FORWARD:
-	id:384, Sequence:ACTCAAGGTCACTGGAGA, length: 18
-	Tm:57.50, GC:50, Palindrome:-6, start index:340
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.64 
-Amplicon length: 159 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 36438
-FORWARD:
-	id:384, Sequence:ACTCAAGGTCACTGGAGA, length: 18
-	Tm:57.50, GC:50, Palindrome:-6, start index:340
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.85 
-Amplicon length: 154 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 37507
-FORWARD:
-	id:394, Sequence:GACTCAAGGTCACTGGAG, length: 18
-	Tm:57.50, GC:55, Palindrome:-6, start index:339
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.64 
-Amplicon length: 160 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 37509
-FORWARD:
-	id:394, Sequence:GACTCAAGGTCACTGGAG, length: 18
-	Tm:57.50, GC:55, Palindrome:-6, start index:339
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.85 
-Amplicon length: 155 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 41105
+set ID: 42638
 FORWARD:
 	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
-	Tm:57.62, GC:42, Palindrome:-3, start index:125
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
 REVERSE:
 	id:652, Sequence:AATAAATGGCTCCTCTCCTGA, length: 21
-	Tm:57.77, GC:42, Palindrome:-3, start index:188
+	Tm:57.77, GC:42, Palindrome:-2.5, start index:188
 tm difference between F & R: 0.15 
 Amplicon length: 84 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 41133
+set ID: 42666
 FORWARD:
 	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
-	Tm:57.62, GC:42, Palindrome:-3, start index:125
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
 REVERSE:
 	id:813, Sequence:TTTCTGTAGACATCATCCTGGCT, length: 23
-	Tm:58.33, GC:43, Palindrome:-3, start index:250
+	Tm:58.33, GC:43, Palindrome:-2.5, start index:250
 tm difference between F & R: 0.71 
 Amplicon length: 148 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 42930
+set ID: 44558
 FORWARD:
 	id:451, Sequence:TCACAGCTCCATTACTTAC, length: 19
-	Tm:57.35, GC:42, Palindrome:-3, start index:123
+	Tm:57.35, GC:42, Palindrome:-2.5, start index:123
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.60 
 Amplicon length: 150 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 43380
-FORWARD:
-	id:454, Sequence:CTCAAGGTCACTGGAGACC, length: 19
-	Tm:57.83, GC:57, Palindrome:-6, start index:341
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.31 
-Amplicon length: 158 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 43382
-FORWARD:
-	id:454, Sequence:CTCAAGGTCACTGGAGACC, length: 19
-	Tm:57.83, GC:57, Palindrome:-6, start index:341
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.53 
-Amplicon length: 153 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 43386
-FORWARD:
-	id:454, Sequence:CTCAAGGTCACTGGAGACC, length: 19
-	Tm:57.83, GC:57, Palindrome:-6, start index:341
-REVERSE:
-	id:605, Sequence:ACATCTCCAAACAGCGTTTGT, length: 21
-	Tm:58.15, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.32 
-Amplicon length: 160 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 44001
+set ID: 45665
 FORWARD:
 	id:461, Sequence:CTCACAGCTCCATTACTTA, length: 19
-	Tm:57.39, GC:42, Palindrome:-3, start index:122
+	Tm:57.39, GC:42, Palindrome:-2.5, start index:122
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.56 
 Amplicon length: 151 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 44451
-FORWARD:
-	id:464, Sequence:ACTCAAGGTCACTGGAGAC, length: 19
-	Tm:57.51, GC:52, Palindrome:-6, start index:340
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.63 
-Amplicon length: 159 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 44453
-FORWARD:
-	id:464, Sequence:ACTCAAGGTCACTGGAGAC, length: 19
-	Tm:57.51, GC:52, Palindrome:-6, start index:340
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.85 
-Amplicon length: 154 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 45072
+set ID: 46772
 FORWARD:
 	id:471, Sequence:ACTCACAGCTCCATTACTT, length: 19
-	Tm:57.40, GC:42, Palindrome:-3, start index:121
+	Tm:57.40, GC:42, Palindrome:-2.5, start index:121
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.55 
 Amplicon length: 152 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 45522
-FORWARD:
-	id:474, Sequence:GACTCAAGGTCACTGGAGA, length: 19
-	Tm:57.72, GC:52, Palindrome:-6, start index:339
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.42 
-Amplicon length: 160 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 45524
-FORWARD:
-	id:474, Sequence:GACTCAAGGTCACTGGAGA, length: 19
-	Tm:57.72, GC:52, Palindrome:-6, start index:339
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.63 
-Amplicon length: 155 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 46143
-FORWARD:
-	id:481, Sequence:AACTCACAGCTCCATTACT, length: 19
-	Tm:57.15, GC:42, Palindrome:-4, start index:120
-REVERSE:
-	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-4, start index:252
-tm difference between F & R: 0.80 
-Amplicon length: 153 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 46593
-FORWARD:
-	id:484, Sequence:AGACTCAAGGTCACTGGAG, length: 19
-	Tm:57.72, GC:52, Palindrome:-6, start index:338
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.42 
-Amplicon length: 161 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 46595
-FORWARD:
-	id:484, Sequence:AGACTCAAGGTCACTGGAG, length: 19
-	Tm:57.72, GC:52, Palindrome:-6, start index:338
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.63 
-Amplicon length: 156 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 46900
-FORWARD:
-	id:488, Sequence:ATTTCAGAGGTACCGACTT, length: 19
-	Tm:58.45, GC:42, Palindrome:-4, start index:967
-REVERSE:
-	id:509, Sequence:GGCAACTCCTTAGATTTGT, length: 19
-	Tm:58.22, GC:42, Palindrome:-4, start index:1026
-tm difference between F & R: 0.23 
-Amplicon length: 78 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 46915
-FORWARD:
-	id:488, Sequence:ATTTCAGAGGTACCGACTT, length: 19
-	Tm:58.45, GC:42, Palindrome:-4, start index:967
-REVERSE:
-	id:669, Sequence:AACGGCAACTCCTTAGATTTG, length: 21
-	Tm:58.35, GC:42, Palindrome:-4, start index:1027
-tm difference between F & R: 0.10 
-Amplicon length: 81 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 46918
-FORWARD:
-	id:488, Sequence:ATTTCAGAGGTACCGACTT, length: 19
-	Tm:58.45, GC:42, Palindrome:-4, start index:967
-REVERSE:
-	id:699, Sequence:GGCAACTCCTTAGATTTGTCT, length: 21
-	Tm:58.31, GC:42, Palindrome:-4, start index:1024
-tm difference between F & R: 0.14 
-Amplicon length: 78 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 47971
-FORWARD:
-	id:498, Sequence:AATTTCAGAGGTACCGACT, length: 19
-	Tm:58.20, GC:42, Palindrome:-3, start index:966
-REVERSE:
-	id:509, Sequence:GGCAACTCCTTAGATTTGT, length: 19
-	Tm:58.22, GC:42, Palindrome:-3, start index:1026
-tm difference between F & R: 0.02 
-Amplicon length: 79 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 47986
-FORWARD:
-	id:498, Sequence:AATTTCAGAGGTACCGACT, length: 19
-	Tm:58.20, GC:42, Palindrome:-3, start index:966
-REVERSE:
-	id:669, Sequence:AACGGCAACTCCTTAGATTTG, length: 21
-	Tm:58.35, GC:42, Palindrome:-3, start index:1027
-tm difference between F & R: 0.15 
-Amplicon length: 82 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 47989
-FORWARD:
-	id:498, Sequence:AATTTCAGAGGTACCGACT, length: 19
-	Tm:58.20, GC:42, Palindrome:-3, start index:966
-REVERSE:
-	id:699, Sequence:GGCAACTCCTTAGATTTGTCT, length: 21
-	Tm:58.31, GC:42, Palindrome:-3, start index:1024
-tm difference between F & R: 0.11 
-Amplicon length: 79 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49042
-FORWARD:
-	id:508, Sequence:AAATTTCAGAGGTACCGAC, length: 19
-	Tm:58.13, GC:42, Palindrome:3, start index:965
-REVERSE:
-	id:509, Sequence:GGCAACTCCTTAGATTTGT, length: 19
-	Tm:58.22, GC:42, Palindrome:3, start index:1026
-tm difference between F & R: 0.08 
-Amplicon length: 80 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49057
-FORWARD:
-	id:508, Sequence:AAATTTCAGAGGTACCGAC, length: 19
-	Tm:58.13, GC:42, Palindrome:3, start index:965
-REVERSE:
-	id:669, Sequence:AACGGCAACTCCTTAGATTTG, length: 21
-	Tm:58.35, GC:42, Palindrome:3, start index:1027
-tm difference between F & R: 0.22 
-Amplicon length: 83 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49060
-FORWARD:
-	id:508, Sequence:AAATTTCAGAGGTACCGAC, length: 19
-	Tm:58.13, GC:42, Palindrome:3, start index:965
-REVERSE:
-	id:699, Sequence:GGCAACTCCTTAGATTTGTCT, length: 21
-	Tm:58.31, GC:42, Palindrome:3, start index:1024
-tm difference between F & R: 0.18 
-Amplicon length: 80 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49157
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:470, Sequence:TCCACGTCCATCCTGTACG, length: 19
-	Tm:58.20, GC:57, Palindrome:-6, start index:1173
-tm difference between F & R: 0.31 
-Amplicon length: 166 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49158
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:480, Sequence:CCACGTCCATCCTGTACGG, length: 19
-	Tm:58.28, GC:63, Palindrome:-6, start index:1172
-tm difference between F & R: 0.39 
-Amplicon length: 165 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49159
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:490, Sequence:CACGTCCATCCTGTACGGA, length: 19
-	Tm:58.18, GC:57, Palindrome:-6, start index:1171
-tm difference between F & R: 0.29 
-Amplicon length: 164 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49160
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:500, Sequence:ACGTCCATCCTGTACGGAA, length: 19
-	Tm:58.16, GC:52, Palindrome:-6, start index:1170
-tm difference between F & R: 0.27 
-Amplicon length: 163 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49161
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:510, Sequence:CGTCCATCCTGTACGGAAG, length: 19
-	Tm:58.37, GC:57, Palindrome:-6, start index:1169
-tm difference between F & R: 0.48 
-Amplicon length: 162 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49165
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:550, Sequence:CTCCACGTCCATCCTGTACG, length: 20
-	Tm:58.25, GC:60, Palindrome:-6, start index:1173
-tm difference between F & R: 0.36 
-Amplicon length: 167 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49166
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:560, Sequence:TCCACGTCCATCCTGTACGG, length: 20
-	Tm:58.33, GC:60, Palindrome:-6, start index:1172
-tm difference between F & R: 0.44 
-Amplicon length: 166 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49168
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:580, Sequence:CACGTCCATCCTGTACGGAA, length: 20
-	Tm:58.16, GC:55, Palindrome:-6, start index:1170
-tm difference between F & R: 0.27 
-Amplicon length: 164 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49169
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:590, Sequence:ACGTCCATCCTGTACGGAAG, length: 20
-	Tm:58.38, GC:55, Palindrome:-6, start index:1169
-tm difference between F & R: 0.49 
-Amplicon length: 163 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49175
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:650, Sequence:CTCCACGTCCATCCTGTACGG, length: 21
-	Tm:58.38, GC:61, Palindrome:-6, start index:1172
-tm difference between F & R: 0.49 
-Amplicon length: 167 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49177
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:670, Sequence:CCACGTCCATCCTGTACGGAA, length: 21
-	Tm:58.48, GC:57, Palindrome:-6, start index:1170
-tm difference between F & R: 0.59 
-Amplicon length: 165 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 49178
-FORWARD:
-	id:509, Sequence:ACAAATCTAAGGAGTTGCC, length: 19
-	Tm:57.89, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:680, Sequence:CACGTCCATCCTGTACGGAAG, length: 21
-	Tm:58.38, GC:57, Palindrome:-6, start index:1169
-tm difference between F & R: 0.49 
-Amplicon length: 164 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 52447
-FORWARD:
-	id:544, Sequence:ACTCAAGGTCACTGGAGACC, length: 20
-	Tm:57.83, GC:55, Palindrome:-6, start index:340
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.31 
-Amplicon length: 159 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 52449
-FORWARD:
-	id:544, Sequence:ACTCAAGGTCACTGGAGACC, length: 20
-	Tm:57.83, GC:55, Palindrome:-6, start index:340
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.52 
-Amplicon length: 154 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 53282
-FORWARD:
-	id:554, Sequence:GACTCAAGGTCACTGGAGAC, length: 20
-	Tm:57.73, GC:55, Palindrome:-6, start index:339
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.41 
-Amplicon length: 160 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 53284
-FORWARD:
-	id:554, Sequence:GACTCAAGGTCACTGGAGAC, length: 20
-	Tm:57.73, GC:55, Palindrome:-6, start index:339
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.63 
-Amplicon length: 155 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 54117
-FORWARD:
-	id:564, Sequence:AGACTCAAGGTCACTGGAGA, length: 20
-	Tm:57.94, GC:50, Palindrome:-6, start index:338
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.20 
-Amplicon length: 161 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 54119
-FORWARD:
-	id:564, Sequence:AGACTCAAGGTCACTGGAGA, length: 20
-	Tm:57.94, GC:50, Palindrome:-6, start index:338
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.41 
-Amplicon length: 156 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 55053
-FORWARD:
-	id:574, Sequence:GAGACTCAAGGTCACTGGAG, length: 20
-	Tm:57.94, GC:55, Palindrome:-6, start index:337
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.20 
-Amplicon length: 162 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 55055
-FORWARD:
-	id:574, Sequence:GAGACTCAAGGTCACTGGAG, length: 20
-	Tm:57.94, GC:55, Palindrome:-6, start index:337
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.41 
-Amplicon length: 157 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 57606
+set ID: 59770
 FORWARD:
 	id:601, Sequence:ACAGCTCCATTACTTACCACA, length: 21
-	Tm:57.63, GC:42, Palindrome:-3, start index:125
+	Tm:57.63, GC:42, Palindrome:-2.5, start index:125
 REVERSE:
 	id:652, Sequence:AATAAATGGCTCCTCTCCTGA, length: 21
-	Tm:57.77, GC:42, Palindrome:-3, start index:188
+	Tm:57.77, GC:42, Palindrome:-2.5, start index:188
 tm difference between F & R: 0.14 
 Amplicon length: 84 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 57634
+set ID: 59798
 FORWARD:
 	id:601, Sequence:ACAGCTCCATTACTTACCACA, length: 21
-	Tm:57.63, GC:42, Palindrome:-3, start index:125
+	Tm:57.63, GC:42, Palindrome:-2.5, start index:125
 REVERSE:
 	id:813, Sequence:TTTCTGTAGACATCATCCTGGCT, length: 23
-	Tm:58.33, GC:43, Palindrome:-3, start index:250
+	Tm:58.33, GC:43, Palindrome:-2.5, start index:250
 tm difference between F & R: 0.70 
 Amplicon length: 148 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 59222
+set ID: 61412
 FORWARD:
 	id:621, Sequence:TCACAGCTCCATTACTTACCA, length: 21
-	Tm:57.68, GC:42, Palindrome:-3, start index:123
+	Tm:57.68, GC:42, Palindrome:-2.5, start index:123
 REVERSE:
 	id:652, Sequence:AATAAATGGCTCCTCTCCTGA, length: 21
-	Tm:57.77, GC:42, Palindrome:-3, start index:188
+	Tm:57.77, GC:42, Palindrome:-2.5, start index:188
 tm difference between F & R: 0.09 
 Amplicon length: 86 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 59250
+set ID: 61440
 FORWARD:
 	id:621, Sequence:TCACAGCTCCATTACTTACCA, length: 21
-	Tm:57.68, GC:42, Palindrome:-3, start index:123
+	Tm:57.68, GC:42, Palindrome:-2.5, start index:123
 REVERSE:
 	id:813, Sequence:TTTCTGTAGACATCATCCTGGCT, length: 23
-	Tm:58.33, GC:43, Palindrome:-3, start index:250
+	Tm:58.33, GC:43, Palindrome:-2.5, start index:250
 tm difference between F & R: 0.66 
 Amplicon length: 150 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 61264
+set ID: 63562
 FORWARD:
 	id:641, Sequence:ACTCACAGCTCCATTACTTAC, length: 21
-	Tm:57.40, GC:42, Palindrome:-3, start index:121
+	Tm:57.40, GC:42, Palindrome:-2.5, start index:121
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.55 
 Amplicon length: 152 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 61714
+set ID: 65538
 FORWARD:
-	id:644, Sequence:GACTCAAGGTCACTGGAGACC, length: 21
-	Tm:58.05, GC:57, Palindrome:-6, start index:339
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.09 
-Amplicon length: 160 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 61716
-FORWARD:
-	id:644, Sequence:GACTCAAGGTCACTGGAGACC, length: 21
-	Tm:58.05, GC:57, Palindrome:-6, start index:339
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.30 
-Amplicon length: 155 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 62549
-FORWARD:
-	id:654, Sequence:AGACTCAAGGTCACTGGAGAC, length: 21
-	Tm:57.95, GC:52, Palindrome:-6, start index:338
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.19 
-Amplicon length: 161 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 62551
-FORWARD:
-	id:654, Sequence:AGACTCAAGGTCACTGGAGAC, length: 21
-	Tm:57.95, GC:52, Palindrome:-6, start index:338
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.41 
-Amplicon length: 156 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 63620
-FORWARD:
-	id:664, Sequence:GAGACTCAAGGTCACTGGAGA, length: 21
-	Tm:58.16, GC:52, Palindrome:-6, start index:337
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.02 
-Amplicon length: 162 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 63622
-FORWARD:
-	id:664, Sequence:GAGACTCAAGGTCACTGGAGA, length: 21
-	Tm:58.16, GC:52, Palindrome:-6, start index:337
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.19 
-Amplicon length: 157 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 64691
-FORWARD:
-	id:674, Sequence:GGAGACTCAAGGTCACTGGAG, length: 21
-	Tm:58.08, GC:57, Palindrome:-6, start index:336
-REVERSE:
-	id:435, Sequence:ATCTCCAAACAGCGTTTGT, length: 19
-	Tm:58.14, GC:42, Palindrome:-6, start index:480
-tm difference between F & R: 0.07 
-Amplicon length: 163 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 64693
-FORWARD:
-	id:674, Sequence:GGAGACTCAAGGTCACTGGAG, length: 21
-	Tm:58.08, GC:57, Palindrome:-6, start index:336
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.28 
-Amplicon length: 158 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65004
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:470, Sequence:TCCACGTCCATCCTGTACG, length: 19
-	Tm:58.20, GC:57, Palindrome:-6, start index:1173
-tm difference between F & R: 0.21 
-Amplicon length: 166 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65005
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:480, Sequence:CCACGTCCATCCTGTACGG, length: 19
-	Tm:58.28, GC:63, Palindrome:-6, start index:1172
-tm difference between F & R: 0.13 
-Amplicon length: 165 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65006
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:490, Sequence:CACGTCCATCCTGTACGGA, length: 19
-	Tm:58.18, GC:57, Palindrome:-6, start index:1171
-tm difference between F & R: 0.23 
-Amplicon length: 164 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65007
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:500, Sequence:ACGTCCATCCTGTACGGAA, length: 19
-	Tm:58.16, GC:52, Palindrome:-6, start index:1170
-tm difference between F & R: 0.25 
-Amplicon length: 163 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65008
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:510, Sequence:CGTCCATCCTGTACGGAAG, length: 19
-	Tm:58.37, GC:57, Palindrome:-6, start index:1169
-tm difference between F & R: 0.04 
-Amplicon length: 162 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65012
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:550, Sequence:CTCCACGTCCATCCTGTACG, length: 20
-	Tm:58.25, GC:60, Palindrome:-6, start index:1173
-tm difference between F & R: 0.16 
-Amplicon length: 167 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65013
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:560, Sequence:TCCACGTCCATCCTGTACGG, length: 20
-	Tm:58.33, GC:60, Palindrome:-6, start index:1172
-tm difference between F & R: 0.08 
-Amplicon length: 166 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65015
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:580, Sequence:CACGTCCATCCTGTACGGAA, length: 20
-	Tm:58.16, GC:55, Palindrome:-6, start index:1170
-tm difference between F & R: 0.25 
-Amplicon length: 164 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65016
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:590, Sequence:ACGTCCATCCTGTACGGAAG, length: 20
-	Tm:58.38, GC:55, Palindrome:-6, start index:1169
-tm difference between F & R: 0.03 
-Amplicon length: 163 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65022
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:650, Sequence:CTCCACGTCCATCCTGTACGG, length: 21
-	Tm:58.38, GC:61, Palindrome:-6, start index:1172
-tm difference between F & R: 0.03 
-Amplicon length: 167 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65024
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:670, Sequence:CCACGTCCATCCTGTACGGAA, length: 21
-	Tm:58.48, GC:57, Palindrome:-6, start index:1170
-tm difference between F & R: 0.07 
-Amplicon length: 165 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 65025
-FORWARD:
-	id:679, Sequence:ACAAATCTAAGGAGTTGCCGT, length: 21
-	Tm:58.41, GC:42, Palindrome:-6, start index:1026
-REVERSE:
-	id:680, Sequence:CACGTCCATCCTGTACGGAAG, length: 21
-	Tm:58.38, GC:57, Palindrome:-6, start index:1169
-tm difference between F & R: 0.03 
-Amplicon length: 164 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67146
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:470, Sequence:TCCACGTCCATCCTGTACG, length: 19
-	Tm:58.20, GC:57, Palindrome:-6, start index:1173
-tm difference between F & R: 0.13 
-Amplicon length: 168 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67147
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:480, Sequence:CCACGTCCATCCTGTACGG, length: 19
-	Tm:58.28, GC:63, Palindrome:-6, start index:1172
-tm difference between F & R: 0.05 
-Amplicon length: 167 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67148
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:490, Sequence:CACGTCCATCCTGTACGGA, length: 19
-	Tm:58.18, GC:57, Palindrome:-6, start index:1171
-tm difference between F & R: 0.15 
-Amplicon length: 166 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67149
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:500, Sequence:ACGTCCATCCTGTACGGAA, length: 19
-	Tm:58.16, GC:52, Palindrome:-6, start index:1170
-tm difference between F & R: 0.17 
-Amplicon length: 165 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67150
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:510, Sequence:CGTCCATCCTGTACGGAAG, length: 19
-	Tm:58.37, GC:57, Palindrome:-6, start index:1169
-tm difference between F & R: 0.04 
-Amplicon length: 164 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67154
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:550, Sequence:CTCCACGTCCATCCTGTACG, length: 20
-	Tm:58.25, GC:60, Palindrome:-6, start index:1173
-tm difference between F & R: 0.08 
-Amplicon length: 169 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67155
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:560, Sequence:TCCACGTCCATCCTGTACGG, length: 20
-	Tm:58.33, GC:60, Palindrome:-6, start index:1172
-tm difference between F & R: 0.00 
-Amplicon length: 168 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67157
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:580, Sequence:CACGTCCATCCTGTACGGAA, length: 20
-	Tm:58.16, GC:55, Palindrome:-6, start index:1170
-tm difference between F & R: 0.17 
-Amplicon length: 166 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67158
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:590, Sequence:ACGTCCATCCTGTACGGAAG, length: 20
-	Tm:58.38, GC:55, Palindrome:-6, start index:1169
-tm difference between F & R: 0.05 
-Amplicon length: 165 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67164
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:650, Sequence:CTCCACGTCCATCCTGTACGG, length: 21
-	Tm:58.38, GC:61, Palindrome:-6, start index:1172
-tm difference between F & R: 0.05 
-Amplicon length: 169 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67166
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:670, Sequence:CCACGTCCATCCTGTACGGAA, length: 21
-	Tm:58.48, GC:57, Palindrome:-6, start index:1170
-tm difference between F & R: 0.15 
-Amplicon length: 167 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 67167
-FORWARD:
-	id:699, Sequence:AGACAAATCTAAGGAGTTGCC, length: 21
-	Tm:58.33, GC:42, Palindrome:-6, start index:1024
-REVERSE:
-	id:680, Sequence:CACGTCCATCCTGTACGGAAG, length: 21
-	Tm:58.38, GC:57, Palindrome:-6, start index:1169
-tm difference between F & R: 0.05 
-Amplicon length: 166 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 71683
-FORWARD:
-	id:754, Sequence:AGACTCAAGGTCACTGGAGACC, length: 22
-	Tm:58.27, GC:54, Palindrome:-6, start index:338
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.08 
-Amplicon length: 156 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 72274
-FORWARD:
-	id:764, Sequence:GAGACTCAAGGTCACTGGAGAC, length: 22
-	Tm:58.17, GC:54, Palindrome:-6, start index:337
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.19 
-Amplicon length: 157 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 73236
-FORWARD:
-	id:774, Sequence:GGAGACTCAAGGTCACTGGAGA, length: 22
-	Tm:58.30, GC:54, Palindrome:-6, start index:336
-REVERSE:
-	id:485, Sequence:CAAACAGCGTTTGTAGTTC, length: 19
-	Tm:58.36, GC:42, Palindrome:-6, start index:475
-tm difference between F & R: 0.06 
-Amplicon length: 158 
-Score: 98 
-----------------------------------------------------------------------------------
-set ID: 76343
-FORWARD:
-	id:811, Sequence:TCACAGCTCCATTACTTACCACA, length: 23
-	Tm:57.69, GC:43, Palindrome:-3, start index:123
+	id:661, Sequence:GAACTCACAGCTCCATTACTT, length: 21
+	Tm:57.60, GC:42, Palindrome:-4.5, start index:119
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-4.5, start index:252
+tm difference between F & R: 0.35 
+Amplicon length: 154 
+Score: 98 
+----------------------------------------------------------------------------------
+set ID: 79178
+FORWARD:
+	id:811, Sequence:TCACAGCTCCATTACTTACCACA, length: 23
+	Tm:57.69, GC:43, Palindrome:-2.5, start index:123
+REVERSE:
+	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.27 
 Amplicon length: 150 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 78176
+set ID: 81050
 FORWARD:
 	id:831, Sequence:ACTCACAGCTCCATTACTTACCA, length: 23
-	Tm:57.73, GC:43, Palindrome:-3, start index:121
+	Tm:57.73, GC:43, Palindrome:-2.5, start index:121
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-3, start index:252
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
 tm difference between F & R: 0.22 
 Amplicon length: 152 
 Score: 98 
 ----------------------------------------------------------------------------------
-set ID: 81099
+set ID: 34486
 FORWARD:
-	id:861, Sequence:GGAACTCACAGCTCCATTACTTA, length: 23
-	Tm:57.73, GC:43, Palindrome:-6, start index:118
+	id:351, Sequence:ACAGCTCCATTACTTACC, length: 18
+	Tm:57.62, GC:44, Palindrome:-2.5, start index:125
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-6, start index:252
-tm difference between F & R: 0.22 
-Amplicon length: 155 
-Score: 98 
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
+tm difference between F & R: 0.33 
+Amplicon length: 148 
+Score: 97 
 ----------------------------------------------------------------------------------
-set ID: 82061
+set ID: 42586
 FORWARD:
-	id:871, Sequence:AGGAACTCACAGCTCCATTACTT, length: 23
-	Tm:57.95, GC:43, Palindrome:-6, start index:117
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:363, Sequence:TGTAGACATCATCCTGGC, length: 18
+	Tm:57.73, GC:50, Palindrome:-2.5, start index:251
+tm difference between F & R: 0.11 
+Amplicon length: 144 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42588
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:373, Sequence:GTAGACATCATCCTGGCT, length: 18
+	Tm:57.60, GC:50, Palindrome:-2.5, start index:250
+tm difference between F & R: 0.03 
+Amplicon length: 143 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42590
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:383, Sequence:TAGACATCATCCTGGCTG, length: 18
+	Tm:57.60, GC:50, Palindrome:-2.5, start index:249
+tm difference between F & R: 0.03 
+Amplicon length: 142 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42592
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:393, Sequence:AGACATCATCCTGGCTGG, length: 18
+	Tm:57.73, GC:55, Palindrome:-2.5, start index:248
+tm difference between F & R: 0.11 
+Amplicon length: 141 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42594
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:403, Sequence:GACATCATCCTGGCTGGG, length: 18
+	Tm:57.64, GC:61, Palindrome:-2.5, start index:247
+tm difference between F & R: 0.02 
+Amplicon length: 140 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42601
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:443, Sequence:CTGTAGACATCATCCTGGC, length: 19
+	Tm:57.78, GC:52, Palindrome:-2.5, start index:251
+tm difference between F & R: 0.16 
+Amplicon length: 145 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42603
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:453, Sequence:TGTAGACATCATCCTGGCT, length: 19
+	Tm:57.78, GC:47, Palindrome:-2.5, start index:250
+tm difference between F & R: 0.16 
+Amplicon length: 144 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42605
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:463, Sequence:GTAGACATCATCCTGGCTG, length: 19
+	Tm:57.78, GC:52, Palindrome:-2.5, start index:249
+tm difference between F & R: 0.16 
+Amplicon length: 143 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42607
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:473, Sequence:TAGACATCATCCTGGCTGG, length: 19
+	Tm:57.73, GC:52, Palindrome:-2.5, start index:248
+tm difference between F & R: 0.10 
+Amplicon length: 142 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42609
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:483, Sequence:AGACATCATCCTGGCTGGG, length: 19
+	Tm:57.86, GC:57, Palindrome:-2.5, start index:247
+tm difference between F & R: 0.24 
+Amplicon length: 141 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42611
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:493, Sequence:GACATCATCCTGGCTGGGG, length: 19
+	Tm:57.77, GC:63, Palindrome:-2.5, start index:246
+tm difference between F & R: 0.15 
+Amplicon length: 140 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42613
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:503, Sequence:ACATCATCCTGGCTGGGGG, length: 19
+	Tm:57.69, GC:63, Palindrome:-2.5, start index:245
+tm difference between F & R: 0.06 
+Amplicon length: 139 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42614
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:513, Sequence:TTCTGTAGACATCATCCTGG, length: 20
+	Tm:57.72, GC:45, Palindrome:-2.5, start index:252
+tm difference between F & R: 0.10 
+Amplicon length: 147 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42615
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:523, Sequence:TCTGTAGACATCATCCTGGC, length: 20
+	Tm:57.83, GC:50, Palindrome:-2.5, start index:251
+tm difference between F & R: 0.20 
+Amplicon length: 146 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42617
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:533, Sequence:CTGTAGACATCATCCTGGCT, length: 20
+	Tm:57.83, GC:50, Palindrome:-2.5, start index:250
+tm difference between F & R: 0.20 
+Amplicon length: 145 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42619
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:543, Sequence:TGTAGACATCATCCTGGCTG, length: 20
+	Tm:57.96, GC:50, Palindrome:-2.5, start index:249
+tm difference between F & R: 0.34 
+Amplicon length: 144 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42621
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:553, Sequence:GTAGACATCATCCTGGCTGG, length: 20
+	Tm:57.91, GC:55, Palindrome:-2.5, start index:248
+tm difference between F & R: 0.29 
+Amplicon length: 143 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42623
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:563, Sequence:TAGACATCATCCTGGCTGGG, length: 20
+	Tm:57.86, GC:55, Palindrome:-2.5, start index:247
+tm difference between F & R: 0.23 
+Amplicon length: 142 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42625
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:573, Sequence:AGACATCATCCTGGCTGGGG, length: 20
+	Tm:57.99, GC:60, Palindrome:-2.5, start index:246
+tm difference between F & R: 0.37 
+Amplicon length: 141 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42627
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:583, Sequence:GACATCATCCTGGCTGGGGG, length: 20
+	Tm:57.91, GC:65, Palindrome:-2.5, start index:245
+tm difference between F & R: 0.28 
+Amplicon length: 140 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42629
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:593, Sequence:ACATCATCCTGGCTGGGGGG, length: 20
+	Tm:57.82, GC:65, Palindrome:-2.5, start index:244
+tm difference between F & R: 0.19 
+Amplicon length: 139 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42631
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:613, Sequence:TTCTGTAGACATCATCCTGGC, length: 21
+	Tm:58.06, GC:47, Palindrome:-2.5, start index:251
+tm difference between F & R: 0.43 
+Amplicon length: 147 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42632
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:622, Sequence:TTCAATAAATGGCTCCTCTCC, length: 21
+	Tm:57.60, GC:42, Palindrome:-2.5, start index:191
+tm difference between F & R: 0.02 
+Amplicon length: 87 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42633
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:623, Sequence:TCTGTAGACATCATCCTGGCT, length: 21
+	Tm:57.88, GC:47, Palindrome:-2.5, start index:250
+tm difference between F & R: 0.25 
+Amplicon length: 146 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42635
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:633, Sequence:CTGTAGACATCATCCTGGCTG, length: 21
+	Tm:58.01, GC:52, Palindrome:-2.5, start index:249
+tm difference between F & R: 0.39 
+Amplicon length: 145 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42637
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:643, Sequence:TGTAGACATCATCCTGGCTGG, length: 21
+	Tm:58.10, GC:52, Palindrome:-2.5, start index:248
+tm difference between F & R: 0.47 
+Amplicon length: 144 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42639
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:653, Sequence:GTAGACATCATCCTGGCTGGG, length: 21
+	Tm:58.04, GC:57, Palindrome:-2.5, start index:247
+tm difference between F & R: 0.42 
+Amplicon length: 143 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42641
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:663, Sequence:TAGACATCATCCTGGCTGGGG, length: 21
+	Tm:57.99, GC:57, Palindrome:-2.5, start index:246
+tm difference between F & R: 0.37 
+Amplicon length: 142 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42643
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:673, Sequence:AGACATCATCCTGGCTGGGGG, length: 21
+	Tm:58.13, GC:61, Palindrome:-2.5, start index:245
+tm difference between F & R: 0.50 
+Amplicon length: 141 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42645
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:683, Sequence:GACATCATCCTGGCTGGGGGG, length: 21
+	Tm:58.04, GC:66, Palindrome:-2.5, start index:244
+tm difference between F & R: 0.41 
+Amplicon length: 140 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42647
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:693, Sequence:ACATCATCCTGGCTGGGGGGA, length: 21
+	Tm:58.04, GC:61, Palindrome:-2.5, start index:243
+tm difference between F & R: 0.41 
+Amplicon length: 139 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42648
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:703, Sequence:CTTTCTGTAGACATCATCCTGG, length: 22
+	Tm:58.00, GC:45, Palindrome:-2.5, start index:252
+tm difference between F & R: 0.37 
+Amplicon length: 149 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42649
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:713, Sequence:TTTCTGTAGACATCATCCTGGC, length: 22
+	Tm:58.29, GC:45, Palindrome:-2.5, start index:251
+tm difference between F & R: 0.66 
+Amplicon length: 148 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42650
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:723, Sequence:TTCTGTAGACATCATCCTGGCT, length: 22
+	Tm:58.11, GC:45, Palindrome:-2.5, start index:250
+tm difference between F & R: 0.48 
+Amplicon length: 147 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42651
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:733, Sequence:TCTGTAGACATCATCCTGGCTG, length: 22
+	Tm:58.06, GC:50, Palindrome:-2.5, start index:249
+tm difference between F & R: 0.43 
+Amplicon length: 146 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42653
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:743, Sequence:CTGTAGACATCATCCTGGCTGG, length: 22
+	Tm:58.14, GC:54, Palindrome:-2.5, start index:248
+tm difference between F & R: 0.52 
+Amplicon length: 145 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42655
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:753, Sequence:TGTAGACATCATCCTGGCTGGG, length: 22
+	Tm:58.23, GC:54, Palindrome:-2.5, start index:247
+tm difference between F & R: 0.60 
+Amplicon length: 144 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42657
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:763, Sequence:GTAGACATCATCCTGGCTGGGG, length: 22
+	Tm:58.18, GC:59, Palindrome:-2.5, start index:246
+tm difference between F & R: 0.55 
+Amplicon length: 143 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42659
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:773, Sequence:TAGACATCATCCTGGCTGGGGG, length: 22
+	Tm:58.12, GC:59, Palindrome:-2.5, start index:245
+tm difference between F & R: 0.50 
+Amplicon length: 142 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42661
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:783, Sequence:AGACATCATCCTGGCTGGGGGG, length: 22
+	Tm:58.26, GC:63, Palindrome:-2.5, start index:244
+tm difference between F & R: 0.63 
+Amplicon length: 141 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 42663
+FORWARD:
+	id:431, Sequence:ACAGCTCCATTACTTACCA, length: 19
+	Tm:57.62, GC:42, Palindrome:-2.5, start index:125
+REVERSE:
+	id:793, Sequence:GACATCATCCTGGCTGGGGGGA, length: 22
+	Tm:58.26, GC:63, Palindrome:-2.5, start index:243
+tm difference between F & R: 0.63 
+Amplicon length: 140 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43034
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:488, Sequence:AAGTCGGTACCTCTGAAAT, length: 19
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.30 
+Amplicon length: 164 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43035
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:498, Sequence:AGTCGGTACCTCTGAAATT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.05 
+Amplicon length: 163 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43036
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:508, Sequence:GTCGGTACCTCTGAAATTT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:965
+tm difference between F & R: 0.04 
+Amplicon length: 162 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43048
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:648, Sequence:AACAAGTCGGTACCTCTGAAA, length: 21
+	Tm:57.71, GC:42, Palindrome:-3.5, start index:968
+tm difference between F & R: 0.31 
+Amplicon length: 167 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43049
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:658, Sequence:ACAAGTCGGTACCTCTGAAAT, length: 21
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.29 
+Amplicon length: 166 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43050
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:668, Sequence:CAAGTCGGTACCTCTGAAATT, length: 21
+	Tm:57.95, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.07 
+Amplicon length: 165 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43051
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:688, Sequence:AGTCGGTACCTCTGAAATTTC, length: 21
+	Tm:58.24, GC:42, Palindrome:-3.5, start index:964
+tm difference between F & R: 0.22 
+Amplicon length: 163 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43052
+FORWARD:
+	id:437, Sequence:TCTGGCACAGCGGACAATT, length: 19
+	Tm:58.02, GC:52, Palindrome:-3.5, start index:822
+REVERSE:
+	id:698, Sequence:GTCGGTACCTCTGAAATTTCA, length: 21
+	Tm:58.03, GC:42, Palindrome:-3.5, start index:963
+tm difference between F & R: 0.01 
+Amplicon length: 162 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 43451
+FORWARD:
+	id:441, Sequence:CACAGCTCCATTACTTACC, length: 19
+	Tm:57.62, GC:47, Palindrome:-2.5, start index:124
 REVERSE:
 	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
-	Tm:57.95, GC:42, Palindrome:-6, start index:252
-tm difference between F & R: 0.00 
-Amplicon length: 156 
-Score: 98 
+	Tm:57.95, GC:42, Palindrome:-2.5, start index:252
+tm difference between F & R: 0.33 
+Amplicon length: 149 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44141
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:488, Sequence:AAGTCGGTACCTCTGAAAT, length: 19
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.07 
+Amplicon length: 165 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44142
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:498, Sequence:AGTCGGTACCTCTGAAATT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.18 
+Amplicon length: 164 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44143
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:508, Sequence:GTCGGTACCTCTGAAATTT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:965
+tm difference between F & R: 0.19 
+Amplicon length: 163 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44155
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:648, Sequence:AACAAGTCGGTACCTCTGAAA, length: 21
+	Tm:57.71, GC:42, Palindrome:-3.5, start index:968
+tm difference between F & R: 0.08 
+Amplicon length: 168 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44156
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:658, Sequence:ACAAGTCGGTACCTCTGAAAT, length: 21
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.06 
+Amplicon length: 167 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44157
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:668, Sequence:CAAGTCGGTACCTCTGAAATT, length: 21
+	Tm:57.95, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.16 
+Amplicon length: 166 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44158
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:688, Sequence:AGTCGGTACCTCTGAAATTTC, length: 21
+	Tm:58.24, GC:42, Palindrome:-3.5, start index:964
+tm difference between F & R: 0.46 
+Amplicon length: 164 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 44159
+FORWARD:
+	id:447, Sequence:ATCTGGCACAGCGGACAAT, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:821
+REVERSE:
+	id:698, Sequence:GTCGGTACCTCTGAAATTTCA, length: 21
+	Tm:58.03, GC:42, Palindrome:-3.5, start index:963
+tm difference between F & R: 0.24 
+Amplicon length: 163 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45044
+FORWARD:
+	id:454, Sequence:CTCAAGGTCACTGGAGACC, length: 19
+	Tm:57.83, GC:57, Palindrome:-5.5, start index:341
+REVERSE:
+	id:605, Sequence:ACATCTCCAAACAGCGTTTGT, length: 21
+	Tm:58.15, GC:42, Palindrome:-5.5, start index:480
+tm difference between F & R: 0.32 
+Amplicon length: 160 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45248
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:488, Sequence:AAGTCGGTACCTCTGAAAT, length: 19
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.07 
+Amplicon length: 166 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45249
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:498, Sequence:AGTCGGTACCTCTGAAATT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.18 
+Amplicon length: 165 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45250
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:508, Sequence:GTCGGTACCTCTGAAATTT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:965
+tm difference between F & R: 0.19 
+Amplicon length: 164 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45262
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:648, Sequence:AACAAGTCGGTACCTCTGAAA, length: 21
+	Tm:57.71, GC:42, Palindrome:-3.5, start index:968
+tm difference between F & R: 0.08 
+Amplicon length: 169 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45263
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:658, Sequence:ACAAGTCGGTACCTCTGAAAT, length: 21
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.06 
+Amplicon length: 168 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45264
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:668, Sequence:CAAGTCGGTACCTCTGAAATT, length: 21
+	Tm:57.95, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.16 
+Amplicon length: 167 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45265
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:688, Sequence:AGTCGGTACCTCTGAAATTTC, length: 21
+	Tm:58.24, GC:42, Palindrome:-3.5, start index:964
+tm difference between F & R: 0.46 
+Amplicon length: 165 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 45266
+FORWARD:
+	id:457, Sequence:TATCTGGCACAGCGGACAA, length: 19
+	Tm:57.79, GC:52, Palindrome:-3.5, start index:820
+REVERSE:
+	id:698, Sequence:GTCGGTACCTCTGAAATTTCA, length: 21
+	Tm:58.03, GC:42, Palindrome:-3.5, start index:963
+tm difference between F & R: 0.24 
+Amplicon length: 164 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46355
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:488, Sequence:AAGTCGGTACCTCTGAAAT, length: 19
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.09 
+Amplicon length: 167 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46356
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:498, Sequence:AGTCGGTACCTCTGAAATT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.16 
+Amplicon length: 166 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46357
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:508, Sequence:GTCGGTACCTCTGAAATTT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:965
+tm difference between F & R: 0.17 
+Amplicon length: 165 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46369
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:648, Sequence:AACAAGTCGGTACCTCTGAAA, length: 21
+	Tm:57.71, GC:42, Palindrome:-3.5, start index:968
+tm difference between F & R: 0.09 
+Amplicon length: 170 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46370
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:658, Sequence:ACAAGTCGGTACCTCTGAAAT, length: 21
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.08 
+Amplicon length: 169 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46371
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:668, Sequence:CAAGTCGGTACCTCTGAAATT, length: 21
+	Tm:57.95, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.15 
+Amplicon length: 168 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46372
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:688, Sequence:AGTCGGTACCTCTGAAATTTC, length: 21
+	Tm:58.24, GC:42, Palindrome:-3.5, start index:964
+tm difference between F & R: 0.44 
+Amplicon length: 166 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 46373
+FORWARD:
+	id:467, Sequence:ATATCTGGCACAGCGGACA, length: 19
+	Tm:57.80, GC:52, Palindrome:-3.5, start index:819
+REVERSE:
+	id:698, Sequence:GTCGGTACCTCTGAAATTTCA, length: 21
+	Tm:58.03, GC:42, Palindrome:-3.5, start index:963
+tm difference between F & R: 0.22 
+Amplicon length: 165 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47462
+FORWARD:
+	id:477, Sequence:CATATCTGGCACAGCGGAC, length: 19
+	Tm:57.80, GC:57, Palindrome:-3.5, start index:818
+REVERSE:
+	id:488, Sequence:AAGTCGGTACCTCTGAAAT, length: 19
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.09 
+Amplicon length: 168 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47463
+FORWARD:
+	id:477, Sequence:CATATCTGGCACAGCGGAC, length: 19
+	Tm:57.80, GC:57, Palindrome:-3.5, start index:818
+REVERSE:
+	id:498, Sequence:AGTCGGTACCTCTGAAATT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.16 
+Amplicon length: 167 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47464
+FORWARD:
+	id:477, Sequence:CATATCTGGCACAGCGGAC, length: 19
+	Tm:57.80, GC:57, Palindrome:-3.5, start index:818
+REVERSE:
+	id:508, Sequence:GTCGGTACCTCTGAAATTT, length: 19
+	Tm:57.97, GC:42, Palindrome:-3.5, start index:965
+tm difference between F & R: 0.17 
+Amplicon length: 166 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47477
+FORWARD:
+	id:477, Sequence:CATATCTGGCACAGCGGAC, length: 19
+	Tm:57.80, GC:57, Palindrome:-3.5, start index:818
+REVERSE:
+	id:658, Sequence:ACAAGTCGGTACCTCTGAAAT, length: 21
+	Tm:57.72, GC:42, Palindrome:-3.5, start index:967
+tm difference between F & R: 0.08 
+Amplicon length: 170 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47478
+FORWARD:
+	id:477, Sequence:CATATCTGGCACAGCGGAC, length: 19
+	Tm:57.80, GC:57, Palindrome:-3.5, start index:818
+REVERSE:
+	id:668, Sequence:CAAGTCGGTACCTCTGAAATT, length: 21
+	Tm:57.95, GC:42, Palindrome:-3.5, start index:966
+tm difference between F & R: 0.15 
+Amplicon length: 169 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47479
+FORWARD:
+	id:477, Sequence:CATATCTGGCACAGCGGAC, length: 19
+	Tm:57.80, GC:57, Palindrome:-3.5, start index:818
+REVERSE:
+	id:688, Sequence:AGTCGGTACCTCTGAAATTTC, length: 21
+	Tm:58.24, GC:42, Palindrome:-3.5, start index:964
+tm difference between F & R: 0.44 
+Amplicon length: 167 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47480
+FORWARD:
+	id:477, Sequence:CATATCTGGCACAGCGGAC, length: 19
+	Tm:57.80, GC:57, Palindrome:-3.5, start index:818
+REVERSE:
+	id:698, Sequence:GTCGGTACCTCTGAAATTTCA, length: 21
+	Tm:58.03, GC:42, Palindrome:-3.5, start index:963
+tm difference between F & R: 0.22 
+Amplicon length: 166 
+Score: 97 
+----------------------------------------------------------------------------------
+set ID: 47879
+FORWARD:
+	id:481, Sequence:AACTCACAGCTCCATTACT, length: 19
+	Tm:57.15, GC:42, Palindrome:-3.5, start index:120
+REVERSE:
+	id:603, Sequence:TTTCTGTAGACATCATCCTGG, length: 21
+	Tm:57.95, GC:42, Palindrome:-3.5, start index:252
+tm difference between F & R: 0.80 
+Amplicon length: 153 
+Score: 97 

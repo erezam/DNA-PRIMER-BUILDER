@@ -15,7 +15,9 @@ class Primer (object):
         self.pair_id = pair_id
         self.junc_prec = junc_prec
         self.getPairsVector()
-        self.palindrome_length = self.palindrome_check()
+        self.palindrome_length = float(self.palindrome_check())
+        if self.palindrome_length < 0:
+            self.palindrome_length = self.palindrome_length+0.5
 
     def a_counter(self):
         aCount = 0
@@ -122,25 +124,27 @@ class Primer (object):
 
     def get_palindrome_score(self):
         score = 0
-        mismatch_flag = False
-        if self.palindrome_length < 0:#there is one mismatch in the palindrome
-            mismatch_flag = True
+        pal_length = float(self.palindrome_length)
 
-        if abs(self.palindrome_length) > 6:
+
+        if abs(pal_length) > 6:
             score = 0
-        if abs(self.palindrome_length) == 6:
+        elif abs(pal_length) == 6:
             score = 0.8
-        if abs(self.palindrome_length) == 5:
+        elif abs(pal_length) == 5.5:
+            score = 0.825
+        elif abs(pal_length) == 5:
             score = 0.85
-        elif abs(self.palindrome_length) == 4:
+        elif abs(pal_length) == 4.5:
+            score = 0.875
+        elif abs(pal_length) == 4:
             score = 0.9
-        elif abs(self.palindrome_length) == 3:
+        elif abs(pal_length) == 3.5:
+            score = 0.925
+        elif abs(pal_length) == 3:
             score = 0.95
         else:
             score = 1
-
-        if mismatch_flag:
-            score += 0.05
 
         return score
 # =========================== get Tm score ======================================================================
