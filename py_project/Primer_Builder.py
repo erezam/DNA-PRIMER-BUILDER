@@ -11,6 +11,7 @@ import TmPredictor
 # load config file with the parameters ranges
 config = json.load(open('config.json'))
 
+
 # ====================== Build ========================================
 # main func of Primer_Builder that manage the full process
 def build(species, symbol):
@@ -318,6 +319,21 @@ def junktion_sets(forward_on_junk, reverse_on_junk, id_count_set):
                 set = Primer_set(forward_primer, reverse_primer, id_count_set)
                 id_count_set += 1
                 on_junc_sets.append(set)
+
+    # Add primers to json data
+    new_file = open("../output/data.txt", "w")
+    for set in on_junc_sets:
+        if set.id % 5000 == 0:
+            new_file.write("{\n\t'F_seq':'%s',\n\t'F_tm':'%.2f',\n\t'F_gc':'%s',\n\t'F_len':'%s',\n\t'F_pali':'%s',\n\t"
+                           "'R_seq':'%s',\n\t'R_tm':'%.2f',\n\t'R_gc':'%s',\n\t'R_len':'%s',\n\t'R_pali':'%s',\n\t"
+                           "'Tm_dif':'%s',\n\t'Amp_len':'%s',\n\t'score':%s\n},\n" % (
+                           set.forward_primer.sequence, set.forward_primer.primer_tm(), set.forward_primer.precent_gc(),
+                           set.forward_primer.length, set.forward_primer.palindrome_length,
+                           set.reverse_primer.sequence, set.reverse_primer.primer_tm(), set.reverse_primer.precent_gc(),
+                           set.reverse_primer.length, set.reverse_primer.palindrome_length,
+                           set.tm_dif(), set.get_amplicon_length(), 0))
+
+    new_file.close()
 
     on_junc_sets = sets_tests(on_junc_sets)
     return on_junc_sets

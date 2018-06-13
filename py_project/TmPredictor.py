@@ -10,9 +10,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 def init():
     # Create linear regression object
     global regr
-    regr = linear_model.LinearRegression()
     # read data from json
-    data = json.load(open("Data.json"))
+    data = json.load(open("Tm_data.json"))
     pairs_vectors = []
     tm = []
     for primer in data["Primers"]:
@@ -25,9 +24,32 @@ def init():
         #vector.append(1)
         pairs_vectors_sums.append(vector)
 
+
+    # Split the data into training/testing sets
+    X_train = pairs_vectors_sums[:-5]
+    X_test = pairs_vectors_sums[-5:]
+
+    # Split the targets into training/testing sets
+    y_train = tm[:-5]
+    y_test = tm[-5:]
+
+    # Create linear regression object
+    regr = linear_model.LinearRegression()
+
     # Train the model using the training sets
-    regr.fit(pairs_vectors_sums, tm)
+    regr.fit(X_train, y_train)
+
+    # Make predictions using the testing set
+    y_pred = regr.predict(X_test)
+
+    print("Tm linear regression score:")
+    # The coefficients
     #print('Coefficients: \n', regr.coef_)
+    # The mean squared error
+    print("Mean squared error: %.2f"
+          % mean_squared_error(y_test, y_pred))
+    # Explained variance score: 1 is perfect prediction
+    print('Variance score: %.2f' % r2_score(y_test, y_pred))
 
 
 def get_pairs_vector(seq):
