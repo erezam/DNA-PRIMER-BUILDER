@@ -351,7 +351,7 @@ def export_to_file(on_junc_sets, species, symbol):
 
     new_file = open("../output/primer_list_" + species + "_" + symbol + ".txt", "w")
     new_file.write("\n**********************************************************************************\
-                    \n********* Forward & Reverse on junktion PRIMERS SETS of Becn1(rat Gene): *********\
+                    \n********* Forward & Reverse on junction PRIMERS SETS of "+ symbol + "(" + species+" Gene): *********\
                     \n**********************************************************************************\n\n")
     new_file.close()
 
