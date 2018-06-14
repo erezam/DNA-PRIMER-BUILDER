@@ -17,7 +17,7 @@ class Primer (object):
         self.getPairsVector()
         self.palindrome_length = float(self.palindrome_check())
         if self.palindrome_length < 0:
-            self.palindrome_length = self.palindrome_length+0.5
+            self.palindrome_length = abs(self.palindrome_length+0.5)
 
     def a_counter(self):
         aCount = 0
