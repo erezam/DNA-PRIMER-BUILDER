@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="72c17765-8351-4616-9594-a9076f28edc8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/data.txt" afterPath="$PROJECT_DIR$/output/data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/primer_list_human_BRAF.txt" afterPath="$PROJECT_DIR$/output/primer_list_human_BRAF.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py_project/Primer.py" afterPath="$PROJECT_DIR$/py_project/Primer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py_project/TmPredictor.py" afterPath="$PROJECT_DIR$/py_project/TmPredictor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py_project/Primer_Builder.py" afterPath="$PROJECT_DIR$/py_project/Primer_Builder.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +17,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_project/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2150">
-              <caret line="92" column="13" lean-forward="false" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="13" />
+            <state relative-caret-position="3725">
+              <caret line="239" column="91" lean-forward="false" selection-start-line="239" selection-start-column="76" selection-end-line="239" selection-end-column="91" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -29,22 +26,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Primer_Builder.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Primer_Builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/py_project/Primer_Builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3875">
-              <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1333">
+              <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+              <folding>
+                <element signature="e#1#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TmPredictor.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TmPredictor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_project/TmPredictor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="-1097">
+              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="26" />
+              <folding>
+                <element signature="e#2#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +53,7 @@
       <file leaf-file-name="ScorePredictor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_project/ScorePredictor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
+            <state relative-caret-position="500">
               <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding />
             </state>
@@ -62,8 +63,8 @@
       <file leaf-file-name="EnsemblRestClient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_project/EnsemblRestClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="-1222">
+              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -160,9 +161,9 @@
         <option value="$PROJECT_DIR$/py_project/config.json" />
         <option value="$PROJECT_DIR$/py_project/Main.py" />
         <option value="$PROJECT_DIR$/py_project/Main.py" />
-        <option value="$PROJECT_DIR$/py_project/Primer_Builder.py" />
         <option value="$PROJECT_DIR$/py_project/Primer.py" />
         <option value="$PROJECT_DIR$/py_project/TmPredictor.py" />
+        <option value="$PROJECT_DIR$/py_project/Primer_Builder.py" />
       </list>
     </option>
   </component>
@@ -186,8 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +203,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,24 +528,30 @@
       <option name="project" value="LOCAL" />
       <updated>1528962829330</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="final commit">
+      <created>1528982436872</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1528982436873</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47760418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22706422" sideWeight="0.4359375" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34747708" sideWeight="0.5640625" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31880733" sideWeight="0.48972973" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31880733" sideWeight="0.48972973" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34747708" sideWeight="0.5640625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1890625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35091743" sideWeight="0.5463542" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35091743" sideWeight="0.5463542" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -607,7 +614,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cut optional primers from the cdna, each one length 20 and in junction" />
     <MESSAGE value="create a Primer class" />
     <MESSAGE value="primer tests" />
     <MESSAGE value="test values changings" />
@@ -632,7 +638,8 @@
     <MESSAGE value="GUI update" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="adding data to logistic regression" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding data to logistic regression" />
+    <MESSAGE value="final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -772,13 +779,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py_project/Main.py">
+    <entry file="file://$PROJECT_DIR$/py_project/Primer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2150">
-          <caret line="92" column="13" lean-forward="false" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -790,43 +795,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/py_project/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3725">
+          <caret line="239" column="91" lean-forward="false" selection-start-line="239" selection-start-column="76" selection-end-line="239" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py_project/TmPredictor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1097">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#2#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/py_project/EnsemblRestClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="-1222">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/py_project/ScorePredictor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
+        <state relative-caret-position="500">
           <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_project/Primer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/py_project/Primer_Builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3875">
-          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_project/TmPredictor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="-1333">
+          <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

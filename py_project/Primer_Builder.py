@@ -320,7 +320,7 @@ def junktion_sets(forward_on_junk, reverse_on_junk, id_count_set):
                 id_count_set += 1
                 on_junc_sets.append(set)
 
-    # Add primers to json data
+        ''' Add primers to json data
     new_file = open("../output/data.txt", "w")
     for set in on_junc_sets:
         if set.id % 5000 == 0:
@@ -334,7 +334,7 @@ def junktion_sets(forward_on_junk, reverse_on_junk, id_count_set):
                            set.tm_dif(), set.get_amplicon_length(), 0))
 
     new_file.close()
-
+    '''
     on_junc_sets = sets_tests(on_junc_sets)
     return on_junc_sets
 
