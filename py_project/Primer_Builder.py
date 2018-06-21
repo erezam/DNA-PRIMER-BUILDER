@@ -8,6 +8,7 @@ from Primer import Primer
 from Primer_set import Primer_set
 from EnsemblRestClient import EnsemblRestClient
 import TmPredictor
+import ScorePredictor
 # load config file with the parameters ranges
 config = json.load(open('config.json'))
 
@@ -16,6 +17,7 @@ config = json.load(open('config.json'))
 # main func of Primer_Builder that manage the full process
 def build(species, symbol):
     # init tm predictor once to reset the global variable regr for tm calc with logistic reg
+    ScorePredictor.init()
     TmPredictor.init()
     # get the needed "201" transcript
     transcript_201 = transcript_data(species, symbol)

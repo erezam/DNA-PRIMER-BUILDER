@@ -1,5 +1,5 @@
 import json
-
+import ScorePredictor
 
 config = json.load(open("config.json"))
 
@@ -39,11 +39,12 @@ class Primer_set (object):
 
 # =========================== get primers set score ======================================================================
     def get_primers_set_score(self):
-        forward_scr = self.forward_primer.get_primer_score()
-        reverse_scr = self.reverse_primer.get_primer_score()
-        amplicon_scr = 100*self.get_amplicon_length_score()
-        return int(0.45*forward_scr + 0.45*reverse_scr + 0.1*amplicon_scr)
-
+        #forward_scr = self.forward_primer.get_primer_score()
+        #reverse_scr = self.reverse_primer.get_primer_score()
+        #amplicon_scr = 100*self.get_amplicon_length_score()
+        #return int(0.45*forward_scr + 0.45*reverse_scr + 0.1*amplicon_scr)
+        score = ScorePredictor.logreg.predict_proba([ScorePredictor.normal_set(self, config)])
+        return int(score[0][1]*100)
 
     def get_amplicon_length_score(self):
         Avg = int(config["Amplicon Length"]["Avg"])
